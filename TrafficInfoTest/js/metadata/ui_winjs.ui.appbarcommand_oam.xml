@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget version="1.0" spec="1.0" id="ms-appx://Microsoft.WinJS.1.0/js/ui/WinJS.UI.AppBarCommand" name="WinJS.UI.AppBarCommand" xmlns:blend="http://schemas.microsoft.com/winjs/Blend/2011" blend:supportsContent="false" xmlns="http://openajax.org/metadata">
+  <author name="Microsoft Corporation" />
+  <description locid="WinJS.UI.AppBarCommand" type="text/plain">AppBarCommands provide button, toggle button, flyout button, or separator functionality for AppBars.</description>
+  <icons>
+    <icon src="ui_winjs.ui.appbarcommand.12x12.png" />
+    <icon src="ui_winjs.ui.appbarcommand.16x16.png" />
+  </icons>
+  <properties>
+    <property name="id" datatype="String" required="false" blend:isAdvanced="true">
+      <description locid="WinJS.UI.AppBarCommand.id" type="text/plain">The Id of the AppBarCommand.</description>
+    </property>
+    <property name="type" datatype="WinJS.UI.AppBarCommand.type" required="false" readonly="true" blend:isAdvanced="true">
+      <description locid="WinJS.UI.AppBarCommand.type" type="text/plain">The Type of the AppBarCommand, possible values are "button", "toggle", "flyout", or "separator"</description>
+    </property>
+    <property name="label" datatype="String" required="false">
+      <description locid="WinJS.UI.AppBarCommand.label" type="text/plain">The label of the AppBarCommand</description>
+    </property>
+    <property name="icon" datatype="String" required="false">
+      <description locid="WinJS.UI.AppBarCommand.icon" type="text/plain">The icon of the AppBarCommand</description>
+    </property>
+    <property name="onclick" datatype="Function" required="false">
+      <description locid="WinJS.UI.AppBarCommand.onclick" type="text/plain">The click event to call when the AppBarCommand is invoked</description>
+    </property>
+    <property name="flyout" datatype="Object" required="false">
+      <description locid="WinJS.UI.AppBarCommand.flyout" type="text/plain">For flyout type AppBarCommands, get returns the WinJS.UI.Flyout that this command invokes.  Set may also use the String id of the flyout to invoke, the DOM object of the flyout, or the flyout object itself</description>
+    </property>
+    <property name="section" datatype="WinJS.UI.AppBarCommand.section" required="false">
+      <description locid="WinJS.UI.AppBarCommand.section" type="text/plain">Set or get the section to place the button in, either "global" or "selection"</description>
+    </property>
+    <property name="tooltip" datatype="String" required="false">
+      <description locid="WinJS.UI.AppBarCommand.tooltip" type="text/plain">The tooltip text of the AppBarCommand</description>
+    </property>
+    <property name="selected" datatype="Boolean" required="false">
+      <description locid="WinJS.UI.AppBarCommand.selected" type="text/plain">Set or get the selected state of a toggle button</description>
+    </property>
+    <property name="element" datatype="HTMLElement" required="false" hidden="true" readonly="true">
+      <description locid="WinJS.UI.AppBarCommand.element" type="text/plain">The DOM element the AppBarCommad is attached to</description>
+    </property>
+    <property name="disabled" datatype="Boolean" required="false">
+      <description locid="WinJS.UI.AppBarCommand.disabled" type="text/plain">Disable a command. It will get or set the HTML disabled attribute.</description>
+    </property>
+    <property name="hidden" datatype="Boolean" required="false" hidden="true">
+      <description locid="WinJS.UI.AppBarCommand.hidden" type="text/plain">Determine if a command is currently hidden.</description>
+    </property>
+    <property name="extraClass" datatype="String" required="false" blend:isAdvanced="true">
+      <description locid="WinJS.UI.AppBarCommand.extraClass" type="text/plain">Adds an extra CSS class during construction.</description>
+    </property>
+  </properties>
+  <content><![CDATA[<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{type:'button',label:'Button'}"></button>]]></content>
+  <requires>
+    <require type="javascript" src="//Microsoft.WinJS.1.0/js/base.js" includeRef="true" p4:distinct="false" xmlns:p4="http://schemas.microsoft.com/winjs/2011" />
+    <require type="javascript" src="//Microsoft.WinJS.1.0/js/ui.js" includeRef="true" p4:distinct="false" xmlns:p4="http://schemas.microsoft.com/winjs/2011" />
+    <require type="css" src="//Microsoft.WinJS.1.0/css/ui-dark.css" includeRef="true" p4:distinct="false" xmlns:p4="http://schemas.microsoft.com/winjs/2011" />
+    <require type="javascript"><![CDATA[WinJS.UI.processAll();]]></require>
+  </requires>
+  <blend:parts>
+    <part name="appBarCommand" class="win-command">
+      <description locid="WinJS.UI.AppBarCommand_part:appBarCommand" type="text/plain">The AppBarCommand control itself</description>
+    </part>
+    <part name="appBarCommandIcon" class="win-commandicon">
+      <description locid="WinJS.UI.AppBarCommand_part:appBarCommandIcon" type="text/plain">The AppBarCommand's icon box</description>
+    </part>
+    <part name="appBarCommandImage" class="win-commandimage">
+      <description locid="WinJS.UI.AppBarCommand_part:appBarCommandImage" type="text/plain">The AppBarCommand's icon's image formatting</description>
+    </part>
+    <part name="appBarCommandRing" class="win-commandring">
+      <description locid="WinJS.UI.AppBarCommand_part:appBarCommandRing" type="text/plain">The AppBarCommand's icon's ring</description>
+    </part>
+    <part name="appBarCommandLabel" class="win-label">
+      <description locid="WinJS.UI.AppBarCommand_part:appBarCommandLabel" type="text/plain">The AppBarCommand's label</description>
+    </part>
+  </blend:parts><locale messages="ui_loc_oam.xml" />
+</widget>

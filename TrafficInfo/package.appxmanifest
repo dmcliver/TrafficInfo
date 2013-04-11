@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="3e53a469-4019-4682-82a8-1dad69748c5a" Version="1.0.0.0" Publisher="CN=annon" />
+  <Properties>
+    <DisplayName>TrafficInfo</DisplayName>
+    <PublisherDisplayName>annon</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="TrafficInfo" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="TrafficInfo" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="images\splashscreen.png" />
+      </VisualElements>
+      <ApplicationContentUriRules>
+        <Rule Match="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAjktqSXS3XAKOKJ53MbzpXg05ygQfvpE&amp;sensor=true" Type="include" />
+      </ApplicationContentUriRules>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="enterpriseAuthentication" />
+    <Capability Name="privateNetworkClientServer" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="proximity" />
+  </Capabilities>
+</Package>
