@@ -55,6 +55,7 @@
     </AppxManifest>
     <Content Include="Coordinators\LocationCoordinator.js" />
     <Content Include="css\default.css" />
+    <Content Include="Domain\Camera.js" />
     <Content Include="Domain\Location.js" />
     <Content Include="Domain\Motorway.js" />
     <Content Include="Domain\TrafficConditions.js" />
@@ -68,7 +69,6 @@
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
     <Content Include="packages.config" />
-    <Content Include="page.html" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />

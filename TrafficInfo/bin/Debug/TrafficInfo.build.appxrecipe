@@ -7,7 +7,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
@@ -709,83 +709,83 @@
     <AppxPackagedFile Include="C:\Users\annon\AppData\Local\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Bing.Maps.JavaScript\1.0\Redist\commonconfiguration\neutral\Bing.Maps.JavaScript\js\veapiModules.js">
       <PackagePath>Bing.Maps.JavaScript\js\veapiModules.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\Coordinators\LocationCoordinator.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\LocationCoordinator.js">
       <PackagePath>Coordinators\LocationCoordinator.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\Domain\Location.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Camera.js">
+      <PackagePath>Domain\Camera.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Location.js">
       <PackagePath>Domain\Location.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\Domain\Motorway.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Motorway.js">
       <PackagePath>Domain\Motorway.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\Domain\TrafficConditions.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\TrafficConditions.js">
       <PackagePath>Domain\TrafficConditions.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\js\default.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\js\navigator.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\pages\home\home.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\Repositories\NztaRepository.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
       <PackagePath>Repositories\NztaRepository.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\Scripts\underscore.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.js">
       <PackagePath>Scripts\underscore.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\Scripts\underscore.min.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.min.js">
       <PackagePath>Scripts\underscore.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\Services\MapService.js">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\css\default.css">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\pages\home\home.css">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\images\logo.png">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\images\push_pin_orang.png">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\push_pin_orang.png">
       <PackagePath>images\push_pin_orang.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\images\push_pin_red.png">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\push_pin_red.png">
       <PackagePath>images\push_pin_red.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\images\push_pin_yellow.png">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\push_pin_yellow.png">
       <PackagePath>images\push_pin_yellow.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\images\smalllogo.png">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\images\splashscreen.png">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\images\storelogo.png">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\packages.config">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\packages.config">
       <PackagePath>packages.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\page.html">
-      <PackagePath>page.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\pages\home\home.html">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\default.html">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfo\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -10,7 +10,7 @@ describe("repository test", function() {
 
     beforeEach(function() {
         repo = new NztaRepository();
-        repo.getAllLocationsWithTrafficResponse = function(locations) {
+        repo.retrievAllLocationsWithTrafficResponse = function(locations) {
             location = locations;
             hasResult = true;
         };

@@ -26,4 +26,21 @@
         return locations;
     };
 
+    this.mapXmlToCameras = function (camerasXml) {
+        
+        var cameras = [];
+        
+        for (var i = 0; i < camerasXml.length; i++) {
+            
+            var cameraXml = camerasXml[i];
+
+            var lat = cameraXml.querySelector("lat").textContent;
+            var lon = cameraXml.querySelector("lon").textContent;
+            var url = cameraXml.querySelector("imageUrl").textContent;
+            cameras.push(new Camera(lat, lon, url));
+        }
+
+        return cameras;
+    };
+
 });

@@ -11,3 +11,16 @@ c:\Users\annon\Documents\Visual Studio 2012\Projects\TrafficInfo\TrafficInfo\bld
 c:\Users\annon\Documents\Visual Studio 2012\Projects\TrafficInfo\TrafficInfo\bld\Debug\pri.resfiles
 c:\Users\annon\Documents\Visual Studio 2012\Projects\TrafficInfo\TrafficInfo\bld\Debug\LanguageQualifiers.txt
 c:\Users\annon\Documents\Visual Studio 2012\Projects\TrafficInfo\TrafficInfo\bld\Debug\ProjectArchitectures.txt
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\TrafficInfo.build.appxrecipe
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\priconfig.xml.intermediate
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\layout.resfiles.intermediate
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\resources.resfiles.intermediate
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\pri.resfiles.intermediate
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\priconfig.xml
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\layout.resfiles
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\resources.resfiles
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\pri.resfiles
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\LanguageQualifiers.txt
+C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Debug\ProjectArchitectures.txt

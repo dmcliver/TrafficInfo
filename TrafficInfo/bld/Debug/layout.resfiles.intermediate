@@ -1,6 +1,7 @@
 Coordinators\LocationCoordinator.js
 css\default.css
 default.html
+Domain\Camera.js
 Domain\Location.js
 Domain\Motorway.js
 Domain\TrafficConditions.js
@@ -14,7 +15,6 @@ images\storelogo.png
 js\default.js
 js\navigator.js
 packages.config
-page.html
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js
