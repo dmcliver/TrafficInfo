@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-11T01:43:30.854</Modified>
+      <Modified>2013-04-11T03:54:33.693</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -956,6 +956,10 @@
       <PackagePath>Domain\Camera.js</PackagePath>
       <Modified>2013-04-11T01:42:38.115</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\CameraPushpinInfo.js">
+      <PackagePath>Domain\CameraPushpinInfo.js</PackagePath>
+      <Modified>2013-04-11T03:31:14.948</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Location.js">
       <PackagePath>Domain\Location.js</PackagePath>
       <Modified>2013-04-10T22:10:23.045</Modified>
@@ -978,7 +982,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-04-11T01:55:33.072</Modified>
+      <Modified>2013-04-11T03:36:16.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
       <PackagePath>Repositories\NztaRepository.js</PackagePath>
@@ -994,7 +998,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
-      <Modified>2013-04-11T02:08:02.664</Modified>
+      <Modified>2013-04-11T03:53:51.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\css\default.css">
       <PackagePath>css\default.css</PackagePath>
@@ -1036,13 +1040,17 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2012-07-25T23:30:08.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\webcam.png">
+      <PackagePath>images\webcam.png</PackagePath>
+      <Modified>2013-04-11T03:53:04.117</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\packages.config">
       <PackagePath>packages.config</PackagePath>
       <Modified>2013-04-09T02:55:21.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-04-11T01:54:07.548</Modified>
+      <Modified>2013-04-11T02:58:34.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
@@ -1050,7 +1058,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-04-11T01:43:30.514</Modified>
+      <Modified>2013-04-11T03:54:33.486</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

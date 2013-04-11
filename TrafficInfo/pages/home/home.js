@@ -7,6 +7,7 @@
     var coordinator;
 
     var thisMap;
+    var cameraInfos;
 
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
@@ -24,6 +25,7 @@
             function onMapCreated(map) {
 
                 thisMap = map;
+                Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
 
                 nztaRepository.retrieveAllCameras();
                 nztaRepository.retrieveAllLocationsWithTraffic();
@@ -31,6 +33,12 @@
         }
     });
     
+    function hideInfobox() {
+        for (var i = 0; i < cameraInfos.length; i++) {
+            cameraInfos[i].clear();
+        }
+    }
+
     function retrievAllLocationsWithTrafficResponse(locationsXml) {
         var locations = coordinator.mapXmlToLocations(locationsXml);
         mapService.setMapWithTrafficInfo(thisMap, locations);
@@ -38,9 +46,17 @@
 
     function retrieveAllCamerasResponse(camerasXml) {
         var cameras = coordinator.mapXmlToCameras(camerasXml);
-        mapService.setMapWithCameras(thisMap, cameras);
+        cameraInfos = mapService.setMapWithCameras(thisMap, cameras, onCameraPushpinClick);
     }
 
+    function onCameraPushpinClick(e) {
+
+        var cameraInfo = _.filter(cameraInfos, function (c) {
+            return c.getPushpin() == e.target;
+        });
+
+        cameraInfo[0].show();
+    }
 })();
 
 

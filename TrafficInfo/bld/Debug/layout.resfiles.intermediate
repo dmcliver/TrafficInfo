@@ -2,6 +2,7 @@ Coordinators\LocationCoordinator.js
 css\default.css
 default.html
 Domain\Camera.js
+Domain\CameraPushpinInfo.js
 Domain\Location.js
 Domain\Motorway.js
 Domain\TrafficConditions.js
@@ -12,6 +13,7 @@ images\push_pin_yellow.png
 images\smalllogo.png
 images\splashscreen.png
 images\storelogo.png
+images\webcam.png
 js\default.js
 js\navigator.js
 packages.config
