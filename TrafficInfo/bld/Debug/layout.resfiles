@@ -20,6 +20,7 @@ packages.config
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js
+Repositories\CameraCoordinateRepository.js
 Repositories\NztaRepository.js
 Scripts\JSLINQ.js
 Scripts\JSLINQ-vsdoc.js

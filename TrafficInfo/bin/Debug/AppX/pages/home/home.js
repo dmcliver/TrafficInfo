@@ -15,7 +15,7 @@
 
             mapService = new MapService();
             nztaRepository = new NztaRepository();
-            coordinator = new LocationCoordinator();
+            coordinator = new LocationCoordinator(new CameraCoordinateRepository());
 
             nztaRepository.retrievAllLocationsWithTrafficResponse = retrievAllLocationsWithTrafficResponse;
             nztaRepository.retrieveAllCamerasResponse = retrieveAllCamerasResponse;
