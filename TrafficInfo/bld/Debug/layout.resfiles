@@ -21,6 +21,8 @@ pages\home\home.css
 pages\home\home.html
 pages\home\home.js
 Repositories\NztaRepository.js
+Scripts\JSLINQ.js
+Scripts\JSLINQ-vsdoc.js
 Scripts\underscore.js
 Scripts\underscore.min.js
 Services\MapService.js

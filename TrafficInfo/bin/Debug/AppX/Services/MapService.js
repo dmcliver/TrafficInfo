@@ -32,7 +32,9 @@
             var pushPinLocation = new Microsoft.Maps.Location(condition.startLat, condition.startLon);
             var pinImage = condition.congestion == "Heavy" || condition.congestion == "Congested" ? "images/push_pin_orang.png" : condition.congestion == "Moderate" ? "images/push_pin_yellow.png" : "images/push_pin_red.png";
             var pushPin = new Microsoft.Maps.Pushpin(pushPinLocation, { icon: pinImage, draggable: false });
+
             if (pinImage == "images/push_pin_red.png") {
+                
                 Microsoft.Maps.Events.addHandler(pushPin, 'click', function (e) { });
             }
             map.entities.push(pushPin);
@@ -45,8 +47,8 @@
         for (var i = 0; i < cameras.length; i++) {
             
             var camera = cameras[i];
-            var pushPinLocation = new Microsoft.Maps.Location(camera.lat, camera.lon);
-            var htmlImageContent = "<div style='background-color:White;color:Black'><p>Info</p><img src='"+ camera.url +"' /></div>";
+            var pushPinLocation = new Microsoft.Maps.Location(camera.Lat, camera.Lon);
+            var htmlImageContent = "<div style='background-color:White;color:Black'><p>"+ camera.Name + " " + camera.Lat + " " + camera.Lon + "</p><img src='"+ camera.Url +"' /></div>";
             var infoBox = new Microsoft.Maps.Infobox(pushPinLocation, { visible: false, htmlContent: htmlImageContent });
             var pushPin = new Microsoft.Maps.Pushpin(pushPinLocation, { icon: "images/webcam.png", draggable: false });
             Microsoft.Maps.Events.addHandler(pushPin, 'click', onCameraPushpinClick);
@@ -57,4 +59,6 @@
         return cameraInfos;
     };
 });
+
+
 

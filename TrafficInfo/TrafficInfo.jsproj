@@ -76,6 +76,8 @@
     <Content Include="pages\home\home.js" />
     <Content Include="default.html" />
     <Content Include="Repositories\NztaRepository.js" />
+    <Content Include="Scripts\JSLINQ-vsdoc.js" />
+    <Content Include="Scripts\JSLINQ.js" />
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Services\MapService.js" />

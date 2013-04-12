@@ -14,13 +14,15 @@
     this.retrieveAllLocationsWithTraffic = function() {
         
         WinJS.xhr({ url: "https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficConditions2/REST/FeedService/", headers: self.headers }).done(function (result) {
+            
             var xml = result.responseXML;
             var locations = xml.querySelectorAll("getTrafficConditionsResponse > trafficConditions > motorways > locations");
             self.retrievAllLocationsWithTrafficResponse(locations);
         });
     };
 
-    this.retrieveAllCameras = function() {
+    this.retrieveAllCameras = function () {
+        
         WinJS.xhr({ url: "https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras2/REST/FeedService/", headers: self.headers }).done(function (result) {
             
             var xml = result.responseXML;

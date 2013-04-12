@@ -34,17 +34,19 @@
     });
     
     function hideInfobox() {
-        for (var i = 0; i < cameraInfos.length; i++) {
+        
+        for (var i = 0; i < cameraInfos.length; i++) 
             cameraInfos[i].clear();
-        }
     }
 
     function retrievAllLocationsWithTrafficResponse(locationsXml) {
+        
         var locations = coordinator.mapXmlToLocations(locationsXml);
         mapService.setMapWithTrafficInfo(thisMap, locations);
     }
 
     function retrieveAllCamerasResponse(camerasXml) {
+        
         var cameras = coordinator.mapXmlToCameras(camerasXml);
         cameraInfos = mapService.setMapWithCameras(thisMap, cameras, onCameraPushpinClick);
     }
