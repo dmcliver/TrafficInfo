@@ -1,5 +1,0 @@
-C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfoTest\bin\Debug\TrafficInfoTest.dll
-C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfoTest\bin\Debug\TrafficInfoTest.pdb
-C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfoTest\obj\Debug\TrafficInfoTest.csprojResolveAssemblyReference.cache
-C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfoTest\obj\Debug\TrafficInfoTest.dll
-C:\Users\annon\documents\visual studio 2012\Projects\TrafficInfo\TrafficInfoTest\obj\Debug\TrafficInfoTest.pdb

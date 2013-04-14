@@ -52,7 +52,7 @@
     }
 
     function onCameraPushpinClick(e) {
-
+        
         var cameraInfo = _.filter(cameraInfos, function (c) {
             return c.getPushpin() == e.target;
         });
