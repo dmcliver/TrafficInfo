@@ -5,6 +5,8 @@
     var self = this;
     this.callback = null;
 
+    var searchManager = null;
+
     var thisMap = null;
 
     this.createMap = function (initMap) {
@@ -23,6 +25,7 @@
         };
 
         thisMap = new Microsoft.Maps.Map(document.getElementById("mapDiv"), mapOptions);
+        searchManager = new Microsoft.Maps.Search.SearchManager(thisMap);
     };
 
     function loadCurrentLocation() {
@@ -34,8 +37,6 @@
 
     function onCurrentLocationObtained(locationResult) {
         
-        var searchManager = new Microsoft.Maps.Search.SearchManager(thisMap);
-
         searchManager.reverseGeocode({
             location: locationResult.center, callback: function (res, userData) {
                 self.currentionLocation = res.name;
@@ -43,6 +44,17 @@
             }
         });
     }
+
+    this.findLocationFromCityName = function (city, onSuccessfulSearch) {
+        
+        searchManager.geocode({where: city, callback: function(res,dat){
+            onSuccessfulSearch(res);
+        }});
+    };
+
+    this.reOrientate = function(searchResult) {
+        thisMap.setView({center:searchResult.location });
+    };
 
     this.setMapWithTrafficInfo = function (map, locations) {
         

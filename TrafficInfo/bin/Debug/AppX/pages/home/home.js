@@ -13,6 +13,8 @@
 
         ready: function (element, options) {
 
+            document.getElementById("searchForLocation").addEventListener("click", searchForNewLocation);
+
             mapService = new MapService();
             nztaRepository = new NztaRepository();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
@@ -38,6 +40,17 @@
         }
     });
     
+    function searchForNewLocation() {
+        var value = document.getElementById("searchLocation").value;
+        mapService.findLocationFromCityName(value, onSuccessfulSearch);
+    }
+
+    function onSuccessfulSearch(res) {
+        if(res.results.length==1) {
+            mapService.reOrientate(res.results[0]);
+        }
+    }
+
     function hideInfobox() {
         
         for (var i = 0; i < cameraInfos.length; i++) 
