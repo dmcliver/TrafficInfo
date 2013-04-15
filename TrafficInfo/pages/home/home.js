@@ -27,8 +27,11 @@
                 thisMap = map;
                 Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
 
-                nztaRepository.retrieveAllCameras();
-                nztaRepository.retrieveAllLocationsWithTraffic();
+                if (mapService.currentionLocation.indexOf("Auckland") !== -1) {
+
+                    nztaRepository.retrieveAllCameras();
+                    nztaRepository.retrieveAllLocationsWithTraffic();
+                }
             }
         }
     });

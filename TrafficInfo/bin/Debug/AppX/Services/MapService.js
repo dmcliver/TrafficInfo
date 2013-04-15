@@ -5,24 +5,51 @@
     var self = this;
     this.callback = null;
 
+    var thisMap = null;
+
     this.createMap = function (initMap) {
 
         self.callback = initMap;
         Microsoft.Maps.loadModule('Microsoft.Maps.Map', { callback: self.BuildMap, culture: 'en-us', homeRegion: 'NZ' });
+        Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: self.notifyMapIsLoaded });
     };
+
+    this.currentionLocation = null;
 
     this.BuildMap = function() {
 
         var mapOptions = {
             
-            center: new Microsoft.Maps.Location(-36.7889, 174.771401),
             credentials: "Aoko4s3Tuxs_k2PArX1i9Xea2mbQizENjlKA-Vbpvf_aPivwpxZqFuQ9pGe1ZhrQ",
-            zoom: 11
         };
 
-        var map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), mapOptions);
-        self.callback(map);
+        thisMap = new Microsoft.Maps.Map(document.getElementById("mapDiv"), mapOptions);
     };
+
+    this.notifyMapIsLoaded = function (result) {
+        
+        loadCurrentLocation();
+        
+    };
+
+    function loadCurrentLocation() {
+        var geoLocationProvider = new Microsoft.Maps.GeoLocationProvider(thisMap);
+        geoLocationProvider.getCurrentPosition({
+            successCallback: onCurrentLocationObtained
+        });
+    }
+
+    function onCurrentLocationObtained(locationResult) {
+        
+        var searchManager = new Microsoft.Maps.Search.SearchManager(thisMap);
+
+        searchManager.reverseGeocode({
+            location: locationResult.center, callback: function (res, userData) {
+                self.currentionLocation = res.name;
+                self.callback(thisMap);
+            }
+        });
+    }
 
     this.setMapWithTrafficInfo = function (map, locations) {
         
