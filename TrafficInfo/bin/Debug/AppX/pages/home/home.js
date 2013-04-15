@@ -28,9 +28,11 @@
                 Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
 
                 if (mapService.currentionLocation.indexOf("Auckland") !== -1) {
-
-                    nztaRepository.retrieveAllCameras();
                     nztaRepository.retrieveAllLocationsWithTraffic();
+                }
+                
+                if (mapService.currentionLocation.indexOf("New Zealand") !== -1) {
+                    nztaRepository.retrieveAllCameras();
                 }
             }
         }

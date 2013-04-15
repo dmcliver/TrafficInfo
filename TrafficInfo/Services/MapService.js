@@ -11,7 +11,7 @@
 
         self.callback = initMap;
         Microsoft.Maps.loadModule('Microsoft.Maps.Map', { callback: self.BuildMap, culture: 'en-us', homeRegion: 'NZ' });
-        Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: self.notifyMapIsLoaded });
+        Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
     };
 
     this.currentionLocation = null;
@@ -19,17 +19,10 @@
     this.BuildMap = function() {
 
         var mapOptions = {
-            
             credentials: "Aoko4s3Tuxs_k2PArX1i9Xea2mbQizENjlKA-Vbpvf_aPivwpxZqFuQ9pGe1ZhrQ",
         };
 
         thisMap = new Microsoft.Maps.Map(document.getElementById("mapDiv"), mapOptions);
-    };
-
-    this.notifyMapIsLoaded = function (result) {
-        
-        loadCurrentLocation();
-        
     };
 
     function loadCurrentLocation() {
