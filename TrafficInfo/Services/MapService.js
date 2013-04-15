@@ -47,7 +47,7 @@
 
     this.findLocationFromCityName = function (city, onSuccessfulSearch) {
         
-        searchManager.geocode({where: city, callback: function(res,dat){
+        searchManager.geocode({where: city, callback: function(res, dat){
             onSuccessfulSearch(res);
         }});
     };

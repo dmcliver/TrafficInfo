@@ -14,6 +14,7 @@
         ready: function (element, options) {
 
             document.getElementById("searchForLocation").addEventListener("click", searchForNewLocation);
+            document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
 
             mapService = new MapService();
             nztaRepository = new NztaRepository();
@@ -40,14 +41,32 @@
         }
     });
     
+    function onSelectedCity() {
+        document.getElementById("searchResultList").winControl.selection.getItems().done(function(iitems) {
+            if (iitems.length > 0) {
+                var item = iitems[0];
+                var selectedCityName = item.data.name;
+                mapService.findLocationFromCityName(selectedCityName, function(data) {
+                    mapService.reOrientate(data.results[0]);
+                });
+            }
+        });
+    }
+
     function searchForNewLocation() {
         var value = document.getElementById("searchLocation").value;
         mapService.findLocationFromCityName(value, onSuccessfulSearch);
     }
 
     function onSuccessfulSearch(res) {
-        if(res.results.length==1) {
+        if(res.results.length == 1) {
             mapService.reOrientate(res.results[0]);
+        }
+        else {
+            document.getElementById("extendedSearchTitle").style.display = 'block';
+            var list = new WinJS.Binding.List(res.results);
+            var listControl = document.getElementById("searchResultList");
+            listControl.winControl.itemDataSource = list.dataSource;
         }
     }
 

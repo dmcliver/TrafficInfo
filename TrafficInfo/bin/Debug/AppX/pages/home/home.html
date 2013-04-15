@@ -35,10 +35,20 @@
         </header>
         <section aria-label="Main content" role="main">
             
-            <div id="mapDiv" style="position: relative;width: 85%;height:80%"></div>
-            <input type="text" id="searchLocation"/>
-            <input type="button" id="searchForLocation" value="Search"/>
-
+            <div id="mapDiv" style="position: relative;width: 65%;height:80%;float:left"></div>
+            <div  style="float:right;margin-right: -15px;width: 35%">
+                <input type="text" id="searchLocation"/>
+                <input type="button" id="searchForLocation" value="Search"/>
+                <div id="extendedSearchTitle" style="display: none;">
+                    <h3 >Did you mean...</h3>
+                    <div id="searchResultTemplate" data-win-control="WinJS.Binding.Template">
+                        <div>
+                            <h3 data-win-bind="innerText: name" style="width: 150px;height: 40px"></h3>
+                        </div>
+                    </div>
+                    <div id="searchResultList" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate: select('#searchResultTemplate'), selectionMode: 'single'}"></div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
