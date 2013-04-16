@@ -29,25 +29,42 @@
 
                 thisMap = map;
                 Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
-
+                
                 if (mapService.currentionLocation.indexOf("Auckland") !== -1) {
                     nztaRepository.retrieveAllLocationsWithTraffic();
                 }
-                
+
                 if (mapService.currentionLocation.indexOf("New Zealand") !== -1) {
                     nztaRepository.retrieveAllCameras();
+                }
+                else {
+                    setCameras();
                 }
             }
         }
     });
     
+    function setCameras() {
+
+        var currentCoords = mapService.CurrentCoords;
+
+        nztaRepository.retrieveAllCamerasNearBy(currentCoords.latitude, currentCoords.longitude, function (res) {
+            cameraInfos = mapService.setMapWithCameras(thisMap, res, onCameraPushpinClick);
+        });
+    }
+
     function onSelectedCity() {
+        
         document.getElementById("searchResultList").winControl.selection.getItems().done(function(iitems) {
+
             if (iitems.length > 0) {
+
                 var item = iitems[0];
                 var selectedCityName = item.data.name;
-                mapService.findLocationFromCityName(selectedCityName, function(data) {
+
+                mapService.findLocationFromCityName(selectedCityName, function (data) {
                     mapService.reOrientate(data.results[0]);
+                    setCameras();
                 });
             }
         });
@@ -59,10 +76,14 @@
     }
 
     function onSuccessfulSearch(res) {
+        
         if(res.results.length == 1) {
+
             mapService.reOrientate(res.results[0]);
+            setCameras();
         }
         else {
+            
             document.getElementById("extendedSearchTitle").style.display = 'block';
             var list = new WinJS.Binding.List(res.results);
             var listControl = document.getElementById("searchResultList");

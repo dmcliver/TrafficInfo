@@ -26,10 +26,8 @@
         }
         return locations;
     };
-
     
     this.mapXmlToCameras = function (camerasXml) {
-        ///<summary>Maps the corresponding xml response for the camera service to a collection of camera objects</summary>
         
         var cameraCoordinatesToExclude = cameraCoordinateRepository.retrieveAllCameraCoordinatesToExclude();
         

@@ -14,10 +14,24 @@
         self.callback = initMap;
         Microsoft.Maps.loadModule('Microsoft.Maps.Map', { callback: self.BuildMap, culture: 'en-us', homeRegion: 'NZ' });
         Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
+        Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', { callback: trafficModuleLoaded });
     };
 
-    this.currentionLocation = null;
+    var currentionLocation = null;
+    var currentCoords = null;
 
+    Object.defineProperty(this, "CurrentLocation", {
+        get: function () {
+            return currentionLocation;
+        }
+    });
+
+    Object.defineProperty(this, "CurrentCoords", {
+        get: function () {
+            return currentCoords;
+        }
+    });
+    
     this.BuildMap = function() {
 
         var mapOptions = {
@@ -29,20 +43,33 @@
     };
 
     function loadCurrentLocation() {
+
         var geoLocationProvider = new Microsoft.Maps.GeoLocationProvider(thisMap);
+
         geoLocationProvider.getCurrentPosition({
-            successCallback: onCurrentLocationObtained
+            successCallback: self.onCurrentLocationObtained
         });
     }
 
-    function onCurrentLocationObtained(locationResult) {
-        
+    this.onCurrentLocationObtained = function(locationResult) {
+
+        currentCoords = locationResult.center;
+
         searchManager.reverseGeocode({
-            location: locationResult.center, callback: function (res, userData) {
+            location: locationResult.center,
+            callback: function(res, userData) {
                 self.currentionLocation = res.name;
                 self.callback(thisMap);
             }
         });
+    };
+
+    function trafficModuleLoaded() {
+        
+        var trafficeManager = new Microsoft.Maps.Traffic.TrafficManager(thisMap);
+        trafficeManager.show();
+        trafficeManager.showIncidents();
+        trafficeManager.showFlow();
     }
 
     this.findLocationFromCityName = function (city, onSuccessfulSearch) {
@@ -52,8 +79,9 @@
         }});
     };
 
-    this.reOrientate = function(searchResult) {
-        thisMap.setView({center:searchResult.location });
+    this.reOrientate = function (searchResult) {
+        currentCoords = searchResult.location;
+        thisMap.setView({ center: currentCoords });
     };
 
     this.setMapWithTrafficInfo = function (map, locations) {
@@ -80,7 +108,7 @@
             
             var camera = cameras[i];
             var pushPinLocation = new Microsoft.Maps.Location(camera.Lat, camera.Lon);
-            var htmlImageContent = "<div style='background-color:White;color:Black'><p>"+ camera.Name + " " + camera.Lat + " " + camera.Lon + "</p><img src='"+ camera.Url +"' /></div>";
+            var htmlImageContent = "<div style='background-color:White;color:Black'><p>"+ camera.Name + "</p><img src='"+ camera.Url +"' /></div>";
             var infoBox = new Microsoft.Maps.Infobox(pushPinLocation, { visible: false, htmlContent: htmlImageContent });
             var pushPin = new Microsoft.Maps.Pushpin(pushPinLocation, { icon: "images/webcam.png", draggable: false });
             Microsoft.Maps.Events.addHandler(pushPin, 'click', onCameraPushpinClick);
