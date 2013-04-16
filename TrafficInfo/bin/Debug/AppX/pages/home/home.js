@@ -8,10 +8,14 @@
 
     var thisMap;
     var cameraInfos;
-
+    var charmBarService;
+    
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
         ready: function (element, options) {
+
+            charmBarService = new CharmBarService();
+            charmBarService.getCurrentSelectedCamera = getCurrentCamera;
 
             document.getElementById("searchForLocation").addEventListener("click", searchForNewLocation);
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
@@ -44,6 +48,12 @@
         }
     });
     
+    function getCurrentCamera() {
+        if(cameraInfo != null)
+            return cameraInfo.CameraUri;
+        return null;
+    }
+
     function setCameras() {
 
         var currentCoords = mapService.CurrentCoords;
@@ -109,13 +119,18 @@
         cameraInfos = mapService.setMapWithCameras(thisMap, cameras, onCameraPushpinClick);
     }
 
+    var cameraInfo;
+
     function onCameraPushpinClick(e) {
         
-        var cameraInfo = _.filter(cameraInfos, function (c) {
+        var filteredCameras = _.filter(cameraInfos, function (c) {
             return c.getPushpin() == e.target;
         });
 
-        cameraInfo[0].show();
+        if (filteredCameras.length > 0) {
+            cameraInfo = filteredCameras[0];
+            cameraInfo.show();
+        }
     }
 })();
 

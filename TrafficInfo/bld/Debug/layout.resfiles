@@ -26,4 +26,5 @@ Scripts\JSLINQ.js
 Scripts\JSLINQ-vsdoc.js
 Scripts\underscore.js
 Scripts\underscore.min.js
+Services\CharmBarService.js
 Services\MapService.js
