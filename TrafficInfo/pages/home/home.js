@@ -14,19 +14,17 @@
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
         ready: function (element, options) {
-
-            charmBarService = new CharmBarService();
-            charmBarService.getCurrentSelectedCamera = getCurrentCamera;
-
-            document.getElementById("searchForLocation").addEventListener("click", searchForNewLocation);
+            
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
 
             mapService = new MapService();
             nztaRepository = new NztaRepository();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
+            charmBarService = new CharmBarService();
+            charmBarService.getCurrentSelectedCamera = getCurrentCamera;
+            charmBarService.invokeSuggestedResults = integratedSearchForNewLocation;
 
             nztaRepository.retrieveAllCamerasResponse = retrieveAllCamerasResponse;
-
             mapService.createMap(onMapCreated);
             
             function onMapCreated(map) {
@@ -60,21 +58,17 @@
         });
     }
 
-    function searchForNewLocation() {
-        var value = document.getElementById("searchLocation").value;
-        mapService.findLocationFromCityName(value, onSuccessfulSearch);
+    function integratedSearchForNewLocation(e) {
+        mapService.findLocationFromCityName(e.queryText, onSuccessfulSearch);
     }
 
     function onSuccessfulSearch(res) {
         
         if(res.results.length == 1) {
-
             mapService.reOrientate(res.results[0]);
-            setCameras();
         }
         else {
             
-            document.getElementById("extendedSearchTitle").style.display = 'block';
             var list = new WinJS.Binding.List(res.results);
             var listControl = document.getElementById("searchResultList");
             listControl.winControl.itemDataSource = list.dataSource;

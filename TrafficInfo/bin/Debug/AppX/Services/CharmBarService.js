@@ -4,9 +4,11 @@
 
     var self = this;
     this.getCurrentSelectedCamera = null;
-    
+    this.invokeSuggestedResults = null;
+
     var dtm = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
-    
+    var searchPane = Windows.ApplicationModel.Search.SearchPane.getForCurrentView();
+
     dtm.addEventListener("datarequested", function (e) {
 
         if (self.getCurrentSelectedCamera != null && self.getCurrentSelectedCamera() != null) {
@@ -18,6 +20,10 @@
             deferral.complete();
         }
     });
+
+    searchPane.onsuggestionsrequested = function(e) {
+        self.invokeSuggestedResults(e);
+    };
     
     function setShareDetails(e) {
         e.request.data.properties.title = "Traffic camera image";

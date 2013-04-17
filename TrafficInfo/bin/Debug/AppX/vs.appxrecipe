@@ -5,7 +5,7 @@
     <WindowsUser>annon</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>471A29832780C6F6AD540CBC2CEE21739433D6DEFEFFFF7AEED9C430614241A9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>190CE26BFC6238D9ECD38627365F0D2B844915A7EF5EF558088F00CCD48C2C7E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3e53a469-4019-4682-82a8-1dad69748c5a_1.0.0.0_neutral__wztdtvqxwhg7j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3e53a469-4019-4682-82a8-1dad69748c5a_wztdtvqxwhg7j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3e53a469-4019-4682-82a8-1dad69748c5a</RegisteredPackageID>
@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-16T22:10:23.236</Modified>
+      <Modified>2013-04-17T04:27:09.556</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -982,7 +982,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-04-17T01:31:14.664</Modified>
+      <Modified>2013-04-17T04:59:44.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\CameraCoordinateRepository.js">
       <PackagePath>Repositories\CameraCoordinateRepository.js</PackagePath>
@@ -1010,19 +1010,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\CharmBarService.js">
       <PackagePath>Services\CharmBarService.js</PackagePath>
-      <Modified>2013-04-16T22:17:58.641</Modified>
+      <Modified>2013-04-17T02:57:42.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
-      <Modified>2013-04-17T01:31:14.646</Modified>
+      <Modified>2013-04-17T02:24:49.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2013-04-08T03:19:57.642</Modified>
+      <Modified>2013-04-17T05:26:42.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2013-04-08T03:19:57.644</Modified>
+      <Modified>2013-04-17T05:25:19.497</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
@@ -1066,15 +1066,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-04-16T21:40:20.674</Modified>
+      <Modified>2013-04-17T05:41:37.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2013-04-15T00:12:39.109</Modified>
+      <Modified>2013-04-17T05:25:19.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-04-16T22:10:22.283</Modified>
+      <Modified>2013-04-17T02:55:00.479</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

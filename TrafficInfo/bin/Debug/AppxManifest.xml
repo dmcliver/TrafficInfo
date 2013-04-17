@@ -29,6 +29,9 @@
       <ApplicationContentUriRules>
         <Rule Match="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAjktqSXS3XAKOKJ53MbzpXg05ygQfvpE&amp;sensor=true" Type="include" />
       </ApplicationContentUriRules>
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>

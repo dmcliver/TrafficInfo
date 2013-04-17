@@ -1,47 +1,46 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title>homePage</title>
-
-    <!-- WinJS references -->
-    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
-    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
-    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
     
-    <!-- Project references -->
-    <link href="/css/default.css" rel="stylesheet" />
-    <link href="/pages/home/home.css" rel="stylesheet" />
-    <script src="/pages/home/home.js"></script>
-    
-    <!-- Dependencies -->
-    <script src="../../Repositories/NztaRepository.js"></script>
-    <script src="../../Repositories/CameraCoordinateRepository.js"></script>
-    <script src="../../Coordinators/LocationCoordinator.js"></script>
-    <script src="../../Services/MapService.js"></script>
-    <script src="../../Services/CharmBarService.js"></script>
-    <script src="../../Domain/Location.js"></script>
-    <script src="../../Domain/Camera.js"></script>
-    <script src="../../Domain/CameraPushpinInfo.js"></script>
+    <head>
+        <meta charset="utf-8" />
+        <title>homePage</title>
 
-</head>
-<body>
-    <!-- The content that will be loaded and displayed. -->
-    <div class="fragment homepage">
-        <header aria-label="Header content" role="banner">
-            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
-            <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Welcome to TrafficInfo!</span>
-            </h1>
-        </header>
-        <section aria-label="Main content" role="main">
-            
-            <div id="mapDiv" style="position: relative;width: 65%;height:80%;float:left"></div>
-            <div  style="float:right;margin-right: -15px;width: 35%">
-                <input type="text" id="searchLocation"/>
-                <input type="button" id="searchForLocation" value="Search"/>
-                <div id="extendedSearchTitle" style="display: none;">
-                    <h3 >Did you mean...</h3>
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    
+        <!-- Project references -->
+        <link href="/css/default.css" rel="stylesheet" />
+        <link href="/pages/home/home.css" rel="stylesheet" />
+        <script src="/pages/home/home.js"></script>
+    
+        <!-- Dependencies -->
+        <script src="../../Repositories/NztaRepository.js"></script>
+        <script src="../../Repositories/CameraCoordinateRepository.js"></script>
+        <script src="../../Coordinators/LocationCoordinator.js"></script>
+        <script src="../../Services/MapService.js"></script>
+        <script src="../../Services/CharmBarService.js"></script>
+        <script src="../../Domain/Location.js"></script>
+        <script src="../../Domain/Camera.js"></script>
+        <script src="../../Domain/CameraPushpinInfo.js"></script>
+
+    </head>
+
+    <body>
+        <!-- The content that will be loaded and displayed. -->
+        <div class="fragment homepage">
+            <header aria-label="Header content" role="banner">
+                <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+        
+                <h1 class="titlearea win-type-ellipsis">
+                    <span class="pagetitle">Welcome to TrafficInfo!</span>
+                </h1>
+            </header>
+        
+            <section role="main">
+ 
+                <div style="display: inline;float: left;margin-right: 100px;width: 330px">
                     <div id="searchResultTemplate" data-win-control="WinJS.Binding.Template">
                         <div>
                             <h3 data-win-bind="innerText: name" style="width: 150px;height: 40px"></h3>
@@ -49,8 +48,10 @@
                     </div>
                     <div id="searchResultList" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate: select('#searchResultTemplate'), selectionMode: 'single'}"></div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            
+                <div id="mapDiv" style="margin-left: 20%;position: relative;width: 80%;height: 90%"></div>
+
+            </section>
+        </div>
+    </body>
 </html>
