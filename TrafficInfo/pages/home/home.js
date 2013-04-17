@@ -9,6 +9,7 @@
     var thisMap;
     var cameraInfos;
     var charmBarService;
+    var cameraInfo;
     
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
@@ -24,7 +25,6 @@
             nztaRepository = new NztaRepository();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
 
-            nztaRepository.retrievAllLocationsWithTrafficResponse = retrievAllLocationsWithTrafficResponse;
             nztaRepository.retrieveAllCamerasResponse = retrieveAllCamerasResponse;
 
             mapService.createMap(onMapCreated);
@@ -33,17 +33,7 @@
 
                 thisMap = map;
                 Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
-                
-                if (mapService.currentionLocation.indexOf("Auckland") !== -1) {
-                    nztaRepository.retrieveAllLocationsWithTraffic();
-                }
-
-                if (mapService.currentionLocation.indexOf("New Zealand") !== -1) {
-                    nztaRepository.retrieveAllCameras();
-                }
-                else {
-                    setCameras();
-                }
+                nztaRepository.retrieveAllCameras();
             }
         }
     });
@@ -52,15 +42,6 @@
         if(cameraInfo != null)
             return cameraInfo.CameraUri;
         return null;
-    }
-
-    function setCameras() {
-
-        var currentCoords = mapService.CurrentCoords;
-
-        nztaRepository.retrieveAllCamerasNearBy(currentCoords.latitude, currentCoords.longitude, function (res) {
-            cameraInfos = mapService.setMapWithCameras(thisMap, res, onCameraPushpinClick);
-        });
     }
 
     function onSelectedCity() {
@@ -74,7 +55,6 @@
 
                 mapService.findLocationFromCityName(selectedCityName, function (data) {
                     mapService.reOrientate(data.results[0]);
-                    setCameras();
                 });
             }
         });
@@ -107,19 +87,11 @@
             cameraInfos[i].clear();
     }
 
-    function retrievAllLocationsWithTrafficResponse(locationsXml) {
-        
-        var locations = coordinator.mapXmlToLocations(locationsXml);
-        mapService.setMapWithTrafficInfo(thisMap, locations);
-    }
-
     function retrieveAllCamerasResponse(camerasXml) {
         
         var cameras = coordinator.mapXmlToCameras(camerasXml);
         cameraInfos = mapService.setMapWithCameras(thisMap, cameras, onCameraPushpinClick);
     }
-
-    var cameraInfo;
 
     function onCameraPushpinClick(e) {
         

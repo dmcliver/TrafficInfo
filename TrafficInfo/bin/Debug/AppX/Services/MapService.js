@@ -83,24 +83,7 @@
         currentCoords = searchResult.location;
         thisMap.setView({ center: currentCoords });
     };
-
-    this.setMapWithTrafficInfo = function (map, locations) {
-        
-        for (var i = 0; i < locations.length; i++) {
-            
-            var condition = locations[i];
-            var pushPinLocation = new Microsoft.Maps.Location(condition.startLat, condition.startLon);
-            var pinImage = condition.congestion == "Heavy" || condition.congestion == "Congested" ? "images/push_pin_orang.png" : condition.congestion == "Moderate" ? "images/push_pin_yellow.png" : "images/push_pin_red.png";
-            var pushPin = new Microsoft.Maps.Pushpin(pushPinLocation, { icon: pinImage, draggable: false });
-
-            if (pinImage == "images/push_pin_red.png") {
-                
-                Microsoft.Maps.Events.addHandler(pushPin, 'click', function (e) { });
-            }
-            map.entities.push(pushPin);
-        }
-    };
-
+    
     this.setMapWithCameras = function(map, cameras, onCameraPushpinClick) {
 
         var cameraInfos = [];

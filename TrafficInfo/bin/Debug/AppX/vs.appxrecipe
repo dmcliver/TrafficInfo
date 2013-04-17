@@ -982,7 +982,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-04-16T22:14:57.229</Modified>
+      <Modified>2013-04-17T01:31:14.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\CameraCoordinateRepository.js">
       <PackagePath>Repositories\CameraCoordinateRepository.js</PackagePath>
@@ -990,7 +990,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
       <PackagePath>Repositories\NztaRepository.js</PackagePath>
-      <Modified>2013-04-16T00:22:28.041</Modified>
+      <Modified>2013-04-17T01:31:14.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ-vsdoc.js">
       <PackagePath>Scripts\JSLINQ-vsdoc.js</PackagePath>
@@ -1014,7 +1014,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
-      <Modified>2013-04-16T03:25:12.500</Modified>
+      <Modified>2013-04-17T01:31:14.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\css\default.css">
       <PackagePath>css\default.css</PackagePath>
