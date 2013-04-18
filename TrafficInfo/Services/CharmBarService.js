@@ -36,7 +36,6 @@
                 title: "Camera refresh rate", href: "/pages/settings/settings.html"
             }
         };
-        
         WinJS.UI.SettingsFlyout.populateSettings(e);
     }
 
