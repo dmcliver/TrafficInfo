@@ -41,12 +41,16 @@
             <section role="main">
  
                 <div style="display: inline;float: left;margin-right: 100px;width: 330px">
-                    <div id="searchResultTemplate" data-win-control="WinJS.Binding.Template">
-                        <div>
-                            <h3 data-win-bind="innerText: name" style="width: 150px;height: 40px"></h3>
+                    <h3>Place suggestions:</h3>
+                    
+                    <div style="border:1px solid white">
+                        <div id="searchResultTemplate" data-win-control="WinJS.Binding.Template">
+                            <div>
+                                <h3 data-win-bind="innerText: name" style="width: 150px;height: 40px"></h3>
+                            </div>
                         </div>
+                        <div id="searchResultList" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate: select('#searchResultTemplate'), selectionMode: 'single'}"></div>
                     </div>
-                    <div id="searchResultList" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate: select('#searchResultTemplate'), selectionMode: 'single'}"></div>
                 </div>
             
                 <div id="mapDiv" style="margin-left: 20%;position: relative;width: 80%;height: 90%"></div>

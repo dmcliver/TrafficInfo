@@ -75,6 +75,9 @@
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
     <Content Include="default.html" />
+    <Content Include="pages\settings\settings.css" />
+    <Content Include="pages\settings\settings.html" />
+    <Content Include="pages\settings\settings.js" />
     <Content Include="Repositories\CameraCoordinateRepository.js" />
     <Content Include="Repositories\NztaRepository.js" />
     <Content Include="Scripts\JSLINQ-vsdoc.js" />

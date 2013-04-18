@@ -14,7 +14,13 @@
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
         ready: function (element, options) {
-            
+
+            var value = Windows.Storage.ApplicationData.current.roamingSettings.values["refreshRate"];
+            if(value == undefined) {
+                value = "5";
+            }
+            value = parseInt(value);
+
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
 
             mapService = new MapService();
@@ -31,11 +37,16 @@
 
                 thisMap = map;
                 Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
-                nztaRepository.retrieveAllCameras();
+                retrieveCameras();
+                setTimeout(retrieveCameras(), value * 60 * 1000);
             }
         }
     });
-    
+
+    function retrieveCameras() {
+        nztaRepository.retrieveAllCameras();
+    }
+
     function getCurrentCamera() {
         if(cameraInfo != null)
             return cameraInfo.CameraUri;
