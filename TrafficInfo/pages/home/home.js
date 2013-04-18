@@ -10,15 +10,31 @@
     var cameraInfos;
     var charmBarService;
     var cameraInfo;
-    
+    var value;
+
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
         ready: function (element, options) {
 
-            var value = Windows.Storage.ApplicationData.current.roamingSettings.values["refreshRate"];
+            var canvas = document.getElementById("legend1");
+            if (canvas.getContext) {
+  
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "red";
+                ctx.fillRect(0, 6, 15, 15);
+                ctx.fillStyle = "orange";
+                ctx.fillRect(0, 33, 15, 15);
+                ctx.fillStyle = "yellow";
+                ctx.fillRect(0, 60, 15, 15);
+                ctx.fillStyle = "green";
+                ctx.fillRect(0, 87, 15, 15);
+            }
+
+            value = Windows.Storage.ApplicationData.current.roamingSettings.values["refreshRate"];
             if(value == undefined) {
                 value = "5";
             }
+            value = "1";
             value = parseInt(value);
 
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
@@ -38,13 +54,13 @@
                 thisMap = map;
                 Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
                 retrieveCameras();
-                setTimeout(retrieveCameras(), value * 60 * 1000);
             }
         }
     });
 
     function retrieveCameras() {
         nztaRepository.retrieveAllCameras();
+        setTimeout(retrieveCameras, value * 60 * 1000);
     }
 
     function getCurrentCamera() {

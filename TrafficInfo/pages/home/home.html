@@ -51,6 +51,27 @@
                         </div>
                         <div id="searchResultList" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate: select('#searchResultTemplate'), selectionMode: 'single'}"></div>
                     </div>
+
+                    <h3 style="margin-top: 10px">Legend:</h3>
+                    <table style="border: 1px solid white;width: 330px">
+                        <tr>
+                            <td>Bad traffic</td>
+                            <td rowspan="4">
+                                <canvas id="legend1" width="30" height="105"></canvas>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Heavy traffic</td><td></td>
+                        </tr>
+                        <tr>
+                            <td>Moderate traffic</td><td></td>
+                        </tr>
+                        <tr>
+                            <td>Free following</td><td></td>
+                        </tr>
+                    </table>
+                    
+
                 </div>
             
                 <div id="mapDiv" style="margin-left: 20%;position: relative;width: 80%;height: 90%"></div>
