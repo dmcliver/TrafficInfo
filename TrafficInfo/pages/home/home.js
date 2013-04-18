@@ -37,14 +37,16 @@
 
                 thisMap = map;
                 Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
-                retrieveCameras();
+                nztaRepository.retrieveAllCameras();
+                setTimeout(refreshCameras, value * 60 * 1000);
             }
         }
     });
 
-    function retrieveCameras() {
+    function refreshCameras() {
+        mapService.clearMap();
         nztaRepository.retrieveAllCameras();
-        setTimeout(retrieveCameras, value * 60 * 1000);
+        setTimeout(refreshCameras, value * 60 * 1000);
     }
 
     function getCurrentCamera() {

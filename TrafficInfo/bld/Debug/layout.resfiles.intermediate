@@ -25,6 +25,7 @@ pages\settings\settings.html
 pages\settings\settings.js
 Repositories\CameraCoordinateRepository.js
 Repositories\NztaRepository.js
+Repositories\TrafficSettingsRepository.js
 Scripts\JSLINQ.js
 Scripts\JSLINQ-vsdoc.js
 Scripts\underscore.js

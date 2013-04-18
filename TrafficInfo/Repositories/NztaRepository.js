@@ -20,6 +20,5 @@
             self.retrieveAllCamerasResponse(cameras);
         });
     };
-    
 });
 

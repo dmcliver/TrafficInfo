@@ -17,13 +17,6 @@
 
         ready: function (element, options) {
             
-            value = Windows.Storage.ApplicationData.current.roamingSettings.values["refreshRate"];
-            if(value == undefined) {
-                value = "5";
-            }
-            value = "1";
-            value = parseInt(value);
-
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
 
             mapService = new MapService();
@@ -31,25 +24,29 @@
             nztaRepository = new NztaRepository();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
             charmBarService = new CharmBarService();
-            
+            var trafficSettingsRepository = new TrafficSettingsRepository();
+
             charmBarService.getCurrentSelectedCamera = getCurrentCamera;
             charmBarService.invokeSuggestedResults = integratedSearchForNewLocation;
             renderEngine.renderLegend();
             nztaRepository.retrieveAllCamerasResponse = retrieveAllCamerasResponse;
+            value = trafficSettingsRepository.retrieveCameraRefreshRate();
             mapService.createMap(onMapCreated);
             
             function onMapCreated(map) {
 
                 thisMap = map;
                 Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
-                retrieveCameras();
+                nztaRepository.retrieveAllCameras();
+                setTimeout(refreshCameras, value * 60 * 1000);
             }
         }
     });
 
-    function retrieveCameras() {
+    function refreshCameras() {
+        mapService.clearMap();
         nztaRepository.retrieveAllCameras();
-        setTimeout(retrieveCameras, value * 60 * 1000);
+        setTimeout(refreshCameras, value * 60 * 1000);
     }
 
     function getCurrentCamera() {

@@ -6,7 +6,7 @@
     this.callback = null;
 
     var searchManager = null;
-
+    var trafficeManager = null;
     var thisMap = null;
 
     this.createMap = function (initMap) {
@@ -66,7 +66,11 @@
 
     function trafficModuleLoaded() {
         
-        var trafficeManager = new Microsoft.Maps.Traffic.TrafficManager(thisMap);
+        trafficeManager = new Microsoft.Maps.Traffic.TrafficManager(thisMap);
+        showTraffic();
+    }
+
+    function showTraffic() {
         trafficeManager.show();
         trafficeManager.showIncidents();
         trafficeManager.showFlow();
@@ -100,6 +104,16 @@
             cameraInfos.push(new CameraPushpinInfo(pushPin, infoBox, camera.Url));
         }
         return cameraInfos;
+    };
+
+    this.clearMap = function () {
+        for (var i = 0; i < thisMap.entities.getLength(); i++) {
+            var currentEntity = thisMap.entities[i];
+            if(currentEntity == typeof  Microsoft.Maps.Pushpin || currentEntity == typeof  Microsoft.Maps.Infobox ) {
+                thisMap.entities.remove(currentEntity);
+            }
+        }
+        showTraffic();
     };
 });
 
