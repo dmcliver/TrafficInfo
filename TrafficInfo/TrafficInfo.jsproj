@@ -60,6 +60,7 @@
     <Content Include="Domain\Location.js" />
     <Content Include="Domain\Motorway.js" />
     <Content Include="Domain\TrafficConditions.js" />
+    <Content Include="images\Increase-Blog-Traffic-Free.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\push_pin_orang.png" />
     <Content Include="images\push_pin_red.png" />

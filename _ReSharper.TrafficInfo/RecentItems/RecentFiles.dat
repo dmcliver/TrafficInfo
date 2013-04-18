@@ -7,20 +7,30 @@
     <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Domain/f:TrafficConditions.js" caret="146" fromTop="9" />
     <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Domain/f:Camera.js" caret="13" fromTop="0" />
     <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Domain/f:CameraPushpinInfo.js" caret="161" fromTop="6" />
-    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Repositories/f:NztaRepository.js" caret="1110" fromTop="27" />
     <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Coordinators/f:LocationCoordinator.js" caret="1044" fromTop="22" />
-    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:home/f:home.js" caret="980" fromTop="24" />
-    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:home/f:home.html" caret="906" fromTop="22" />
-    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Services/f:MapService.js" caret="2224" fromTop="44" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Services/f:MapService.js" caret="4007" fromTop="49" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Services/f:GrpahicsRenderService.js" caret="555" fromTop="17" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Repositories/f:TrafficSettingsRepository.js" caret="303" fromTop="9" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:settings/f:settings.js" caret="711" fromTop="26" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:settings/f:settings.html" caret="1220" fromTop="32" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Repositories/f:NztaRepository.js" caret="680" fromTop="22" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Services/f:CharmBarService.js" caret="1130" fromTop="32" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:home/f:home.js" caret="984" fromTop="29" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:home/f:home.html" caret="1764" fromTop="18" />
+    <File id="d:Bing.Maps.JavaScript/d:js/f:veapiModules.js" caret="48968" fromTop="0" />
   </RecentFiles>
   <RecentEdits>
     <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/f:default.html" caret="660" fromTop="16" />
-    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Repositories/f:NztaRepository.js" caret="193" fromTop="10" />
     <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Domain/f:Camera.js" caret="13" fromTop="0" />
     <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Coordinators/f:LocationCoordinator.js" caret="1485" fromTop="37" />
-    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:home/f:home.html" caret="906" fromTop="22" />
     <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Domain/f:CameraPushpinInfo.js" caret="210" fromTop="9" />
-    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:home/f:home.js" caret="806" fromTop="18" />
-    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Services/f:MapService.js" caret="2224" fromTop="44" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Repositories/f:NztaRepository.js" caret="680" fromTop="22" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:home/f:home.js" caret="1754" fromTop="37" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Services/f:MapService.js" caret="4007" fromTop="49" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Repositories/f:TrafficSettingsRepository.js" caret="303" fromTop="9" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Services/f:GrpahicsRenderService.js" caret="555" fromTop="17" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:Services/f:CharmBarService.js" caret="1130" fromTop="32" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:settings/f:settings.html" caret="547" fromTop="13" />
+    <File id="3E53A469-4019-4682-82A8-1DAD69748C5A/d:pages/d:home/f:home.html" caret="1329" fromTop="22" />
   </RecentEdits>
 </RecentFiles>

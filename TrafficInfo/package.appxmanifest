@@ -18,6 +18,9 @@
       <VisualElements DisplayName="TrafficInfo" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="TrafficInfo" ForegroundText="light" BackgroundColor="#464646">
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="images\splashscreen.png" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
       </VisualElements>
       <ApplicationContentUriRules>
         <Rule Match="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAjktqSXS3XAKOKJ53MbzpXg05ygQfvpE&amp;sensor=true" Type="include" />
