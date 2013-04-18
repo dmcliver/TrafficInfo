@@ -30,4 +30,5 @@ Scripts\JSLINQ-vsdoc.js
 Scripts\underscore.js
 Scripts\underscore.min.js
 Services\CharmBarService.js
+Services\GrpahicsRenderService.js
 Services\MapService.js

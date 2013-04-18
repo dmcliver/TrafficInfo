@@ -80,11 +80,13 @@
     <Content Include="pages\settings\settings.js" />
     <Content Include="Repositories\CameraCoordinateRepository.js" />
     <Content Include="Repositories\NztaRepository.js" />
+    <Content Include="Repositories\TrafficSettingsRepository.js" />
     <Content Include="Scripts\JSLINQ-vsdoc.js" />
     <Content Include="Scripts\JSLINQ.js" />
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Services\CharmBarService.js" />
+    <Content Include="Services\GrpahicsRenderService.js" />
     <Content Include="Services\MapService.js" />
     <None Include="TrafficInfo_TemporaryKey.pfx" />
   </ItemGroup>

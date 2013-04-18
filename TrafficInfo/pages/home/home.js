@@ -11,42 +11,26 @@
     var charmBarService;
     var cameraInfo;
     var value;
+    var renderEngine;
 
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
         ready: function (element, options) {
-
-            var canvas = document.getElementById("legend1");
-            if (canvas.getContext) {
-  
-                var ctx = canvas.getContext("2d");
-                ctx.fillStyle = "red";
-                ctx.fillRect(0, 6, 15, 15);
-                ctx.fillStyle = "orange";
-                ctx.fillRect(0, 33, 15, 15);
-                ctx.fillStyle = "yellow";
-                ctx.fillRect(0, 60, 15, 15);
-                ctx.fillStyle = "green";
-                ctx.fillRect(0, 87, 15, 15);
-            }
-
-            value = Windows.Storage.ApplicationData.current.roamingSettings.values["refreshRate"];
-            if(value == undefined) {
-                value = "5";
-            }
-            value = "1";
-            value = parseInt(value);
-
+            
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
 
             mapService = new MapService();
+            renderEngine = new GraphicsRenderService();
             nztaRepository = new NztaRepository();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
             charmBarService = new CharmBarService();
+            var trafficSettingsRepository = new TrafficSettingsRepository();
+
             charmBarService.getCurrentSelectedCamera = getCurrentCamera;
             charmBarService.invokeSuggestedResults = integratedSearchForNewLocation;
-
+            renderEngine.renderLegend();
             nztaRepository.retrieveAllCamerasResponse = retrieveAllCamerasResponse;
+            value = trafficSettingsRepository.retrieveCameraRefreshRate();
             mapService.createMap(onMapCreated);
             
             function onMapCreated(map) {
