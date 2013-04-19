@@ -5,7 +5,7 @@
     <WindowsUser>annon</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>E3E1D4CA98774638ABB5443F6594B03BACE61F6AB894F25C981E590D80DFB446</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>843AE0372C91875BC44B6816407E2E25DEBBAC0F3E4F12C986B08F9B5526FD09</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3e53a469-4019-4682-82a8-1dad69748c5a_1.0.0.0_neutral__wztdtvqxwhg7j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3e53a469-4019-4682-82a8-1dad69748c5a_wztdtvqxwhg7j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3e53a469-4019-4682-82a8-1dad69748c5a</RegisteredPackageID>
@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-18T22:35:04.621</Modified>
+      <Modified>2013-04-19T01:42:13.206</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -1026,7 +1026,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
-      <Modified>2013-04-18T22:59:01.279</Modified>
+      <Modified>2013-04-18T23:45:24.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\css\default.css">
       <PackagePath>css\default.css</PackagePath>
@@ -1040,13 +1040,31 @@
       <PackagePath>pages\settings\settings.css</PackagePath>
       <Modified>2013-04-17T21:38:45.249</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-620x300.jpg">
+      <PackagePath>images\DUI81-620x300.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-19T00:21:17.304</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-620x300smll.jpg">
+      <PackagePath>images\DUI81-620x300smll.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-19T01:41:49.110</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Increase-Blog-Traffic-Free.jpg">
       <PackagePath>images\Increase-Blog-Traffic-Free.jpg</PackagePath>
       <Modified>2013-04-18T22:18:29.614</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Live_Traffic_NSW_logoNoTextBig.png">
+      <PackagePath>images\Live_Traffic_NSW_logoNoTextBig.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-18T23:29:12.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Live_Traffic_NSW_logoNoTextSmll.png">
+      <PackagePath>images\Live_Traffic_NSW_logoNoTextSmll.png</PackagePath>
+      <Modified>2013-04-18T23:29:33.333</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2012-07-25T23:30:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\push_pin_orang.png">
@@ -1063,12 +1081,10 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2012-07-25T23:30:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2012-07-25T23:30:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\storelogo.png">
@@ -1098,7 +1114,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-04-18T22:35:04.470</Modified>
+      <Modified>2013-04-19T01:42:12.933</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

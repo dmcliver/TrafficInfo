@@ -15,9 +15,9 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="TrafficInfo" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="TrafficInfo" ForegroundText="light" BackgroundColor="#464646">
+      <VisualElements DisplayName="TrafficInfo" Logo="images\Live_Traffic_NSW_logoNoTextBig.png" SmallLogo="images\DUI81-620x300smll.jpg" Description="TrafficInfo" ForegroundText="light" BackgroundColor="#1A1A1A">
         <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="images\splashscreen.png" />
+        <SplashScreen Image="images\DUI81-620x300.jpg" BackgroundColor="#1A1A1A" />
         <InitialRotationPreference>
           <Rotation Preference="landscape" />
         </InitialRotationPreference>

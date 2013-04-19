@@ -13,8 +13,6 @@
 
         self.callback = initMap;
         Microsoft.Maps.loadModule('Microsoft.Maps.Map', { callback: self.BuildMap, culture: 'en-us', homeRegion: 'NZ' });
-        Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
-        Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', { callback: trafficModuleLoaded });
     };
 
     var currentionLocation = null;
@@ -39,10 +37,14 @@
         };
 
         thisMap = new Microsoft.Maps.Map(document.getElementById("mapDiv"), mapOptions);
-        searchManager = new Microsoft.Maps.Search.SearchManager(thisMap);
+        Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', { callback: trafficModuleLoaded });
+        Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
+        
     };
 
     function loadCurrentLocation() {
+
+        searchManager = new Microsoft.Maps.Search.SearchManager(thisMap);
 
         var geoLocationProvider = new Microsoft.Maps.GeoLocationProvider(thisMap);
 

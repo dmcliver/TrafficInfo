@@ -60,7 +60,11 @@
     <Content Include="Domain\Location.js" />
     <Content Include="Domain\Motorway.js" />
     <Content Include="Domain\TrafficConditions.js" />
+    <Content Include="images\DUI81-620x300.jpg" />
+    <Content Include="images\DUI81-620x300smll.jpg" />
     <Content Include="images\Increase-Blog-Traffic-Free.jpg" />
+    <Content Include="images\Live_Traffic_NSW_logoNoTextBig.png" />
+    <Content Include="images\Live_Traffic_NSW_logoNoTextSmll.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\push_pin_orang.png" />
     <Content Include="images\push_pin_red.png" />
