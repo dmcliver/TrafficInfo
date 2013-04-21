@@ -42,14 +42,20 @@
         
             <section role="main">
                 
-                <div id="mapDiv" style="position: relative;height: 90%"></div>
+                <div id="mapDiv"></div>
 
                 <div id="searchResultTemplate" data-win-control="WinJS.Binding.Template">
                     <div>
-                        <h3 data-win-bind="innerText: name" style="height: 40px"></h3>
+                        <h3 data-win-bind="innerText: name" id="searchItem"></h3>
                     </div>
                 </div>
-                <div class="searchItem" style="position: absolute;top: 130px;left:122px;float: left;width: 200px;height: 500px;" id="searchResultList" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate: select('#searchResultTemplate'), selectionMode: 'single',layout: {type: WinJS.UI.ListLayout}}" ></div>
+                
+                <!-- need to keep style position here for styling to work properly. Why? Coz javascript/css or M$ is gay? -->
+                <div id="searchResultList" 
+                     style="position: absolute;" 
+                     data-win-control="WinJS.UI.ListView" 
+                     data-win-options="{ itemTemplate: select('#searchResultTemplate'), selectionMode: 'single', layout: {type: WinJS.UI.ListLayout} }" >
+                </div>
 
             </section>
         </div>

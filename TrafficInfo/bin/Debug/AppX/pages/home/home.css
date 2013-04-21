@@ -28,3 +28,20 @@
     border-right-color: red;
     border-top-color: red;
 }
+
+#searchItem {
+    height: 40px;
+}
+
+#mapDiv {
+    position: relative;
+    height: 90%;
+}
+
+#searchResultList {
+    width: 200px;
+    height: 40%;
+    top: 300px;
+    left:120px;
+    float: left;
+}
