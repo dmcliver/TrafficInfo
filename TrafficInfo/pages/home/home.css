@@ -14,3 +14,17 @@
         margin-left: 100px;
     }
 }
+
+:not(.searchItem).win-listview .win-selected.win-container .win-selectionborder {
+   border-bottom-color: rgb(70, 23, 180);
+   border-left-color: rgb(70, 23, 180);
+   border-right-color: rgb(70, 23, 180);
+   border-top-color: rgb(70, 23, 180);
+}
+
+.win-container.searchItem .win-container.win-selected.win-selectionborder {
+    border-bottom-color:red;
+    border-left-color: red;
+    border-right-color: red;
+    border-top-color: red;
+}

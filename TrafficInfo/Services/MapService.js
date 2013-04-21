@@ -86,8 +86,12 @@
     };
 
     this.reOrientate = function (searchResult) {
-        currentCoords = searchResult.location;
-        thisMap.setView({ center: currentCoords });
+
+        if (searchResult != null && searchResult != undefined) {
+
+            currentCoords = searchResult.location;
+            thisMap.setView({ center: currentCoords });
+        }
     };
     
     this.setMapWithCameras = function(map, cameras, onCameraPushpinClick) {

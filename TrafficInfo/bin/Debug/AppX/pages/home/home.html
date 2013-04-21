@@ -41,42 +41,15 @@
             </header>
         
             <section role="main">
- 
-                <div style="display: inline;float: left;margin-right: 100px;width: 330px">
-                    <h3>Place suggestions:</h3>
-                    
-                    <div style="border:1px solid white;background-color: rgba(128,128,128,0.5);">
-                        <div id="searchResultTemplate" data-win-control="WinJS.Binding.Template">
-                            <div>
-                                <h3 data-win-bind="innerText: name" style="width: 150px;height: 40px"></h3>
-                            </div>
-                        </div>
-                        <div id="searchResultList" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate: select('#searchResultTemplate'), selectionMode: 'single'}"></div>
+                
+                <div id="mapDiv" style="position: relative;height: 90%"></div>
+
+                <div id="searchResultTemplate" data-win-control="WinJS.Binding.Template">
+                    <div>
+                        <h3 data-win-bind="innerText: name" style="height: 40px"></h3>
                     </div>
-
-                    <h3 style="margin-top: 10px">Legend:</h3>
-                    <table style="border: 1px solid white;background-color: rgba(128,128,128,0.5);width: 330px">
-                        <tr>
-                            <td>Bad traffic</td>
-                            <td rowspan="4">
-                                <canvas id="legend1" width="30" height="108"></canvas>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Heavy traffic</td><td></td>
-                        </tr>
-                        <tr>
-                            <td>Moderate traffic</td><td></td>
-                        </tr>
-                        <tr>
-                            <td>Free following</td><td></td>
-                        </tr>
-                    </table>
-                    
-
                 </div>
-            
-                <div id="mapDiv" style="margin-left: 20%;position: relative;width: 80%;height: 90%"></div>
+                <div class="searchItem" style="position: absolute;top: 130px;left:122px;float: left;width: 200px;height: 500px;" id="searchResultList" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate: select('#searchResultTemplate'), selectionMode: 'single',layout: {type: WinJS.UI.ListLayout}}" ></div>
 
             </section>
         </div>
