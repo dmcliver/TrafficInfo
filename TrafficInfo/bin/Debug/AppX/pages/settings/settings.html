@@ -1,0 +1,32 @@
+﻿
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>TrafficInfo Settings</title>
+        <script src="settings.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div data-win-control="WinJS.UI.SettingsFlyout" id="cameraRefreshRate" style="width: 400px">
+            <div class="win-ui-dark win-header" style="background-color: darkblue">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+                <div class="win-label">Camera refresh rate</div>
+            </div>
+            <div class="win-content">
+                <div class="win-settings-section">
+                    Select the refresh rate in minutes: 
+                    <select id="refreshRate">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                        <option value="60">60</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
