@@ -4,6 +4,7 @@ default.html
 Domain\Camera.js
 Domain\CameraPushpinInfo.js
 Domain\Location.js
+Domain\MapBounds.js
 Domain\Motorway.js
 Domain\TrafficConditions.js
 images\DUI81-620x300.jpg
@@ -36,5 +37,4 @@ Scripts\JSLINQ-vsdoc.js
 Scripts\underscore.js
 Scripts\underscore.min.js
 Services\CharmBarService.js
-Services\GrpahicsRenderService.js
 Services\MapService.js

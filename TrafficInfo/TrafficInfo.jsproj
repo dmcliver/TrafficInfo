@@ -58,6 +58,7 @@
     <Content Include="Domain\Camera.js" />
     <Content Include="Domain\CameraPushpinInfo.js" />
     <Content Include="Domain\Location.js" />
+    <Content Include="Domain\MapBounds.js" />
     <Content Include="Domain\Motorway.js" />
     <Content Include="Domain\TrafficConditions.js" />
     <Content Include="images\DUI81-620x300.jpg" />
@@ -91,7 +92,6 @@
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Services\CharmBarService.js" />
-    <Content Include="Services\GrpahicsRenderService.js" />
     <Content Include="Services\MapService.js" />
     <None Include="TrafficInfo_TemporaryKey.pfx" />
   </ItemGroup>

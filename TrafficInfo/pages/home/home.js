@@ -20,7 +20,6 @@
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
 
             mapService = new MapService();
-            renderEngine = new GraphicsRenderService();
             nztaRepository = new NztaRepository();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
             charmBarService = new CharmBarService();
@@ -28,7 +27,6 @@
 
             charmBarService.getCurrentSelectedCamera = getCurrentCamera;
             charmBarService.invokeSuggestedResults = integratedSearchForNewLocation;
-            renderEngine.renderLegend();
             nztaRepository.retrieveAllCamerasResponse = retrieveAllCamerasResponse;
             value = trafficSettingsRepository.retrieveCameraRefreshRate();
             mapService.createMap(onMapCreated);
@@ -57,7 +55,9 @@
 
     function onSelectedCity() {
         
-        document.getElementById("searchResultList").winControl.selection.getItems().done(function(iitems) {
+        var listViewControl = document.getElementById("searchResultList").winControl;
+
+        listViewControl.selection.getItems().done(function (iitems) {
 
             if (iitems.length > 0) {
 
@@ -66,9 +66,11 @@
 
                 mapService.findLocationFromCityName(selectedCityName, function (data) {
                     mapService.reOrientate(data.results[0]);
+                    listViewControl.itemDataSource = new WinJS.Binding.List([]).dataSource;
                 });
             }
         });
+        
     }
 
     function integratedSearchForNewLocation(e) {
@@ -76,16 +78,11 @@
     }
 
     function onSuccessfulSearch(res) {
-        
-        if(res.results.length == 1) {
-            mapService.reOrientate(res.results[0]);
-        }
-        else {
             
-            var list = new WinJS.Binding.List(res.results);
-            var listControl = document.getElementById("searchResultList");
-            listControl.winControl.itemDataSource = list.dataSource;
-        }
+        var list = new WinJS.Binding.List(res.results);
+        var listControl = document.getElementById("searchResultList");
+        listControl.winControl.itemDataSource = list.dataSource;
+
     }
 
     function hideInfobox() {

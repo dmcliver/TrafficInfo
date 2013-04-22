@@ -34,6 +34,7 @@
 
         var mapOptions = {
             credentials: "Aoko4s3Tuxs_k2PArX1i9Xea2mbQizENjlKA-Vbpvf_aPivwpxZqFuQ9pGe1ZhrQ",
+            bounds: MapBounds.Boundary
         };
 
         thisMap = new Microsoft.Maps.Map(document.getElementById("mapDiv"), mapOptions);
@@ -80,7 +81,7 @@
 
     this.findLocationFromCityName = function (city, onSuccessfulSearch) {
         
-        searchManager.geocode({where: city, callback: function(res, dat){
+        searchManager.geocode({bounds: MapBounds.Boundary, count: 20, where: city, callback: function(res, dat){
             onSuccessfulSearch(res);
         }});
     };
