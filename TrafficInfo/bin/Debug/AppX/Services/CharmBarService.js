@@ -11,20 +11,21 @@
 
     WinJS.Application.onsettings = charmBarSettings;
 
-    dtm.addEventListener("datarequested", function (e) {
+    if (dtm.ondatarequested !== null) {
+        dtm.addEventListener("datarequested", function(e) {
 
-        if (self.getCurrentSelectedCamera != null && self.getCurrentSelectedCamera() != null) {
+            if (self.getCurrentSelectedCamera != null && self.getCurrentSelectedCamera() != null) {
 
-            var deferral = e.request.getDeferral();
-            
-            setShareDetails(e);
-            var uri = setUri(e);
-            setUriStream(e, uri);
+                var deferral = e.request.getDeferral();
 
-            deferral.complete();
-        }
-    });
+                setShareDetails(e);
+                var uri = setUri(e);
+                setUriStream(e, uri);
 
+                deferral.complete();
+            }
+        });
+    }
     searchPane.onsuggestionsrequested = function(e) {
         self.invokeSuggestedResults(e);
     };

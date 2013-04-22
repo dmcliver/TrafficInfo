@@ -23,6 +23,7 @@ images\webcam.png
 js\default.js
 js\navigator.js
 packages.config
+pages\help\help.html
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js

@@ -17,7 +17,8 @@
         ready: function (element, options) {
             
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
-
+            document.getElementById("helpCmd").winControl.addEventListener("click", showHelp);
+            
             mapService = new MapService();
             nztaRepository = new NztaRepository();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
@@ -39,7 +40,7 @@
             }
         }
     });
-    //Comments
+    
     function refreshCameras() {
         mapService.clearMap();
         nztaRepository.retrieveAllCameras();
@@ -108,6 +109,10 @@
             cameraInfo = filteredCameras[0];
             cameraInfo.show();
         }
+    }
+    
+    function showHelp() {
+        WinJS.Navigation.navigate('/pages/help/help.html');
     }
 })();
 

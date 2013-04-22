@@ -11,14 +11,14 @@
     var charmBarService;
     var cameraInfo;
     var value;
-    var renderEngine;
-
+    
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
         ready: function (element, options) {
             
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
-
+            document.getElementById("helpCmd").winControl.addEventListener("click", showHelp);
+            
             mapService = new MapService();
             nztaRepository = new NztaRepository();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
@@ -40,7 +40,7 @@
             }
         }
     });
-
+    
     function refreshCameras() {
         mapService.clearMap();
         nztaRepository.retrieveAllCameras();
@@ -109,6 +109,10 @@
             cameraInfo = filteredCameras[0];
             cameraInfo.show();
         }
+    }
+    
+    function showHelp() {
+        WinJS.Navigation.navigate('/pages/help/help.html');
     }
 })();
 
