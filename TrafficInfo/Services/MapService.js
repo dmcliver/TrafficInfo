@@ -81,7 +81,8 @@
 
     this.findLocationFromCityName = function (city, onSuccessfulSearch) {
         
-        searchManager.geocode({bounds: MapBounds.Boundary, count: 20, where: city, callback: function(res, dat){
+        searchManager.geocode({
+            bounds: MapBounds.Boundary, count: 20, where: city, callback: function (res, dat) {
             onSuccessfulSearch(res);
         }});
     };

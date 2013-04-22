@@ -70,7 +70,6 @@
                 });
             }
         });
-        
     }
 
     function integratedSearchForNewLocation(e) {
@@ -78,11 +77,14 @@
     }
 
     function onSuccessfulSearch(res) {
-            
-        var list = new WinJS.Binding.List(res.results);
+
+        var filterResults = _.filter(res.results, function(r) {
+            return MapBounds.isInBoundary(r);
+        });
+
+        var list = new WinJS.Binding.List(filterResults);
         var listControl = document.getElementById("searchResultList");
         listControl.winControl.itemDataSource = list.dataSource;
-
     }
 
     function hideInfobox() {
