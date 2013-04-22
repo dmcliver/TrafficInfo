@@ -11,8 +11,7 @@
     var charmBarService;
     var cameraInfo;
     var value;
-    var renderEngine;
-
+    
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
         ready: function (element, options) {
