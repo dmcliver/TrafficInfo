@@ -39,7 +39,7 @@
             }
         }
     });
-
+    //Comments
     function refreshCameras() {
         mapService.clearMap();
         nztaRepository.retrieveAllCameras();
