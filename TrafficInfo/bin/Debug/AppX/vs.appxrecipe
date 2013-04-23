@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-22T05:14:25.253</Modified>
+      <Modified>2013-04-23T03:49:54.677</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -948,111 +948,117 @@
       <PackagePath>Bing.Maps.JavaScript\js\veapiModules.js</PackagePath>
       <Modified>2013-04-08T03:49:06.566</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\LocationCoordinator.js">
-      <PackagePath>Coordinators\LocationCoordinator.js</PackagePath>
-      <Modified>2013-04-15T22:46:31.204</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\animated-overlay.gif">
+      <PackagePath>Content\themes\base\images\animated-overlay.gif</PackagePath>
+      <Modified>2013-04-23T03:27:47.337</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Camera.js">
-      <PackagePath>Domain\Camera.js</PackagePath>
-      <Modified>2013-04-11T22:46:34.737</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\animated-overlay.gif">
+      <PackagePath>Content\themes\base\minified\images\animated-overlay.gif</PackagePath>
+      <Modified>2013-04-23T03:27:44.250</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\CameraPushpinInfo.js">
-      <PackagePath>Domain\CameraPushpinInfo.js</PackagePath>
-      <Modified>2013-04-16T03:25:12.500</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <PackagePath>Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png</PackagePath>
+      <Modified>2013-04-23T03:27:47.216</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Location.js">
-      <PackagePath>Domain\Location.js</PackagePath>
-      <Modified>2013-04-10T22:10:23.045</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png">
+      <PackagePath>Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png</PackagePath>
+      <Modified>2013-04-23T03:27:47.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\MapBounds.js">
-      <PackagePath>Domain\MapBounds.js</PackagePath>
-      <Modified>2013-04-22T03:32:25.377</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.995</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Motorway.js">
-      <PackagePath>Domain\Motorway.js</PackagePath>
-      <Modified>2013-04-10T22:09:26.749</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\TrafficConditions.js">
-      <PackagePath>Domain\TrafficConditions.js</PackagePath>
-      <Modified>2013-04-10T22:07:34.057</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.843</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\default.js">
-      <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-04-22T05:12:00.683</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.768</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\navigator.js">
-      <PackagePath>js\navigator.js</PackagePath>
-      <Modified>2013-04-08T03:19:57.728</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
-      <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-04-22T05:13:12.259</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <PackagePath>Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.581</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.js">
-      <PackagePath>pages\settings\settings.js</PackagePath>
-      <Modified>2013-04-18T00:42:19.752</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-icons_222222_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_222222_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.507</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\CameraCoordinateRepository.js">
-      <PackagePath>Repositories\CameraCoordinateRepository.js</PackagePath>
-      <Modified>2013-04-12T05:13:05.111</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-icons_2e83ff_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_2e83ff_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
-      <PackagePath>Repositories\NztaRepository.js</PackagePath>
-      <Modified>2013-04-18T04:52:09.023</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-icons_454545_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_454545_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\TrafficSettingsRepository.js">
-      <PackagePath>Repositories\TrafficSettingsRepository.js</PackagePath>
-      <Modified>2013-04-18T05:17:07.480</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-icons_888888_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_888888_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.244</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ-vsdoc.js">
-      <PackagePath>Scripts\JSLINQ-vsdoc.js</PackagePath>
-      <Modified>2013-04-12T04:07:33.497</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\ui-icons_cd0a0a_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_cd0a0a_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:46.154</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ.js">
-      <PackagePath>Scripts\JSLINQ.js</PackagePath>
-      <Modified>2013-04-12T04:07:33.856</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <PackagePath>Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png</PackagePath>
+      <Modified>2013-04-23T03:27:44.166</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.js">
-      <PackagePath>Scripts\underscore.js</PackagePath>
-      <Modified>2013-04-09T02:55:21.474</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png">
+      <PackagePath>Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.959</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.min.js">
-      <PackagePath>Scripts\underscore.min.js</PackagePath>
-      <Modified>2013-04-09T02:55:21.196</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png">
+      <PackagePath>Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.825</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\CharmBarService.js">
-      <PackagePath>Services\CharmBarService.js</PackagePath>
-      <Modified>2013-04-22T05:19:18.437</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png">
+      <PackagePath>Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.756</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
-      <PackagePath>Services\MapService.js</PackagePath>
-      <Modified>2013-04-22T02:41:31.300</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png">
+      <PackagePath>Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.678</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\css\default.css">
-      <PackagePath>css\default.css</PackagePath>
-      <Modified>2013-04-19T02:18:48.472</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png">
+      <PackagePath>Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.css">
-      <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2013-04-22T00:11:13.831</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png">
+      <PackagePath>Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.512</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.css">
-      <PackagePath>pages\settings\settings.css</PackagePath>
-      <Modified>2013-04-17T21:38:45.249</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <PackagePath>Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.433</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-620x300.jpg">
-      <PackagePath>images\DUI81-620x300.jpg</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-19T00:21:17.304</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-icons_222222_256x240.png">
+      <PackagePath>Content\themes\base\minified\images\ui-icons_222222_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.344</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-620x300smll.jpg">
-      <PackagePath>images\DUI81-620x300smll.jpg</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-19T01:41:49.110</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png">
+      <PackagePath>Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.189</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Increase-Blog-Traffic-Free.jpg">
-      <PackagePath>images\Increase-Blog-Traffic-Free.jpg</PackagePath>
-      <Modified>2013-04-18T22:18:29.614</Modified>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-icons_454545_256x240.png">
+      <PackagePath>Content\themes\base\minified\images\ui-icons_454545_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:43.112</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-icons_888888_256x240.png">
+      <PackagePath>Content\themes\base\minified\images\ui-icons_888888_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:42.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png">
+      <PackagePath>Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png</PackagePath>
+      <Modified>2013-04-23T03:27:42.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Live_Traffic_NSW_logoNoTextBig.png">
       <PackagePath>images\Live_Traffic_NSW_logoNoTextBig.png</PackagePath>
@@ -1096,9 +1102,291 @@
       <PackagePath>images\webcam.png</PackagePath>
       <Modified>2013-04-11T03:53:04.117</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery-ui.css">
+      <PackagePath>Content\themes\base\jquery-ui.css</PackagePath>
+      <Modified>2013-04-23T03:27:44.452</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.accordion.css">
+      <PackagePath>Content\themes\base\jquery.ui.accordion.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.877</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.all.css">
+      <PackagePath>Content\themes\base\jquery.ui.all.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.autocomplete.css">
+      <PackagePath>Content\themes\base\jquery.ui.autocomplete.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.761</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.base.css">
+      <PackagePath>Content\themes\base\jquery.ui.base.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.693</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.button.css">
+      <PackagePath>Content\themes\base\jquery.ui.button.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.614</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.core.css">
+      <PackagePath>Content\themes\base\jquery.ui.core.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.534</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.datepicker.css">
+      <PackagePath>Content\themes\base\jquery.ui.datepicker.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.471</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.dialog.css">
+      <PackagePath>Content\themes\base\jquery.ui.dialog.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.372</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.menu.css">
+      <PackagePath>Content\themes\base\jquery.ui.menu.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.199</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.progressbar.css">
+      <PackagePath>Content\themes\base\jquery.ui.progressbar.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.resizable.css">
+      <PackagePath>Content\themes\base\jquery.ui.resizable.css</PackagePath>
+      <Modified>2013-04-23T03:27:45.039</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.selectable.css">
+      <PackagePath>Content\themes\base\jquery.ui.selectable.css</PackagePath>
+      <Modified>2013-04-23T03:27:44.958</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.slider.css">
+      <PackagePath>Content\themes\base\jquery.ui.slider.css</PackagePath>
+      <Modified>2013-04-23T03:27:44.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.spinner.css">
+      <PackagePath>Content\themes\base\jquery.ui.spinner.css</PackagePath>
+      <Modified>2013-04-23T03:27:44.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.tabs.css">
+      <PackagePath>Content\themes\base\jquery.ui.tabs.css</PackagePath>
+      <Modified>2013-04-23T03:27:44.741</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.theme.css">
+      <PackagePath>Content\themes\base\jquery.ui.theme.css</PackagePath>
+      <Modified>2013-04-23T03:27:44.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery.ui.tooltip.css">
+      <PackagePath>Content\themes\base\jquery.ui.tooltip.css</PackagePath>
+      <Modified>2013-04-23T03:27:44.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery-ui.min.css">
+      <PackagePath>Content\themes\base\minified\jquery-ui.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:39.239</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.accordion.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.accordion.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:41.648</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.autocomplete.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.autocomplete.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:41.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.button.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.button.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:41.484</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.core.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.core.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:41.387</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.datepicker.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.datepicker.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:41.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.dialog.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.dialog.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:40.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.menu.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.menu.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:40.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.progressbar.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.progressbar.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:40.640</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.resizable.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.resizable.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:40.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.selectable.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.selectable.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:40.298</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.slider.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.slider.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:40.209</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.spinner.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.spinner.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:40.111</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.tabs.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.tabs.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:40.036</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.theme.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.theme.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:39.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\minified\jquery.ui.tooltip.min.css">
+      <PackagePath>Content\themes\base\minified\jquery.ui.tooltip.min.css</PackagePath>
+      <Modified>2013-04-23T03:27:39.631</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2013-04-19T02:18:48.472</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+      <Modified>2013-04-22T00:11:13.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.css">
+      <PackagePath>pages\searchRoute\searchRoute.css</PackagePath>
+      <Modified>2013-04-22T22:09:58.241</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.css">
+      <PackagePath>pages\settings\settings.css</PackagePath>
+      <Modified>2013-04-17T21:38:45.249</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\LocationCoordinator.js">
+      <PackagePath>Coordinators\LocationCoordinator.js</PackagePath>
+      <Modified>2013-04-15T22:46:31.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Camera.js">
+      <PackagePath>Domain\Camera.js</PackagePath>
+      <Modified>2013-04-11T22:46:34.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\CameraPushpinInfo.js">
+      <PackagePath>Domain\CameraPushpinInfo.js</PackagePath>
+      <Modified>2013-04-16T03:25:12.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Location.js">
+      <PackagePath>Domain\Location.js</PackagePath>
+      <Modified>2013-04-10T22:10:23.045</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\MapBounds.js">
+      <PackagePath>Domain\MapBounds.js</PackagePath>
+      <Modified>2013-04-22T03:32:25.377</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Motorway.js">
+      <PackagePath>Domain\Motorway.js</PackagePath>
+      <Modified>2013-04-10T22:09:26.749</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\TrafficConditions.js">
+      <PackagePath>Domain\TrafficConditions.js</PackagePath>
+      <Modified>2013-04-10T22:07:34.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-04-22T05:12:00.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2013-04-08T03:19:57.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+      <Modified>2013-04-23T01:11:42.751</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
+      <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
+      <Modified>2013-04-23T04:33:53.406</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.js">
+      <PackagePath>pages\settings\settings.js</PackagePath>
+      <Modified>2013-04-18T00:42:19.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\CameraCoordinateRepository.js">
+      <PackagePath>Repositories\CameraCoordinateRepository.js</PackagePath>
+      <Modified>2013-04-12T05:13:05.111</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\GeocodeRepository.js">
+      <PackagePath>Repositories\GeocodeRepository.js</PackagePath>
+      <Modified>2013-04-23T00:57:24.645</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
+      <PackagePath>Repositories\NztaRepository.js</PackagePath>
+      <Modified>2013-04-18T04:52:09.023</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\TrafficSettingsRepository.js">
+      <PackagePath>Repositories\TrafficSettingsRepository.js</PackagePath>
+      <Modified>2013-04-18T05:17:07.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-1.6.4-vsdoc.js">
+      <PackagePath>Scripts\jquery-1.6.4-vsdoc.js</PackagePath>
+      <Modified>2013-04-23T03:27:24.963</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-1.6.4.js">
+      <PackagePath>Scripts\jquery-1.6.4.js</PackagePath>
+      <Modified>2013-04-23T03:27:25.525</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-1.6.4.min.js">
+      <PackagePath>Scripts\jquery-1.6.4.min.js</PackagePath>
+      <Modified>2013-04-23T03:27:25.062</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-ui-1.10.2.js">
+      <PackagePath>Scripts\jquery-ui-1.10.2.js</PackagePath>
+      <Modified>2013-04-23T03:27:37.139</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-ui-1.10.2.min.js">
+      <PackagePath>Scripts\jquery-ui-1.10.2.min.js</PackagePath>
+      <Modified>2013-04-23T03:27:37.059</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ-vsdoc.js">
+      <PackagePath>Scripts\JSLINQ-vsdoc.js</PackagePath>
+      <Modified>2013-04-12T04:07:33.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ.js">
+      <PackagePath>Scripts\JSLINQ.js</PackagePath>
+      <Modified>2013-04-12T04:07:33.856</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.js">
+      <PackagePath>Scripts\underscore.js</PackagePath>
+      <Modified>2013-04-09T02:55:21.474</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.min.js">
+      <PackagePath>Scripts\underscore.min.js</PackagePath>
+      <Modified>2013-04-09T02:55:21.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\CharmBarService.js">
+      <PackagePath>Services\CharmBarService.js</PackagePath>
+      <Modified>2013-04-23T01:08:00.589</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
+      <PackagePath>Services\MapService.js</PackagePath>
+      <Modified>2013-04-22T02:41:31.300</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
+      <PackagePath>Services\UriEncoderService.js</PackagePath>
+      <Modified>2013-04-23T00:50:09.030</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\ValidatorService.js">
+      <PackagePath>Services\ValidatorService.js</PackagePath>
+      <Modified>2013-04-23T03:42:52.221</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-620x300.jpg">
+      <PackagePath>images\DUI81-620x300.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-19T00:21:17.304</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-620x300smll.jpg">
+      <PackagePath>images\DUI81-620x300smll.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-19T01:41:49.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Increase-Blog-Traffic-Free.jpg">
+      <PackagePath>images\Increase-Blog-Traffic-Free.jpg</PackagePath>
+      <Modified>2013-04-18T22:18:29.614</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\packages.config">
       <PackagePath>packages.config</PackagePath>
-      <Modified>2013-04-12T04:07:34.059</Modified>
+      <Modified>2013-04-23T03:27:47.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\help\help.html">
       <PackagePath>pages\help\help.html</PackagePath>
@@ -1106,19 +1394,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-04-22T05:09:32.683</Modified>
+      <Modified>2013-04-23T03:50:42.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
       <Modified>2013-04-22T05:09:12.784</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.html">
+      <PackagePath>pages\searchRoute\searchRoute.html</PackagePath>
+      <Modified>2013-04-23T04:44:56.914</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.html">
       <PackagePath>pages\settings\settings.html</PackagePath>
-      <Modified>2013-04-18T05:32:10.005</Modified>
+      <Modified>2013-04-22T22:04:11.820</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-04-22T05:14:23.722</Modified>
+      <Modified>2013-04-23T03:49:53.292</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

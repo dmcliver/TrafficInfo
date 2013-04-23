@@ -11,6 +11,10 @@
 
     WinJS.Application.onsettings = charmBarSettings;
 
+    searchPane.onsuggestionsrequested = function (e) {
+        self.invokeSuggestedResults(e);
+    };
+
     if (dtm.ondatarequested !== null) {
         dtm.addEventListener("datarequested", function(e) {
 
@@ -26,16 +30,18 @@
             }
         });
     }
-    searchPane.onsuggestionsrequested = function(e) {
-        self.invokeSuggestedResults(e);
-    };
-    
+  
     function charmBarSettings(e) {
 
         e.detail.applicationcommands = {
             "cameraRefreshRate": {
-                title: "Camera refresh rate", href: "/pages/settings/settings.html"
+                title: "Camera refresh rate",
+                href: "/pages/settings/settings.html"
             }
+//            "personalSearchRoute" : {
+//                title: "Personalized startup search route",
+//                href: "/pages/searchRoute/searchRoute.html"
+//            }
         };
         WinJS.UI.SettingsFlyout.populateSettings(e);
     }

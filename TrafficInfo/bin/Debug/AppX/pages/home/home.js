@@ -18,6 +18,7 @@
             
             document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
             document.getElementById("helpCmd").winControl.addEventListener("click", showHelp);
+            document.getElementById("favCmd").winControl.addEventListener("click", showSettings);
             
             mapService = new MapService();
             nztaRepository = new NztaRepository();
@@ -30,17 +31,17 @@
             nztaRepository.retrieveAllCamerasResponse = retrieveAllCamerasResponse;
             value = trafficSettingsRepository.retrieveCameraRefreshRate();
             mapService.createMap(onMapCreated);
-            
-            function onMapCreated(map) {
-
-                thisMap = map;
-                Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
-                nztaRepository.retrieveAllCameras();
-                setTimeout(refreshCameras, value * 60 * 1000);
-            }
         }
     });
     
+    function onMapCreated(map) {
+
+        thisMap = map;
+        Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
+        nztaRepository.retrieveAllCameras();
+        setTimeout(refreshCameras, value * 60 * 1000);
+    }
+
     function refreshCameras() {
         mapService.clearMap();
         nztaRepository.retrieveAllCameras();
@@ -113,6 +114,10 @@
     
     function showHelp() {
         WinJS.Navigation.navigate('/pages/help/help.html');
+    }
+    
+    function showSettings() {
+        WinJS.Navigation.navigate('/pages/searchRoute/searchRoute.html');
     }
 })();
 
