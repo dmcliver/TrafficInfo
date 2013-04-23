@@ -27,7 +27,7 @@
             </h1>
         </header>
 
-        <section role="main">
+        <section role="main" id="bod">
 
             <div style="position: fixed; top: 100px;">
 
@@ -59,7 +59,19 @@
             </div>
 
             <div id="startSearchResultList"
-                style="width: 200px; position: fixed; top: 60px; left: 135px"
+                style="width: 310px; position: fixed; top: 65px; left: 133px; height: 365px"
+                data-win-control="WinJS.UI.ListView"
+                data-win-options="{ itemTemplate: select('#startSearchResultTemplate'), selectionMode: 'single', layout: {type: WinJS.UI.ListLayout} }">
+            </div>
+            
+            <div id="Div1" data-win-control="WinJS.Binding.Template">
+                <div>
+                    <h3 data-win-bind="innerText: name" style="height: 40px"></h3>
+                </div>
+            </div>
+
+            <div id="Div2"
+                style="width: 310px; position: fixed; top: 65px; left: 133px; height: 365px"
                 data-win-control="WinJS.UI.ListView"
                 data-win-options="{ itemTemplate: select('#startSearchResultTemplate'), selectionMode: 'single', layout: {type: WinJS.UI.ListLayout} }">
             </div>

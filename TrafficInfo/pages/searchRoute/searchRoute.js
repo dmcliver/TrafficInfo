@@ -19,6 +19,7 @@
             encodeService = new UriEncoderService();
 
             document.getElementById("startLoc").onkeyup = saveDetails;
+            document.getElementById("bod").onclick = clearAutocomplete;
             document.getElementById("save").onclick = saveDetails;
 
             var toggleSwitch = document.getElementById("settingSwitch");
@@ -38,9 +39,13 @@
 
     var startLoc;
 
+    function clearAutocomplete() {
+        startLocs.splice(0, startLocs.length);
+    }
+
     function saveDetails() {
 
-        startLocs.splice(0, startLocs.length);
+        clearAutocomplete();
 
         document.getElementById("allErrors").style.display = 'none';
 
@@ -49,7 +54,7 @@
 
         var startUri = encodeService.encode(startLoc);
         var endUri = encodeService.encode(endLoc);
-        startLoc.setCustomValidity("Location is not valid, or has multiple hits");
+
         geocodeRepo.getCoords(startUri, getStartLatAndLong);
 
         return false;

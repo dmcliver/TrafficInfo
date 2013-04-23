@@ -1296,7 +1296,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
-      <Modified>2013-04-23T04:33:53.406</Modified>
+      <Modified>2013-04-23T05:05:44.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.js">
       <PackagePath>pages\settings\settings.js</PackagePath>
@@ -1368,7 +1368,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\ValidatorService.js">
       <PackagePath>Services\ValidatorService.js</PackagePath>
-      <Modified>2013-04-23T03:42:52.221</Modified>
+      <Modified>2013-04-23T05:03:12.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-620x300.jpg">
       <PackagePath>images\DUI81-620x300.jpg</PackagePath>
@@ -1402,7 +1402,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.html">
       <PackagePath>pages\searchRoute\searchRoute.html</PackagePath>
-      <Modified>2013-04-23T04:44:56.914</Modified>
+      <Modified>2013-04-23T21:40:56.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.html">
       <PackagePath>pages\settings\settings.html</PackagePath>
