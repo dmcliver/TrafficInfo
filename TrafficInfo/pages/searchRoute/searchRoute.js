@@ -2,30 +2,47 @@
 
     "use strict";
 
-    var geocodeRepo = null;
-    var encodeService = null;
-    var validator = null;
-    var startLocs = null;
+    var geocodeRepo;
+    var encodeService;
+    var validator;
+    
+    var textBox1;
+    var textBox2;
 
     WinJS.UI.Pages.define("/pages/searchRoute/searchRoute.html", {
 
         ready: function (element, options) {
 
-            startLocs = new WinJS.Binding.List([]);
-            document.getElementById("startSearchResultList").winControl.itemDataSource = startLocs.dataSource;
+            textBox1 = new AutoCompleteTextBox("startLoc", "startSearchResultList");
+            textBox1.eventSpring = getSourceData1;
+
+            textBox2 = new AutoCompleteTextBox("endLoc", "endSearchResultList");
+            textBox2.eventSpring = getSourceData2;
 
             geocodeRepo = new GeocodeRepository();
-            validator = new ValidatorService();
             encodeService = new UriEncoderService();
-
-            document.getElementById("startLoc").onkeyup = saveDetails;
-            document.getElementById("bod").onclick = clearAutocomplete;
-            document.getElementById("save").onclick = saveDetails;
+            validator = new ValidatorService();
+            
+            document.getElementById("bod").onclick = clearTextBoxes;
+            document.getElementById("save").onclick = null;
 
             var toggleSwitch = document.getElementById("settingSwitch");
             toggleSwitch.onchange = toggleControlEnable;
         }
     });
+
+    function clearTextBoxes() {
+        textBox1.clear();
+        textBox2.clear();
+    }
+
+    function getSourceData1(text) {
+        geocodeRepo.getCoords(encodeService.encode(text), getStartLatAndLong1);
+    }
+
+    function getSourceData2(text) {
+        geocodeRepo.getCoords(encodeService.encode(text), getStartLatAndLong2);
+    }
 
     function toggleControlEnable(evt) {
         
@@ -37,40 +54,32 @@
         document.getElementById("save").disabled = !enable;
     }
 
-    var startLoc;
-
-    function clearAutocomplete() {
-        startLocs.splice(0, startLocs.length);
-    }
-
-    function saveDetails() {
-
-        clearAutocomplete();
-
-        document.getElementById("allErrors").style.display = 'none';
-
-        startLoc = document.getElementById("startLoc");
-        var endLoc = document.getElementById("endLoc");
-
-        var startUri = encodeService.encode(startLoc);
-        var endUri = encodeService.encode(endLoc);
-
-        geocodeRepo.getCoords(startUri, getStartLatAndLong);
-
-        return false;
-    }
-
-    function getStartLatAndLong(xhr) {
+    function getStartLatAndLong1(xhr) {
         
         var start = document.getElementById("startLoc").value;
         
         if (validator.validate(xhr,start)) {
 
-            var list = JSLINQ(xhr.results);
-            var formattedList = list.Select(function (i) { return { name: i.formatted_address }; });
-            _.each(formattedList.items, function(i) {
-                startLocs.push(i);
-            });
+            var formattedList = mapToBindProp(xhr);
+            textBox1.bind(formattedList.items);
         }
     }
+    
+    function getStartLatAndLong2(xhr) {
+        var start = document.getElementById("endLoc").value;
+
+        if (validator.validate(xhr, start)) {
+
+            var formattedList = mapToBindProp(xhr);
+            textBox2.bind(formattedList.items);
+        }
+    }
+
+    function mapToBindProp(xhr) {
+        var list = JSLINQ(xhr.results);
+        var formattedList = list.Select(function (i) { return { bind_prop: i.formatted_address }; });
+        return formattedList;
+    }
+    
 })();
+

@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-23T03:49:54.677</Modified>
+      <Modified>2013-04-24T01:23:58.790</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -948,6 +948,126 @@
       <PackagePath>Bing.Maps.JavaScript\js\veapiModules.js</PackagePath>
       <Modified>2013-04-08T03:49:06.566</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\AutoCompleteTextBox.js">
+      <PackagePath>AutoCompleteTextBox.js</PackagePath>
+      <Modified>2013-04-24T01:27:22.523</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\LocationCoordinator.js">
+      <PackagePath>Coordinators\LocationCoordinator.js</PackagePath>
+      <Modified>2013-04-15T22:46:31.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Camera.js">
+      <PackagePath>Domain\Camera.js</PackagePath>
+      <Modified>2013-04-11T22:46:34.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\CameraPushpinInfo.js">
+      <PackagePath>Domain\CameraPushpinInfo.js</PackagePath>
+      <Modified>2013-04-16T03:25:12.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Location.js">
+      <PackagePath>Domain\Location.js</PackagePath>
+      <Modified>2013-04-10T22:10:23.045</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\MapBounds.js">
+      <PackagePath>Domain\MapBounds.js</PackagePath>
+      <Modified>2013-04-22T03:32:25.377</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Motorway.js">
+      <PackagePath>Domain\Motorway.js</PackagePath>
+      <Modified>2013-04-10T22:09:26.749</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\TrafficConditions.js">
+      <PackagePath>Domain\TrafficConditions.js</PackagePath>
+      <Modified>2013-04-10T22:07:34.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-04-22T05:12:00.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2013-04-08T03:19:57.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+      <Modified>2013-04-23T01:11:42.751</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
+      <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
+      <Modified>2013-04-24T01:39:49.333</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.js">
+      <PackagePath>pages\settings\settings.js</PackagePath>
+      <Modified>2013-04-18T00:42:19.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\CameraCoordinateRepository.js">
+      <PackagePath>Repositories\CameraCoordinateRepository.js</PackagePath>
+      <Modified>2013-04-12T05:13:05.111</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\GeocodeRepository.js">
+      <PackagePath>Repositories\GeocodeRepository.js</PackagePath>
+      <Modified>2013-04-23T00:57:24.645</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
+      <PackagePath>Repositories\NztaRepository.js</PackagePath>
+      <Modified>2013-04-18T04:52:09.023</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\TrafficSettingsRepository.js">
+      <PackagePath>Repositories\TrafficSettingsRepository.js</PackagePath>
+      <Modified>2013-04-18T05:17:07.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-1.6.4-vsdoc.js">
+      <PackagePath>Scripts\jquery-1.6.4-vsdoc.js</PackagePath>
+      <Modified>2013-04-23T03:27:24.963</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-1.6.4.js">
+      <PackagePath>Scripts\jquery-1.6.4.js</PackagePath>
+      <Modified>2013-04-23T03:27:25.525</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-1.6.4.min.js">
+      <PackagePath>Scripts\jquery-1.6.4.min.js</PackagePath>
+      <Modified>2013-04-23T03:27:25.062</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-ui-1.10.2.js">
+      <PackagePath>Scripts\jquery-ui-1.10.2.js</PackagePath>
+      <Modified>2013-04-23T03:27:37.139</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-ui-1.10.2.min.js">
+      <PackagePath>Scripts\jquery-ui-1.10.2.min.js</PackagePath>
+      <Modified>2013-04-23T03:27:37.059</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ-vsdoc.js">
+      <PackagePath>Scripts\JSLINQ-vsdoc.js</PackagePath>
+      <Modified>2013-04-12T04:07:33.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ.js">
+      <PackagePath>Scripts\JSLINQ.js</PackagePath>
+      <Modified>2013-04-12T04:07:33.856</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.js">
+      <PackagePath>Scripts\underscore.js</PackagePath>
+      <Modified>2013-04-09T02:55:21.474</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.min.js">
+      <PackagePath>Scripts\underscore.min.js</PackagePath>
+      <Modified>2013-04-09T02:55:21.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\CharmBarService.js">
+      <PackagePath>Services\CharmBarService.js</PackagePath>
+      <Modified>2013-04-23T01:08:00.589</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
+      <PackagePath>Services\MapService.js</PackagePath>
+      <Modified>2013-04-22T02:41:31.300</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
+      <PackagePath>Services\UriEncoderService.js</PackagePath>
+      <Modified>2013-04-24T00:43:15.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\ValidatorService.js">
+      <PackagePath>Services\ValidatorService.js</PackagePath>
+      <Modified>2013-04-23T05:03:12.174</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\animated-overlay.gif">
       <PackagePath>Content\themes\base\images\animated-overlay.gif</PackagePath>
       <Modified>2013-04-23T03:27:47.337</Modified>
@@ -1254,122 +1374,6 @@
       <PackagePath>pages\settings\settings.css</PackagePath>
       <Modified>2013-04-17T21:38:45.249</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\LocationCoordinator.js">
-      <PackagePath>Coordinators\LocationCoordinator.js</PackagePath>
-      <Modified>2013-04-15T22:46:31.204</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Camera.js">
-      <PackagePath>Domain\Camera.js</PackagePath>
-      <Modified>2013-04-11T22:46:34.737</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\CameraPushpinInfo.js">
-      <PackagePath>Domain\CameraPushpinInfo.js</PackagePath>
-      <Modified>2013-04-16T03:25:12.500</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Location.js">
-      <PackagePath>Domain\Location.js</PackagePath>
-      <Modified>2013-04-10T22:10:23.045</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\MapBounds.js">
-      <PackagePath>Domain\MapBounds.js</PackagePath>
-      <Modified>2013-04-22T03:32:25.377</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Motorway.js">
-      <PackagePath>Domain\Motorway.js</PackagePath>
-      <Modified>2013-04-10T22:09:26.749</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\TrafficConditions.js">
-      <PackagePath>Domain\TrafficConditions.js</PackagePath>
-      <Modified>2013-04-10T22:07:34.057</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\default.js">
-      <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-04-22T05:12:00.683</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\navigator.js">
-      <PackagePath>js\navigator.js</PackagePath>
-      <Modified>2013-04-08T03:19:57.728</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
-      <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-04-23T01:11:42.751</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
-      <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
-      <Modified>2013-04-23T05:05:44.735</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.js">
-      <PackagePath>pages\settings\settings.js</PackagePath>
-      <Modified>2013-04-18T00:42:19.752</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\CameraCoordinateRepository.js">
-      <PackagePath>Repositories\CameraCoordinateRepository.js</PackagePath>
-      <Modified>2013-04-12T05:13:05.111</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\GeocodeRepository.js">
-      <PackagePath>Repositories\GeocodeRepository.js</PackagePath>
-      <Modified>2013-04-23T00:57:24.645</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
-      <PackagePath>Repositories\NztaRepository.js</PackagePath>
-      <Modified>2013-04-18T04:52:09.023</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\TrafficSettingsRepository.js">
-      <PackagePath>Repositories\TrafficSettingsRepository.js</PackagePath>
-      <Modified>2013-04-18T05:17:07.480</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-1.6.4-vsdoc.js">
-      <PackagePath>Scripts\jquery-1.6.4-vsdoc.js</PackagePath>
-      <Modified>2013-04-23T03:27:24.963</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-1.6.4.js">
-      <PackagePath>Scripts\jquery-1.6.4.js</PackagePath>
-      <Modified>2013-04-23T03:27:25.525</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-1.6.4.min.js">
-      <PackagePath>Scripts\jquery-1.6.4.min.js</PackagePath>
-      <Modified>2013-04-23T03:27:25.062</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-ui-1.10.2.js">
-      <PackagePath>Scripts\jquery-ui-1.10.2.js</PackagePath>
-      <Modified>2013-04-23T03:27:37.139</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\jquery-ui-1.10.2.min.js">
-      <PackagePath>Scripts\jquery-ui-1.10.2.min.js</PackagePath>
-      <Modified>2013-04-23T03:27:37.059</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ-vsdoc.js">
-      <PackagePath>Scripts\JSLINQ-vsdoc.js</PackagePath>
-      <Modified>2013-04-12T04:07:33.497</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ.js">
-      <PackagePath>Scripts\JSLINQ.js</PackagePath>
-      <Modified>2013-04-12T04:07:33.856</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.js">
-      <PackagePath>Scripts\underscore.js</PackagePath>
-      <Modified>2013-04-09T02:55:21.474</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.min.js">
-      <PackagePath>Scripts\underscore.min.js</PackagePath>
-      <Modified>2013-04-09T02:55:21.196</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\CharmBarService.js">
-      <PackagePath>Services\CharmBarService.js</PackagePath>
-      <Modified>2013-04-23T01:08:00.589</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
-      <PackagePath>Services\MapService.js</PackagePath>
-      <Modified>2013-04-22T02:41:31.300</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
-      <PackagePath>Services\UriEncoderService.js</PackagePath>
-      <Modified>2013-04-23T00:50:09.030</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\ValidatorService.js">
-      <PackagePath>Services\ValidatorService.js</PackagePath>
-      <Modified>2013-04-23T05:03:12.174</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-620x300.jpg">
       <PackagePath>images\DUI81-620x300.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -1402,7 +1406,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.html">
       <PackagePath>pages\searchRoute\searchRoute.html</PackagePath>
-      <Modified>2013-04-23T21:40:56.968</Modified>
+      <Modified>2013-04-24T01:46:24.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.html">
       <PackagePath>pages\settings\settings.html</PackagePath>
@@ -1410,7 +1414,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-04-23T03:49:53.292</Modified>
+      <Modified>2013-04-24T01:23:56.790</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
