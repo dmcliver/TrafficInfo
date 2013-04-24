@@ -7,7 +7,8 @@
     var htmlEl = document.getElementById(elIdName);
     
     var items = new WinJS.Binding.List([]);
-    document.getElementById(listId).winControl.itemDataSource = items.dataSource;
+    var txtBoxEl = document.getElementById(listId);
+    txtBoxEl.winControl.itemDataSource = items.dataSource;
 
     var saveDetails = function () {
         self.clear();
@@ -24,6 +25,10 @@
 
     self.clear = function() {
         items.splice(0, items.length);
+    };
+
+    self.getTxtBoxEl = function() {
+        return txtBoxEl;
     };
 });
 

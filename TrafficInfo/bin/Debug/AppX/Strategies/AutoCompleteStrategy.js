@@ -1,7 +1,8 @@
 ﻿var AutoCompleteStrategy = (function(textBoxAutoCompleteBehaviour) {
 
     "use strict";
-    
+    var self = this;
+
     var encodeService = new UriEncoderService();
     var geocodeRepo = new GeocodeRepository();
     var validator = new ValidatorService();
@@ -10,17 +11,21 @@
         geocodeRepo.getCoords(encodeService.encode(text), getLatAndLong);
     };
 
+    this.wireDataSourceToTxtBox = function() {
+        textBoxAutoCompleteBehaviour.setTxtBoxDataSouce(self.getSourceData);
+    };
+
     var getLatAndLong = function (xhr) {
 
-        var start = textBoxAutoCompleteBehaviour.getTextBoxElement();
+        var txtBoxEl = textBoxAutoCompleteBehaviour.getTextBoxElement();
 
-        if (validator.validate(xhr, start)) {
+        if (validator.validate(xhr, txtBoxEl)) {
 
             var formattedList = mapToBindProp(xhr);
             textBoxAutoCompleteBehaviour.bind(formattedList.items);
         }
     };
-
+    
     var mapToBindProp = function (ajr) {
 
         var list = JSLINQ(ajr.results);

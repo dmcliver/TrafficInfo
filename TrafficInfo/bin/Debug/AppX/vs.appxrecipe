@@ -950,7 +950,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\AutoCompleteTextBox.js">
       <PackagePath>AutoCompleteTextBox.js</PackagePath>
-      <Modified>2013-04-24T04:47:32.860</Modified>
+      <Modified>2013-04-24T05:10:06.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\LocationCoordinator.js">
       <PackagePath>Coordinators\LocationCoordinator.js</PackagePath>
@@ -994,7 +994,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
-      <Modified>2013-04-24T04:51:23.894</Modified>
+      <Modified>2013-04-24T05:16:00.877</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.js">
       <PackagePath>pages\settings\settings.js</PackagePath>
@@ -1070,11 +1070,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Strategies\AutoCompleteStrategy.js">
       <PackagePath>Strategies\AutoCompleteStrategy.js</PackagePath>
-      <Modified>2013-04-24T04:49:45.422</Modified>
+      <Modified>2013-04-24T05:15:52.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Strategies\TextBoxAutoCompleteBehaviour.js">
       <PackagePath>Strategies\TextBoxAutoCompleteBehaviour.js</PackagePath>
-      <Modified>2013-04-24T04:49:45.417</Modified>
+      <Modified>2013-04-24T05:15:52.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\animated-overlay.gif">
       <PackagePath>Content\themes\base\images\animated-overlay.gif</PackagePath>

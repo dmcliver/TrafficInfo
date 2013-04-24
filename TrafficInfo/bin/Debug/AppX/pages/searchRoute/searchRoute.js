@@ -5,15 +5,15 @@
     var textBox1;
     var textBox2;
 
-    var endLoc = "endLoc";
-    var startLoc = "startLoc";
+    var endTxtBxId = "endLoc";
+    var startTxtBxId = "startLoc";
     
     WinJS.UI.Pages.define("/pages/searchRoute/searchRoute.html", {
 
         ready: function (element, options) {
 
-            textBox1 = createTextBox(startLoc, "startSearchResultList");
-            textBox2 = createTextBox(endLoc, "endSearchResultList");
+            textBox1 = createTextBox(startTxtBxId, "startSearchResultList");
+            textBox2 = createTextBox(endTxtBxId, "endSearchResultList");
             
             document.getElementById("bod").onclick = clearTextBoxes;
             document.getElementById("save").onclick = null;
@@ -28,11 +28,11 @@
         textBox2.clear();
     }
 
-    function createTextBox(loc, list) {
+    function createTextBox(txtBxId, list) {
         
-        var txtBox = new AutoCompleteTextBox(loc, list);
-        var locAutoCompleteStrategy = new AutoCompleteStrategy(new TextBoxAutoCompleteBehaviour(txtBox, loc));
-        txtBox.eventSpring = locAutoCompleteStrategy.getSourceData;
+        var txtBox = new AutoCompleteTextBox(txtBxId, list);
+        var locAutoCompleteStrategy = new AutoCompleteStrategy(new TextBoxAutoCompleteBehaviour(txtBox));
+        locAutoCompleteStrategy.wireDataSourceToTxtBox();
         return txtBox;
     }
 
@@ -41,8 +41,8 @@
         var toggleSwitch = document.getElementById("settingSwitch");
         var enable = toggleSwitch.winControl.checked;
         
-        document.getElementById(startLoc).disabled = !enable;
-        document.getElementById(endLoc).disabled = !enable;
+        document.getElementById(startTxtBxId).disabled = !enable;
+        document.getElementById(endTxtBxId).disabled = !enable;
         document.getElementById("save").disabled = !enable;
     }
 })();

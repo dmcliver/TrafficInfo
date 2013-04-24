@@ -1,9 +1,13 @@
-﻿var TextBoxAutoCompleteBehaviour = (function (textBox, id) {
+﻿var TextBoxAutoCompleteBehaviour = (function (textBox) {
 
     "use strict";
 
     this.getTextBoxElement = function () {
-        return document.getElementById(id);
+        return textBox.getTxtBoxEl();
+    };
+
+    this.setTxtBoxDataSouce = function(callback) {
+        textBox.eventSpring = callback;
     };
 
     this.bind = function (items) {
