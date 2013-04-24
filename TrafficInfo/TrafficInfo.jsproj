@@ -168,6 +168,8 @@
     <Content Include="Services\MapService.js" />
     <Content Include="Services\UriEncoderService.js" />
     <Content Include="Services\ValidatorService.js" />
+    <Content Include="Strategies\AutoCompleteStrategy.js" />
+    <Content Include="Strategies\TextBoxAutoCompleteBehaviour.js" />
     <None Include="TrafficInfo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
