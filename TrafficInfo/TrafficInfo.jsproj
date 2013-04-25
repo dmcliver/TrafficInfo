@@ -170,6 +170,7 @@
     <Content Include="Services\ValidatorService.js" />
     <Content Include="Strategies\AutoCompleteStrategy.js" />
     <Content Include="Strategies\TextBoxAutoCompleteBehaviour.js" />
+    <Content Include="TextBoxFactory.js" />
     <None Include="TrafficInfo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
