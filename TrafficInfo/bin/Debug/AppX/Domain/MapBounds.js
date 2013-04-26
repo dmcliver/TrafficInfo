@@ -6,19 +6,25 @@
     var secondCorner = new Microsoft.Maps.Location(-33.431441, -178.505859);
 
     function boundaryCheck(placeResult) {
+        
         var bestView = placeResult.bestView;
         var center = bestView.center;
 
-        var longitude = center.longitude;
+        checkBoundary(center);
+    }
 
-        if(longitude < 0) {
+    function checkBoundary(location) {
+        
+        var longitude = location.longitude;
+
+        if (longitude < 0) {
             longitude = 0 - longitude;
         }
-        
-        if 
+
+        if
         (
-            center.latitude >= firstCorner.latitude
-            && center.latitude <= secondCorner.latitude
+            location.latitude >= firstCorner.latitude
+            && location.latitude <= secondCorner.latitude
             && longitude >= firstCorner.longitude
             && longitude >= secondCorner.longitude
         )
@@ -26,5 +32,6 @@
         return false;
     }
 
-    return { Boundary: new Microsoft.Maps.LocationRect.fromCorners(firstCorner, secondCorner), isInBoundary: boundaryCheck };
+    return { Boundary: new Microsoft.Maps.LocationRect.fromCorners(firstCorner, secondCorner), isInBoundary: boundaryCheck, boundsCheck: checkBoundary };
 })();
+

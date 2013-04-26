@@ -1,4 +1,4 @@
-﻿var AutoCompleteStrategy = (function(textBoxAutoCompleteBehaviour) {
+﻿var AutoCompleteStrategy = (function(textBoxAutoCompleteBehaviour,onSuggestedResult) {
 
     "use strict";
     var self = this;
@@ -23,14 +23,16 @@
 
             var formattedList = mapToBindProp(xhr);
             textBoxAutoCompleteBehaviour.bind(formattedList.items);
+            if (formattedList.items.length > 0)
+                onSuggestedResult(formattedList.items[0]);
         }
     };
     
     var mapToBindProp = function (ajr) {
 
         var list = JSLINQ(ajr.results);
-        var formattedList = list.Select(function (i) { return { bind_prop: i.formatted_address }; });
-        return formattedList;
+        var formattedList = list.Select(function (i) { return { bind_prop: i.formatted_address, location: { latitude: i.geometry.location.lat, longitude: i.geometry.location.lng } }; });
+        return JSLINQ(formattedList.items).Where(function (itm) { return MapBounds.boundsCheck(itm.location); });
     };
 });
 

@@ -7,33 +7,61 @@
 
     var endTxtBxId = "endLoc";
     var startTxtBxId = "startLoc";
-    
+
+    var startLocDetails = null;
+    var endLocDetails = null;
+
+    var textBoxFactory;
+
     WinJS.UI.Pages.define("/pages/searchRoute/searchRoute.html", {
 
         ready: function (element, options) {
 
-            textBox1 = createTextBox(startTxtBxId, "startSearchResultList");
-            textBox2 = createTextBox(endTxtBxId, "endSearchResultList");
-            
+            textBoxFactory = new TextBoxFactory();
+
+            textBox1 = textBoxFactory.createTextBox(startTxtBxId, "startSearchResultList", onStartSuggestedResult, updateStartLocDetails, updateStartLocDetails);
+            textBox2 = textBoxFactory.createTextBox(endTxtBxId, "endSearchResultList", onEndSuggestedResult, updateEndLocDetails, updateEndLocDetails);
+
+            $("#helpButton").click(function(evt) {
+                WinJS.Navigation.navigate("/pages/help/help.html");
+            });
+
             document.getElementById("bod").onclick = clearTextBoxes;
-            document.getElementById("save").onclick = null;
+            document.getElementById("save").onclick = submit;
 
             var toggleSwitch = document.getElementById("settingSwitch");
             toggleSwitch.onchange = toggleControlEnable;
         }
     });
 
+    function updateEndLocDetails(data) {
+        endLocDetails = data;
+        $("#endResult").text(data.bind_prop);
+    }
+
+    function updateStartLocDetails(data) {
+        startLocDetails = data;
+        $("#startResult").text(data.bind_prop);
+    }
+
+    function submit() {
+        WinJS.Navigation.navigate("/pages/home/home.html");
+        return false;
+    }
+
     function clearTextBoxes() {
         textBox1.clear();
         textBox2.clear();
     }
 
-    function createTextBox(txtBxId, list) {
-        
-        var txtBox = new AutoCompleteTextBox(txtBxId, list);
-        var locAutoCompleteStrategy = new AutoCompleteStrategy(new TextBoxAutoCompleteBehaviour(txtBox));
-        locAutoCompleteStrategy.wireDataSourceToTxtBox();
-        return txtBox;
+    function onStartSuggestedResult(item) {
+        startLocDetails = item;
+        $("#startResult").text(item.bind_prop);
+    }
+    
+    function onEndSuggestedResult(item) {
+        endLocDetails = item;
+        $("#endResult").text(item.bind_prop);
     }
 
     function toggleControlEnable(evt) {
@@ -44,6 +72,10 @@
         document.getElementById(startTxtBxId).disabled = !enable;
         document.getElementById(endTxtBxId).disabled = !enable;
         document.getElementById("save").disabled = !enable;
+    }
+    
+    function navigateToHelp() {
+        WinJS.Navigation.navigate("/pages/help/help.html");
     }
 })();
 

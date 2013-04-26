@@ -8,7 +8,39 @@
     
     var items = new WinJS.Binding.List([]);
     var txtBoxEl = document.getElementById(listId);
+
     txtBoxEl.winControl.itemDataSource = items.dataSource;
+    
+    txtBoxEl.addEventListener("iteminvoked", firePopupLeftClick);
+    txtBoxEl.addEventListener("selectionchanged", firePopupRightClick);
+
+    function firePopupLeftClick(evt) {
+        
+        if (self.onPopupLeftClick != null) {
+            
+            var index = evt.detail.itemIndex;
+            var item = items.getItem(index).data;
+            self.onPopupLeftClick(item);
+        }
+    }
+
+    function firePopupRightClick(evt) {
+        
+        if (self.onPopupRightClick != null) {
+            
+            txtBoxEl.winControl.selection.getItems().done(
+                
+                function complete(res) {
+                    
+                    if(res.length > 0)
+                        self.onPopupRightClick(res[0].data);
+                },
+                function error(res) {
+                    // swallow it, big & hard!!!
+                }
+            );
+        }
+    }
 
     var saveDetails = function () {
         self.clear();
@@ -30,6 +62,9 @@
     self.getTxtBoxEl = function() {
         return txtBoxEl;
     };
+
+    self.onPopupLeftClick = null;
+    self.onPopupRightClick = null;
 });
 
 

@@ -140,6 +140,7 @@
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
     <Content Include="packages.config" />
+    <Content Include="pages\help\help.css" />
     <Content Include="pages\help\help.html" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />

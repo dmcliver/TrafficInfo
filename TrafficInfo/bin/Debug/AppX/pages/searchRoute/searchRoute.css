@@ -3,6 +3,65 @@
     margin-right: 120px;
 }
 
+#formBackgnd {
+    background-color: rgba(0,0,0,0.5);
+    border: 3px solid navy;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: -msgrid;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+}
+
+#firstFormEl {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 2;
+}
+
+#secondFormEl {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-column-span: 2;
+}
+
+#firstFormLbl {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+}
+
+#startLoc {
+    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+}
+
+#sndFormLbl {
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+}
+
+#endLoc {
+    -ms-grid-column: 2;
+    -ms-grid-row: 4;
+}
+
+#startSearchResultList {
+    width: 310px;
+    position: fixed;
+    top: 165px;
+    left: 130px;
+    height: 365px;
+}
+
+#endSearchResultList {
+    width: 310px;
+    position: fixed;
+    top: -200px;
+    left: 545px;
+    height: 365px;
+}
+
 @media screen and (-ms-view-state: snapped) {
     .homepage section[role=main] {
         margin-left: 20px;
