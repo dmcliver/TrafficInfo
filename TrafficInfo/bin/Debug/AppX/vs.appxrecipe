@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-26T02:35:08.618</Modified>
+      <Modified>2013-04-29T03:05:42.760</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -970,7 +970,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\MapBounds.js">
       <PackagePath>Domain\MapBounds.js</PackagePath>
-      <Modified>2013-04-25T22:41:16.286</Modified>
+      <Modified>2013-04-29T03:19:13.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Motorway.js">
       <PackagePath>Domain\Motorway.js</PackagePath>
@@ -990,11 +990,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-04-23T01:11:42.751</Modified>
+      <Modified>2013-04-29T03:22:21.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
-      <Modified>2013-04-26T02:32:03.463</Modified>
+      <Modified>2013-04-29T04:22:30.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.js">
       <PackagePath>pages\settings\settings.js</PackagePath>
@@ -1062,23 +1062,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
       <PackagePath>Services\UriEncoderService.js</PackagePath>
-      <Modified>2013-04-24T00:43:15.759</Modified>
+      <Modified>2013-04-29T04:39:11.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\ValidatorService.js">
       <PackagePath>Services\ValidatorService.js</PackagePath>
-      <Modified>2013-04-23T05:03:12.174</Modified>
+      <Modified>2013-04-29T03:53:42.879</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Strategies\AutoCompleteStrategy.js">
       <PackagePath>Strategies\AutoCompleteStrategy.js</PackagePath>
-      <Modified>2013-04-25T23:04:58.757</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Strategies\TextBoxAutoCompleteBehaviour.js">
-      <PackagePath>Strategies\TextBoxAutoCompleteBehaviour.js</PackagePath>
-      <Modified>2013-04-24T05:15:52.053</Modified>
+      <Modified>2013-04-29T04:42:50.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\TextBoxFactory.js">
       <PackagePath>TextBoxFactory.js</PackagePath>
-      <Modified>2013-04-26T01:34:35.181</Modified>
+      <Modified>2013-04-29T03:54:52.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\animated-overlay.gif">
       <PackagePath>Content\themes\base\images\animated-overlay.gif</PackagePath>
@@ -1384,7 +1380,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.css">
       <PackagePath>pages\searchRoute\searchRoute.css</PackagePath>
-      <Modified>2013-04-26T02:51:06.157</Modified>
+      <Modified>2013-04-29T06:06:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.css">
       <PackagePath>pages\settings\settings.css</PackagePath>
@@ -1422,7 +1418,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.html">
       <PackagePath>pages\searchRoute\searchRoute.html</PackagePath>
-      <Modified>2013-04-26T02:44:56.242</Modified>
+      <Modified>2013-04-29T06:03:04.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.html">
       <PackagePath>pages\settings\settings.html</PackagePath>
@@ -1430,7 +1426,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-04-26T02:35:07.344</Modified>
+      <Modified>2013-04-29T03:05:41.461</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

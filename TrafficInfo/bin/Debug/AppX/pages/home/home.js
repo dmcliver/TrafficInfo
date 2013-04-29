@@ -78,12 +78,14 @@
     }
 
     function onSuccessfulSearch(res) {
+        
+        var linq = JSLINQ(res.results);
 
-        var filterResults = _.filter(res.results, function(r) {
+        var filterResults = linq.Where(function (r) {
             return MapBounds.isInBoundary(r);
         });
 
-        var list = new WinJS.Binding.List(filterResults);
+        var list = new WinJS.Binding.List(filterResults.items);
         var listControl = document.getElementById("searchResultList");
         listControl.winControl.itemDataSource = list.dataSource;
     }

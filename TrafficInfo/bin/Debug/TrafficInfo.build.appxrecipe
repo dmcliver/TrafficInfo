@@ -802,9 +802,6 @@
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Strategies\AutoCompleteStrategy.js">
       <PackagePath>Strategies\AutoCompleteStrategy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Strategies\TextBoxAutoCompleteBehaviour.js">
-      <PackagePath>Strategies\TextBoxAutoCompleteBehaviour.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\TextBoxFactory.js">
       <PackagePath>TextBoxFactory.js</PackagePath>
     </AppxPackagedFile>

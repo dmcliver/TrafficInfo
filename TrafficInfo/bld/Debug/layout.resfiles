@@ -115,5 +115,4 @@ Services\MapService.js
 Services\UriEncoderService.js
 Services\ValidatorService.js
 Strategies\AutoCompleteStrategy.js
-Strategies\TextBoxAutoCompleteBehaviour.js
 TextBoxFactory.js

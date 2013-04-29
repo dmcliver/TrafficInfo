@@ -10,7 +10,7 @@
         var bestView = placeResult.bestView;
         var center = bestView.center;
 
-        checkBoundary(center);
+        return checkBoundary(center);
     }
 
     function checkBoundary(location) {

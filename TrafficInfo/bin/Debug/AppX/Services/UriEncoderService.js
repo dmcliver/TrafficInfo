@@ -4,7 +4,7 @@
     "use strict";
 
     var geocodeUri = "http://maps.googleapis.com/maps/api/geocode/json?address=";
-    var geocodeUriPostfix = "&sensor=false";
+    var geocodeUriPostfix = "&components=country:NZ&sensor=false";
 
     this.encode = function (value) {
 

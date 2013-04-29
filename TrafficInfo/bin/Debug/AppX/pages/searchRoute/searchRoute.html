@@ -13,7 +13,6 @@
         <script src="../../AutoCompleteTextBox.js" type="text/javascript"></script>
         <script src="../../TextBoxFactory.js" type="text/javascript"></script>
         <script src="../../Strategies/AutoCompleteStrategy.js"></script>
-        <script src="../../Strategies/TextBoxAutoCompleteBehaviour.js"></script>
 
         <script src="../../Services/UriEncoderService.js"></script>
         <script src="../../Services/ValidatorService.js"></script>
@@ -38,22 +37,37 @@
 
                     <form>
                         <div id="formBackgnd">
-                            <ul id="firstFormEl">
-                                <li>
-                                    Selected start location:<span id="endResult"></span>    
-                                </li>
-                            </ul>
+                            <div id="startControl">
+                                <label id="firstFormLbl">Start location:</label>
+                                <input id="startLoc" required disabled="disabled" type="text" />
+                                <div id="startVal">
+                                    <span id="startLocValid" style="color: red">*</span>
+                                </div>
+                                <div id="startSearchResultTemplate" data-win-control="WinJS.Binding.Template" style="height: 5px">
+                                    <div>
+                                        <h3 data-win-bind="innerText: bind_prop" style="height: 40px"></h3>
+                                    </div>
+                                </div>
+                                <div id="startSearchResultList"
+                                     data-win-control="WinJS.UI.ListView"
+                                     data-win-options="{ itemTemplate: select('#startSearchResultTemplate'), selectionMode: 'single', layout: {type: WinJS.UI.ListLayout} }">
+                                </div>
+                            </div>
                             
-                            <ul id="secondFormEl">
-                                <li>
-                                    Selected end location:<span id="startResult"></span>    
-                                </li>
-                            </ul>
-
-                            <label id="firstFormLbl">Start location name:</label>
-                            <input id="startLoc" required disabled="disabled" type="text" />
-                            <label id="sndFormLbl" >End location name:</label>
-                            <input id="endLoc" required disabled="disabled" type="text" />
+                            <div id="endControl">
+                                <label id="sndFormLbl" >End location:</label>
+                                <input id="endLoc" required disabled="disabled" type="text" />
+                                <span id="endLocValid" style="color: red">*</span>
+                                <div id="endSearchResultTemplate" data-win-control="WinJS.Binding.Template" style="height: 5px">
+                                    <div> 
+                                        <h3 data-win-bind="innerText: bind_prop" style="height: 40px"></h3>
+                                    </div>
+                                </div>
+                                <div id="endSearchResultList"
+                                     data-win-control="WinJS.UI.ListView"
+                                     data-win-options="{ itemTemplate: select('#startSearchResultTemplate'), selectionMode: 'single', layout: {type: WinJS.UI.ListLayout } }">
+                                </div>
+                            </div>
                         </div>
 
                         <span id="allErrors" style="display: none; color: red"></span>
@@ -62,27 +76,7 @@
                     </form>
                 </div>
                 
-                <div id="startSearchResultTemplate" data-win-control="WinJS.Binding.Template" style="height: 5px">
-                    <div>
-                        <h3 data-win-bind="innerText: bind_prop" style="height: 40px"></h3>
-                    </div>
-                </div>
-
-                <div id="startSearchResultList"
-                    data-win-control="WinJS.UI.ListView"
-                    data-win-options="{ itemTemplate: select('#startSearchResultTemplate'), selectionMode: 'single', layout: {type: WinJS.UI.ListLayout} }">
-                </div>
-            
-                <div id="endSearchResultTemplate" data-win-control="WinJS.Binding.Template" style="height: 5px">
-                    <div> 
-                        <h3 data-win-bind="innerText: bind_prop" style="height: 40px"></h3>
-                    </div>
-                </div>
-
-                <div id="endSearchResultList"
-                     data-win-control="WinJS.UI.ListView"
-                     data-win-options="{ itemTemplate: select('#startSearchResultTemplate'), selectionMode: 'single', layout: {type: WinJS.UI.ListLayout } }">
-                </div>
+                
             </section>
         </div>
 

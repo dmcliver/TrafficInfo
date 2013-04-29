@@ -19,12 +19,15 @@
 
             textBoxFactory = new TextBoxFactory();
 
-            textBox1 = textBoxFactory.createTextBox(startTxtBxId, "startSearchResultList", onStartSuggestedResult, updateStartLocDetails, updateStartLocDetails);
-            textBox2 = textBoxFactory.createTextBox(endTxtBxId, "endSearchResultList", onEndSuggestedResult, updateEndLocDetails, updateEndLocDetails);
+            textBox1 = textBoxFactory.createTextBox(startTxtBxId, "startSearchResultList", onStartSuggestedResult, onStartSuggestedResult, onStartSuggestedResult, startLocIsInvalid);
+            textBox2 = textBoxFactory.createTextBox(endTxtBxId, "endSearchResultList", onEndSuggestedResult, onEndSuggestedResult, onEndSuggestedResult, endLocIsInvalid);
 
             $("#helpButton").click(function(evt) {
                 WinJS.Navigation.navigate("/pages/help/help.html");
             });
+
+            document.getElementById("startLoc").addEventListener("focus", clearTextBox2);
+            document.getElementById("endLoc").addEventListener("focus", clearTextBox1);
 
             document.getElementById("bod").onclick = clearTextBoxes;
             document.getElementById("save").onclick = submit;
@@ -34,17 +37,38 @@
         }
     });
 
-    function updateEndLocDetails(data) {
-        endLocDetails = data;
-        $("#endResult").text(data.bind_prop);
+    function startLocIsInvalid() {
+        startLocDetails = null;
+        $("#startLocValid").show();
     }
 
-    function updateStartLocDetails(data) {
-        startLocDetails = data;
-        $("#startResult").text(data.bind_prop);
+    function endLocIsInvalid() {
+        endLocDetails = null;
+        $("#endLocValid").show();
+    }
+
+    function clearTextBox2(evt) {
+        textBox2.clear();
+    }
+
+    function clearTextBox1(evt) {
+        textBox1.clear();
     }
 
     function submit() {
+        
+        if(startLocDetails == null) {
+            $("#allErrors").text("Start location is not valid");
+            $("#allErrors").css('display','block');
+            return false;
+        }
+        
+        if (endLocDetails == null) {
+            $("#allErrors").text("End location is not valid");
+            $("#allErrors").css('display', 'block');
+            return false;
+        }
+        
         WinJS.Navigation.navigate("/pages/home/home.html");
         return false;
     }
@@ -55,13 +79,14 @@
     }
 
     function onStartSuggestedResult(item) {
+        
         startLocDetails = item;
-        $("#startResult").text(item.bind_prop);
+        $("#startLocValid").hide();
     }
     
     function onEndSuggestedResult(item) {
         endLocDetails = item;
-        $("#endResult").text(item.bind_prop);
+        $("#endLocValid").hide();
     }
 
     function toggleControlEnable(evt) {

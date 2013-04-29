@@ -7,59 +7,75 @@
     background-color: rgba(0,0,0,0.5);
     border: 3px solid navy;
     padding-bottom: 20px;
+    padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    display: -msgrid;
-    -ms-grid-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+    margin-bottom: 10px;
+    display: -ms-grid;
+    -ms-grid-columns: 330px 330px;
+    -ms-grid-rows: 1fr;
+    height: 40px;
+    width: 775px;
 }
 
-#firstFormEl {
+#startControl,#endControl {
+    display: -ms-grid;
+    -ms-grid-columns: 100px 150px 1fr;
+    -ms-grid-rows: 35px 365px;
+
+}
+
+#startVal {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    margin-left: 130px;
+}
+
+#startControl {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+#endControl {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    margin-left: 65px;
+}
+
+
+#firstFormLbl, #sndFormLbl {
     -ms-grid-column: 1;
     -ms-grid-row: 1;
-    -ms-grid-column-span: 2;
 }
 
-#secondFormEl {
-    -ms-grid-column: 1;
+#endLocValid {
+        -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+
+#startLoc, #endLoc {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+
+#endSearchResultList, #startSearchResultList, #endSearchResultTemplate, #startSearchResultTemplate {
     -ms-grid-row: 2;
-    -ms-grid-column-span: 2;
-}
-
-#firstFormLbl {
-    -ms-grid-column: 1;
-    -ms-grid-row: 3;
-}
-
-#startLoc {
     -ms-grid-column: 2;
-    -ms-grid-row: 3;
 }
 
-#sndFormLbl {
-    -ms-grid-column: 1;
-    -ms-grid-row: 4;
-}
+ #endSearchResultTemplate, #startSearchResultTemplate {
+    height: 5px;
+    width: 310px;     
+ }
 
-#endLoc {
-    -ms-grid-column: 2;
-    -ms-grid-row: 4;
-}
-
-#startSearchResultList {
+#endSearchResultList, #startSearchResultList {
     width: 310px;
-    position: fixed;
-    top: 165px;
-    left: 130px;
-    height: 365px;
+    height: 365px;    
 }
 
-#endSearchResultList {
+#endSearchResultList, #startSearchResultList {
     width: 310px;
-    position: fixed;
-    top: -200px;
-    left: 545px;
-    height: 365px;
+    height: 365px;    
 }
 
 @media screen and (-ms-view-state: snapped) {

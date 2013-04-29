@@ -1,4 +1,4 @@
-﻿var AutoCompleteStrategy = (function(textBoxAutoCompleteBehaviour,onSuggestedResult) {
+﻿var AutoCompleteStrategy = (function(txtBox,onSuggestedResult, clearValidation) {
 
     "use strict";
     var self = this;
@@ -12,18 +12,22 @@
     };
 
     this.wireDataSourceToTxtBox = function() {
-        textBoxAutoCompleteBehaviour.setTxtBoxDataSouce(self.getSourceData);
+        txtBox.eventSpring = self.getSourceData;
     };
 
     var getLatAndLong = function (xhr) {
 
-        var txtBoxEl = textBoxAutoCompleteBehaviour.getTextBoxElement();
+        var txtBoxEl = txtBox.getTxtBoxEl();
+
+        clearValidation();
 
         if (validator.validate(xhr, txtBoxEl)) {
 
             var formattedList = mapToBindProp(xhr);
-            textBoxAutoCompleteBehaviour.bind(formattedList.items);
-            if (formattedList.items.length > 0)
+
+            if (formattedList.items.length > 1)
+                txtBox.bind(formattedList.items);
+            else if (formattedList.items.length == 1)
                 onSuggestedResult(formattedList.items[0]);
         }
     };
