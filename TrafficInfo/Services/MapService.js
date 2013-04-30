@@ -41,10 +41,12 @@
         Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', { callback: trafficModuleLoaded });
 
         if (Windows.Storage.ApplicationData.current.roamingSettings.values["SettingsLocation"]) {
+            
             var fromSettings = MapBounds.fromSettings();
             thisMap.setView({ bounds: fromSettings, zoom: 16 });
             self.mapInitializedCallback(thisMap);
-        } else
+        }
+        else
             Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
     };
 
@@ -64,8 +66,10 @@
         currentCoords = locationResult.center;
 
         searchManager.reverseGeocode({
+            
             location: locationResult.center,
-            callback: function(res, userData) {
+            callback: function (res, userData) {
+                
                 self.currentionLocation = res.name;
                 self.mapInitializedCallback(thisMap);
             }

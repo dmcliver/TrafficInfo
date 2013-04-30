@@ -16,7 +16,8 @@
     };
 
     if (dtm.ondatarequested !== null) {
-        dtm.addEventListener("datarequested", function(e) {
+
+        dtm.addEventListener("datarequested", function (e) {
 
             if (self.getCurrentSelectedCamera != null && self.getCurrentSelectedCamera() != null) {
 
@@ -38,10 +39,6 @@
                 title: "Camera refresh rate",
                 href: "/pages/settings/settings.html"
             }
-//            "personalSearchRoute" : {
-//                title: "Personalized startup search route",
-//                href: "/pages/searchRoute/searchRoute.html"
-//            }
         };
         WinJS.UI.SettingsFlyout.populateSettings(e);
     }

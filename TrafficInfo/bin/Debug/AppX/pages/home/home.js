@@ -43,12 +43,14 @@
     }
 
     function refreshCameras() {
+        
         mapService.clearMap();
         nztaRepository.retrieveAllCameras();
         setTimeout(refreshCameras, value * 60 * 1000);
     }
 
     function getCurrentCamera() {
+        
         if(cameraInfo != null)
             return cameraInfo.CameraUri;
         return null;
@@ -86,12 +88,19 @@
         });
 
         var list = new WinJS.Binding.List(filterResults.items);
+        bindSearchResultsListControl(list);
+    }
+
+    function bindSearchResultsListControl(list) {
+        
         var listControl = document.getElementById("searchResultList");
         listControl.winControl.itemDataSource = list.dataSource;
     }
 
     function hideInfobox() {
-        
+
+        bindSearchResultsListControl(new WinJS.Binding.List([]));
+
         for (var i = 0; i < cameraInfos.length; i++) 
             cameraInfos[i].clear();
     }
