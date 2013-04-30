@@ -50,12 +50,6 @@
     -ms-grid-row: 1;
 }
 
-/*
-#endLocValid {
-    -ms-grid-column: 2;
-    -ms-grid-row: 1;
-}
-    */
 #endSearchResultList, #startSearchResultList, #endSearchResultTemplate, #startSearchResultTemplate {
     -ms-grid-row: 2;
     -ms-grid-column: 2;

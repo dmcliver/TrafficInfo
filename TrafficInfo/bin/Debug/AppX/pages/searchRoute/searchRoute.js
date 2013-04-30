@@ -12,13 +12,14 @@
     var endLocDetails = null;
 
     var textBoxFactory;
-
+    var roamingSettings;
     WinJS.UI.Pages.define("/pages/searchRoute/searchRoute.html", {
 
         ready: function (element, options) {
 
             textBoxFactory = new TextBoxFactory();
-
+            roamingSettings  = Windows.Storage.ApplicationData.current.roamingSettings;
+            
             textBox1 = textBoxFactory.createTextBox(startTxtBxId, "startSearchResultList", onStartSuggestedResult, onStartSuggestedResult, onStartSuggestedResult, startLocIsInvalid);
             textBox2 = textBoxFactory.createTextBox(endTxtBxId, "endSearchResultList", onEndSuggestedResult, onEndSuggestedResult, onEndSuggestedResult, endLocIsInvalid);
 
@@ -26,13 +27,24 @@
                 WinJS.Navigation.navigate("/pages/help/help.html");
             });
 
+            var toggleSwitch = document.getElementById("settingSwitch");
+            
+            if (roamingSettings.values["SettingsLocation"]) {
+
+                toggleSwitch.winControl.checked = true;
+
+                toggleControlEnable({ });
+
+                $("#startLoc").val(roamingSettings.values["StartPlace"]);
+                $("#endLoc").val(roamingSettings.values["EndPlace"]);
+            }
+
             document.getElementById("startLoc").addEventListener("focus", clearTextBox2);
             document.getElementById("endLoc").addEventListener("focus", clearTextBox1);
 
             document.getElementById("bod").onclick = clearTextBoxes;
             document.getElementById("save").onclick = submit;
 
-            var toggleSwitch = document.getElementById("settingSwitch");
             toggleSwitch.onchange = toggleControlEnable;
         }
     });
@@ -56,21 +68,32 @@
     }
 
     function submit() {
-        
-        if(startLocDetails == null) {
-            $("#allErrors").text("Start location is not valid");
-            $("#allErrors").css('display','block');
+
+        if (validateErrors(startLocDetails, "Start location is not valid") && validateErrors(endLocDetails, "End location is not valid")) {
+
+            roamingSettings.values["SettingsLocation"] = true;
+            roamingSettings.values["StartLat"] = startLocDetails.location.latitude;
+            roamingSettings.values["StartLong"] = startLocDetails.location.longitude;
+            roamingSettings.values["EndLat"] = endLocDetails.location.latitude;
+            roamingSettings.values["EndLong"] = endLocDetails.location.longitude;
+            roamingSettings.values["StartPlace"] = startLocDetails.bind_prop;
+            roamingSettings.values["EndPlace"] = endLocDetails.bind_prop;
+            
+            WinJS.Navigation.navigate("/pages/home/home.html");
             return false;
         }
+        return false;
+    }
+
+    function validateErrors(locDetails, validationMessage) {
         
-        if (endLocDetails == null) {
-            $("#allErrors").text("End location is not valid");
+        if (startLocDetails == null) {
+            
+            $("#allErrors").text(validationMessage);
             $("#allErrors").css('display', 'block');
             return false;
         }
-        
-        WinJS.Navigation.navigate("/pages/home/home.html");
-        return false;
+        return true;
     }
 
     function clearTextBoxes() {
@@ -81,11 +104,14 @@
     function onStartSuggestedResult(item) {
         
         startLocDetails = item;
+        $("#startLoc").val(item.bind_prop);
         $("#startLocValid").hide();
     }
     
     function onEndSuggestedResult(item) {
+        
         endLocDetails = item;
+        $("#endLoc").val(item.bind_prop);
         $("#endLocValid").hide();
     }
 

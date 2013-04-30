@@ -25,10 +25,8 @@
 
             var formattedList = mapToBindProp(xhr);
 
-            if (formattedList.items.length > 1)
+            if (formattedList.items.length >= 1)
                 txtBox.bind(formattedList.items);
-            else if (formattedList.items.length == 1)
-                onSuggestedResult(formattedList.items[0]);
         }
     };
     
@@ -36,7 +34,9 @@
 
         var list = JSLINQ(ajr.results);
         var formattedList = list.Select(function (i) { return { bind_prop: i.formatted_address, location: { latitude: i.geometry.location.lat, longitude: i.geometry.location.lng } }; });
-        return JSLINQ(formattedList.items).Where(function (itm) { return MapBounds.boundsCheck(itm.location); });
+        return JSLINQ(formattedList.items).Where(function (itm) {
+             return MapBounds.boundsCheck(itm.location);
+        });
     };
 });
 

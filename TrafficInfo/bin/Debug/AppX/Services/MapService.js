@@ -39,8 +39,12 @@
 
         thisMap = new Microsoft.Maps.Map(document.getElementById("mapDiv"), mapOptions);
         Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', { callback: trafficModuleLoaded });
-        Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
-        
+
+        if (Windows.Storage.ApplicationData.current.roamingSettings.values["SettingsLocation"]) {
+            var fromSettings = MapBounds.fromSettings();
+            thisMap.setView({ bounds: fromSettings, zoom: 16 });
+        } else
+            Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
     };
 
     function loadCurrentLocation() {
@@ -115,9 +119,12 @@
     };
 
     this.clearMap = function () {
+        
         for (var i = 0; i < thisMap.entities.getLength(); i++) {
+
             var currentEntity = thisMap.entities[i];
-            if(currentEntity == typeof  Microsoft.Maps.Pushpin || currentEntity == typeof  Microsoft.Maps.Infobox ) {
+
+            if (currentEntity == typeof Microsoft.Maps.Pushpin || currentEntity == typeof Microsoft.Maps.Infobox) {
                 thisMap.entities.remove(currentEntity);
             }
         }
