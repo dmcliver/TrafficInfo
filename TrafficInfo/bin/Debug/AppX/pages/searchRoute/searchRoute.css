@@ -12,23 +12,16 @@
     padding-left: 20px;
     margin-bottom: 10px;
     display: -ms-grid;
-    -ms-grid-columns: 330px 330px;
+    -ms-grid-columns: 400px 400px;
     -ms-grid-rows: 1fr;
     height: 40px;
-    width: 775px;
+    width: 840px;
 }
 
-#startControl,#endControl {
+#startControl, #endControl {
     display: -ms-grid;
-    -ms-grid-columns: 100px 150px 1fr;
+    -ms-grid-columns: 100px 1fr 5px;
     -ms-grid-rows: 35px 365px;
-
-}
-
-#startVal {
-    -ms-grid-column: 3;
-    -ms-grid-row: 1;
-    margin-left: 130px;
 }
 
 #startControl {
@@ -39,17 +32,11 @@
 #endControl {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
-    margin-left: 65px;
+    margin: 1.18px -27.2px -1.18px 27.2px;
 }
-
 
 #firstFormLbl, #sndFormLbl {
     -ms-grid-column: 1;
-    -ms-grid-row: 1;
-}
-
-#endLocValid {
-        -ms-grid-column: 2;
     -ms-grid-row: 1;
 }
 
@@ -58,6 +45,17 @@
     -ms-grid-row: 1;
 }
 
+#startVal, #endVal {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+}
+
+/*
+#endLocValid {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+    */
 #endSearchResultList, #startSearchResultList, #endSearchResultTemplate, #startSearchResultTemplate {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -69,11 +67,8 @@
  }
 
 #endSearchResultList, #startSearchResultList {
-    width: 310px;
-    height: 365px;    
-}
-
-#endSearchResultList, #startSearchResultList {
+    margin-top: 5px;
+    margin-left: -6px;
     width: 310px;
     height: 365px;    
 }
