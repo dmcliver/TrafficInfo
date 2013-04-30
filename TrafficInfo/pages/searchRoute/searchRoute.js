@@ -117,6 +117,8 @@
 
     function toggleControlEnable(evt) {
         
+        roamingSettings.values["SettingsLocation"] = false;
+
         var toggleSwitch = document.getElementById("settingSwitch");
         var enable = toggleSwitch.winControl.checked;
         

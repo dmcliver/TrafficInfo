@@ -3,7 +3,7 @@
     "use strict";
 
     var self = this;
-    this.callback = null;
+    this.mapInitializedCallback = null;
 
     var searchManager = null;
     var trafficeManager = null;
@@ -11,7 +11,7 @@
 
     this.createMap = function (initMap) {
 
-        self.callback = initMap;
+        self.mapInitializedCallback = initMap;
         Microsoft.Maps.loadModule('Microsoft.Maps.Map', { callback: self.BuildMap, culture: 'en-us', homeRegion: 'NZ' });
     };
 
@@ -43,6 +43,7 @@
         if (Windows.Storage.ApplicationData.current.roamingSettings.values["SettingsLocation"]) {
             var fromSettings = MapBounds.fromSettings();
             thisMap.setView({ bounds: fromSettings, zoom: 16 });
+            self.mapInitializedCallback(thisMap);
         } else
             Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
     };
@@ -66,7 +67,7 @@
             location: locationResult.center,
             callback: function(res, userData) {
                 self.currentionLocation = res.name;
-                self.callback(thisMap);
+                self.mapInitializedCallback(thisMap);
             }
         });
     };
