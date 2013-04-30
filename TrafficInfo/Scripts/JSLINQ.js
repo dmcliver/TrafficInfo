@@ -80,21 +80,27 @@
             else
                 return this.Where(clause).items.length;
         },
-        Distinct: function(clause) {
+        Distinct: function (clause) {
+            
             var item;
             var dict = new Object();
             var retVal = new Array();
+            
             for (var i = 0; i < this.items.length; i++) {
+
                 item = clause(this.items[i]);
+
                 // TODO - This doens't correctly compare Objects. Need to fix this
                 if (dict[item] == null) {
+
                     dict[item] = true;
-                    retVal[retVal.length] = item;
+                    retVal[retVal.length] = this.items[i];
                 }
             }
             dict = null;
             return new JSLINQ(retVal);
         },
+        
         Any: function(clause) {
             for (var index = 0; index < this.items.length; index++) {
                 if (clause(this.items[index], index)) { return true; }

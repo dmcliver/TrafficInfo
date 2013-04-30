@@ -990,7 +990,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-04-30T22:45:14.631</Modified>
+      <Modified>2013-04-30T23:04:55.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
@@ -1042,7 +1042,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\JSLINQ.js">
       <PackagePath>Scripts\JSLINQ.js</PackagePath>
-      <Modified>2013-04-12T04:07:33.856</Modified>
+      <Modified>2013-04-30T23:18:34.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Scripts\underscore.js">
       <PackagePath>Scripts\underscore.js</PackagePath>
@@ -1058,7 +1058,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
-      <Modified>2013-04-30T22:18:46.841</Modified>
+      <Modified>2013-04-30T23:14:45.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
       <PackagePath>Services\UriEncoderService.js</PackagePath>
@@ -1070,7 +1070,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Strategies\AutoCompleteStrategy.js">
       <PackagePath>Strategies\AutoCompleteStrategy.js</PackagePath>
-      <Modified>2013-04-30T05:47:05.157</Modified>
+      <Modified>2013-04-30T23:33:15.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\TextBoxFactory.js">
       <PackagePath>TextBoxFactory.js</PackagePath>

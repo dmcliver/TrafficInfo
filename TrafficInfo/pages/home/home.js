@@ -98,8 +98,10 @@
         
         var linq = JSLINQ(res.results);
 
-        var filterResults = linq.Where(function (r) {
+        var filterResults = linq.Where(function(r) {
             return MapBounds.isInBoundary(r);
+        }).Distinct(function(r) {
+            return r.name;
         });
 
         listViewCollection = new WinJS.Binding.List(filterResults.items);
