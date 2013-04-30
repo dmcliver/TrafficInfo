@@ -11,12 +11,17 @@
     var charmBarService;
     var cameraInfo;
     var value;
+    var listViewControl;
+    var listViewCollection;
     
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
         ready: function (element, options) {
             
-            document.getElementById("searchResultList").winControl.addEventListener("selectionchanged", onSelectedCity);
+            listViewControl = document.getElementById("searchResultList").winControl;
+            listViewControl.addEventListener("selectionchanged", onSelectedCity);
+            listViewControl.addEventListener("iteminvoked", firePopupLeftClick);
+            
             document.getElementById("helpCmd").winControl.addEventListener("click", showHelp);
             document.getElementById("favCmd").winControl.addEventListener("click", showSettings);
             
@@ -34,6 +39,13 @@
         }
     });
     
+    function firePopupLeftClick(evt) {
+
+        var index = evt.detail.itemIndex;
+        var selectedLocation = listViewCollection.getItem(index).data;
+        navigateToLocation(selectedLocation);
+    }
+
     function onMapCreated(map) {
 
         thisMap = map;
@@ -58,20 +70,23 @@
 
     function onSelectedCity() {
         
-        var listViewControl = document.getElementById("searchResultList").winControl;
-
         listViewControl.selection.getItems().done(function (iitems) {
 
             if (iitems.length > 0) {
 
                 var item = iitems[0];
-                var selectedCityName = item.data.name;
-
-                mapService.findLocationFromCityName(selectedCityName, function (data) {
-                    mapService.reOrientate(data.results[0]);
-                    listViewControl.itemDataSource = new WinJS.Binding.List([]).dataSource;
-                });
+                navigateToLocation(item.data);
             }
+        });
+    }
+
+    function navigateToLocation(selectedLocation) {
+        
+        var selectedCityName = selectedLocation.name;
+
+        mapService.findLocationFromCityName(selectedCityName, function (data) {
+            mapService.reOrientate(data.results[0]);
+            listViewControl.itemDataSource = new WinJS.Binding.List([]).dataSource;
         });
     }
 
@@ -87,14 +102,13 @@
             return MapBounds.isInBoundary(r);
         });
 
-        var list = new WinJS.Binding.List(filterResults.items);
-        bindSearchResultsListControl(list);
+        listViewCollection = new WinJS.Binding.List(filterResults.items);
+        bindSearchResultsListControl(listViewCollection);
     }
 
     function bindSearchResultsListControl(list) {
         
-        var listControl = document.getElementById("searchResultList");
-        listControl.winControl.itemDataSource = list.dataSource;
+        listViewControl.itemDataSource = list.dataSource;
     }
 
     function hideInfobox() {
