@@ -1062,7 +1062,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileService.js">
       <PackagePath>Services\TileService.js</PackagePath>
-      <Modified>2013-05-01T04:01:45.501</Modified>
+      <Modified>2013-05-01T04:22:32.737</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
       <PackagePath>Services\UriEncoderService.js</PackagePath>

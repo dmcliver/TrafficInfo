@@ -5,7 +5,7 @@
     var repo = new NztaRepository();
     repo.retrieveAllIncidentsResponse = notifyTile;
     var notifier = null;
-    
+    var updater = null;
     var register = function() {
 
         var builder = new Windows.ApplicationModel.Background.BackgroundTaskBuilder();
@@ -18,26 +18,31 @@
 
     function notifyTile(result) {
 
-        var mess = "";
+        for (var j = 0; j < result.length && j < 5; j++) {
 
-        if (result.length > 0)
-            mess = result[0].eventComments;
+            var mess = result[j].eventComments;
 
-        var template = Windows.UI.Notifications.TileTemplateType.tileSquareText04;
-        var tileXml = Windows.UI.Notifications.TileUpdateManager.getTemplateContent(template);
-        var tileTextAttributes = tileXml.getElementsByTagName("text");
+            var template = Windows.UI.Notifications.TileTemplateType.tileSquareText04;
+            var tileXml = Windows.UI.Notifications.TileUpdateManager.getTemplateContent(template);
+            var tileTextAttributes = tileXml.getElementsByTagName("text");
+            
+            tileTextAttributes[0].appendChild(tileXml.createTextNode(mess));
 
-        for (var i = 0; i < tileTextAttributes.length; i++) {
-            tileTextAttributes[i].appendChild(tileXml.createTextNode(mess));
+            var currentTime = new Date();
+            var tileNotification = new Windows.UI.Notifications.TileNotification(tileXml);
+            tileNotification.expirationTime = new Date(currentTime.getTime() + 60 * 13 * 1000);
+            
+            if (updater == null) {
+
+                updater = Windows.UI.Notifications.TileUpdateManager.createTileUpdaterForApplication();
+                updater.enableNotificationQueue(true);
+            }
+            
+            updater.update(tileNotification);
+
+            if (notifier != null)
+                notifier();
         }
-        
-        var currentTime = new Date();
-        var tileNotification = new Windows.UI.Notifications.TileNotification(tileXml);
-        tileNotification.expirationTime = new Date(currentTime.getTime() + 15 * 1 * 1000);
-        Windows.UI.Notifications.TileUpdateManager.createTileUpdaterForApplication().update(tileNotification);
-        
-        if (notifier != null)
-            notifier();
     }
 
     var updateTile = function (notifyDone) {
