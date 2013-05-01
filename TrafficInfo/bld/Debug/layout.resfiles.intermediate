@@ -69,6 +69,7 @@ Domain\CameraPushpinInfo.js
 Domain\Location.js
 Domain\MapBounds.js
 Domain\Motorway.js
+Domain\Place.js
 Domain\TrafficConditions.js
 images\DUI81-620x300.jpg
 images\DUI81-620x300smll.jpg
@@ -99,9 +100,11 @@ pages\searchRoute\searchRoute.js
 pages\settings\settings.css
 pages\settings\settings.html
 pages\settings\settings.js
+Presenters\SearchRoutePresenter.js
 Repositories\CameraCoordinateRepository.js
 Repositories\GeocodeRepository.js
 Repositories\NztaRepository.js
+Repositories\RoamingSettingsRepository.js
 Repositories\TrafficSettingsRepository.js
 Scripts\jquery-1.6.4.js
 Scripts\jquery-1.6.4.min.js

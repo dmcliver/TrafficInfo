@@ -59,3 +59,4 @@
     
     return { RegisterAndUpdate: registerAndUpdateTile, UpdateTile: updateTile };
 })();
+

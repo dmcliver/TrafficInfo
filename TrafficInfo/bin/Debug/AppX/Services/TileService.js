@@ -6,6 +6,7 @@
     repo.retrieveAllIncidentsResponse = notifyTile;
     var notifier = null;
     var updater = null;
+    
     var register = function() {
 
         var builder = new Windows.ApplicationModel.Background.BackgroundTaskBuilder();
@@ -17,8 +18,6 @@
     };
 
     function notifyTile(result) {
-
-        result = [{ eventComments: "one" }, { eventComments: "two" }, { eventComments: "three" }, { eventComments: "four" }, { eventComments: "five" }];
 
         for (var j = 0; j < result.length && j < 5; j++) {
 
@@ -32,11 +31,14 @@
 
             var currentTime = new Date();
             var tileNotification = new Windows.UI.Notifications.TileNotification(tileXml);
-            tileNotification.expirationTime = new Date(currentTime.getTime() + 60 * 1 * 1000);
+            tileNotification.expirationTime = new Date(currentTime.getTime() + 60 * 13 * 1000);
+            
             if (updater == null) {
+
                 updater = Windows.UI.Notifications.TileUpdateManager.createTileUpdaterForApplication();
                 updater.enableNotificationQueue(true);
             }
+            
             updater.update(tileNotification);
 
             if (notifier != null)
@@ -57,3 +59,4 @@
     
     return { RegisterAndUpdate: registerAndUpdateTile, UpdateTile: updateTile };
 })();
+

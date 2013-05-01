@@ -730,6 +730,9 @@
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Motorway.js">
       <PackagePath>Domain\Motorway.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Place.js">
+      <PackagePath>Domain\Place.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\TrafficConditions.js">
       <PackagePath>Domain\TrafficConditions.js</PackagePath>
     </AppxPackagedFile>
@@ -748,6 +751,9 @@
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.js">
       <PackagePath>pages\settings\settings.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Presenters\SearchRoutePresenter.js">
+      <PackagePath>Presenters\SearchRoutePresenter.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\CameraCoordinateRepository.js">
       <PackagePath>Repositories\CameraCoordinateRepository.js</PackagePath>
     </AppxPackagedFile>
@@ -756,6 +762,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
       <PackagePath>Repositories\NztaRepository.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\RoamingSettingsRepository.js">
+      <PackagePath>Repositories\RoamingSettingsRepository.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\TrafficSettingsRepository.js">
       <PackagePath>Repositories\TrafficSettingsRepository.js</PackagePath>

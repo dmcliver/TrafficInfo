@@ -5,42 +5,44 @@
     var textBox1;
     var textBox2;
 
-    var endTxtBxId = "endLoc";
-    var startTxtBxId = "startLoc";
+    var endTxtBxIdName = "endLoc";
+    var startTxtBxIdName = "startLoc";
+
+    var endTxtBxId = "#endLoc";
+    var startTxtBxId = "#startLoc";
+
+    var startLocValid = "#startLocValid";
+    var endLocValid = "#endLocValid";
+
+    var allErrors = "#allErrors";
 
     var startLocDetails = null;
     var endLocDetails = null;
 
     var textBoxFactory;
     var roamingSettings;
+    var presenter;
+
     WinJS.UI.Pages.define("/pages/searchRoute/searchRoute.html", {
 
         ready: function (element, options) {
-
-            textBoxFactory = new TextBoxFactory();
-            roamingSettings  = Windows.Storage.ApplicationData.current.roamingSettings;
             
-            textBox1 = textBoxFactory.createTextBox(startTxtBxId, "startSearchResultList", onStartSuggestedResult, onStartSuggestedResult, onStartSuggestedResult, startLocIsInvalid);
-            textBox2 = textBoxFactory.createTextBox(endTxtBxId, "endSearchResultList", onEndSuggestedResult, onEndSuggestedResult, onEndSuggestedResult, endLocIsInvalid);
+            presenter = new SearchRoutePresenter(showSettings);
+            textBoxFactory = new TextBoxFactory();
+            
+            textBox1 = textBoxFactory.createTextBox(startTxtBxIdName, "startSearchResultList", onStartSuggestedResult, onStartSuggestedResult, onStartSuggestedResult, startLocIsInvalid);
+            textBox2 = textBoxFactory.createTextBox(endTxtBxIdName, "endSearchResultList", onEndSuggestedResult, onEndSuggestedResult, onEndSuggestedResult, endLocIsInvalid);
 
             $("#helpButton").click(function(evt) {
                 WinJS.Navigation.navigate("/pages/help/help.html");
             });
 
             var toggleSwitch = document.getElementById("settingSwitch");
+
+            presenter.showSettingsIfEnabled();
             
-            if (roamingSettings.values["SettingsLocation"]) {
-
-                toggleSwitch.winControl.checked = true;
-
-                toggleControlEnable({ });
-
-                $("#startLoc").val(roamingSettings.values["StartPlace"]);
-                $("#endLoc").val(roamingSettings.values["EndPlace"]);
-            }
-
-            document.getElementById("startLoc").addEventListener("focus", clearTextBox2);
-            document.getElementById("endLoc").addEventListener("focus", clearTextBox1);
+            document.getElementById(startTxtBxIdName).addEventListener("focus", clearTextBox2);
+            document.getElementById(endTxtBxIdName).addEventListener("focus", clearTextBox1);
 
             document.getElementById("bod").onclick = clearTextBoxes;
             document.getElementById("save").onclick = submit;
@@ -49,14 +51,27 @@
         }
     });
 
+    var showSettings = function(startPlace, endPlace) {
+
+        document.getElementById("settingSwitch").winControl.checked = true;
+
+        enableControls();
+
+        $(startTxtBxId).val(startPlace);
+        $(endTxtBxId).val(endPlace);
+
+        $(startLocValid).hide();
+        $(endLocValid).hide();
+    };
+
     function startLocIsInvalid() {
         startLocDetails = null;
-        $("#startLocValid").show();
+        $(startLocValid).show();
     }
 
     function endLocIsInvalid() {
         endLocDetails = null;
-        $("#endLocValid").show();
+        $(endLocValid).show();
     }
 
     function clearTextBox2(evt) {
@@ -71,13 +86,13 @@
 
         if (validateErrors(startLocDetails, "Start location is not valid") && validateErrors(endLocDetails, "End location is not valid")) {
 
-            roamingSettings.values["SettingsLocation"] = true;
-            roamingSettings.values["StartLat"] = startLocDetails.location.latitude;
-            roamingSettings.values["StartLong"] = startLocDetails.location.longitude;
-            roamingSettings.values["EndLat"] = endLocDetails.location.latitude;
-            roamingSettings.values["EndLong"] = endLocDetails.location.longitude;
-            roamingSettings.values["StartPlace"] = startLocDetails.bind_prop;
-            roamingSettings.values["EndPlace"] = endLocDetails.bind_prop;
+            var startLocation = startLocDetails.location;
+            var endLocation = endLocDetails.location;
+
+            var startPlace = new Place(startLocation.latitude, startLocation.longitude, startLocDetails.bind_prop);
+            var endPlace = new Place(endLocation.latitude, endLocation.longitude, endLocDetails.bind_prop);
+
+            presenter.storeLocations(startPlace, endPlace);
             
             WinJS.Navigation.navigate("/pages/home/home.html");
             return false;
@@ -89,8 +104,8 @@
         
         if (startLocDetails == null) {
             
-            $("#allErrors").text(validationMessage);
-            $("#allErrors").css('display', 'block');
+            $(allErrors).text(validationMessage);
+            $(allErrors).css('display', 'block');
             return false;
         }
         return true;
@@ -104,29 +119,33 @@
     function onStartSuggestedResult(item) {
         
         startLocDetails = item;
-        $("#startLoc").val(item.bind_prop);
-        $("#startLocValid").hide();
+        $(startTxtBxId).val(item.bind_prop);
+        $(startLocValid).hide();
     }
     
     function onEndSuggestedResult(item) {
         
         endLocDetails = item;
-        $("#endLoc").val(item.bind_prop);
+        $(endTxtBxId).val(item.bind_prop);
         $("#endLocValid").hide();
     }
 
     function toggleControlEnable(evt) {
         
-        roamingSettings.values["SettingsLocation"] = false;
-
-        var toggleSwitch = document.getElementById("settingSwitch");
-        var enable = toggleSwitch.winControl.checked;
-        
-        document.getElementById(startTxtBxId).disabled = !enable;
-        document.getElementById(endTxtBxId).disabled = !enable;
-        document.getElementById("save").disabled = !enable;
+        Windows.Storage.ApplicationData.current.roamingSettings.values["SettingsLocation"] = false;
+        enableControls();
     }
     
+    function enableControls() {
+        
+        var toggleSwitch = document.getElementById("settingSwitch");
+        var enable = toggleSwitch.winControl.checked;
+
+        document.getElementById(startTxtBxIdName).disabled = !enable;
+        document.getElementById(endTxtBxIdName).disabled = !enable;
+        document.getElementById("save").disabled = !enable;
+    }
+
     function navigateToHelp() {
         WinJS.Navigation.navigate("/pages/help/help.html");
     }
