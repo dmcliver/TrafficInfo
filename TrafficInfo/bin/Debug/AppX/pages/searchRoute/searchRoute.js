@@ -20,7 +20,6 @@
     var endLocDetails = null;
 
     var textBoxFactory;
-    var roamingSettings;
     var presenter;
 
     WinJS.UI.Pages.define("/pages/searchRoute/searchRoute.html", {

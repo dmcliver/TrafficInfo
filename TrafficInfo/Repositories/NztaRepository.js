@@ -22,7 +22,8 @@
         });
     };
 
-    this.retrieveAllIncidents = function() {
+    this.retrieveAllIncidents = function () {
+        
         WinJS.xhr({ url: "https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TREIS/REST/FeedService/", headers: hdrs }).done(function (result) {
 
             var xml = result.responseXML;

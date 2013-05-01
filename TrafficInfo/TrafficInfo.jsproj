@@ -121,7 +121,6 @@
     <Content Include="Domain\Camera.js" />
     <Content Include="Domain\CameraPushpinInfo.js" />
     <Content Include="Domain\Location.js" />
-    <Content Include="Domain\MapBounds.js" />
     <Content Include="Domain\Motorway.js" />
     <Content Include="Domain\Place.js" />
     <Content Include="Domain\TrafficConditions.js" />
@@ -142,6 +141,7 @@
     <Content Include="images\webcam.png" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
+    <Content Include="MapBounds.js" />
     <Content Include="packages.config" />
     <Content Include="pages\help\help.css" />
     <Content Include="pages\help\help.html" />

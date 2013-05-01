@@ -67,7 +67,6 @@ default.html
 Domain\Camera.js
 Domain\CameraPushpinInfo.js
 Domain\Location.js
-Domain\MapBounds.js
 Domain\Motorway.js
 Domain\Place.js
 Domain\TrafficConditions.js
@@ -88,6 +87,7 @@ images\storelogo.png
 images\webcam.png
 js\default.js
 js\navigator.js
+MapBounds.js
 packages.config
 pages\help\help.css
 pages\help\help.html

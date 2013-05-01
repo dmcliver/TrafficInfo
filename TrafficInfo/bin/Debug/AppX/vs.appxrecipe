@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-05-01T22:40:59.611</Modified>
+      <Modified>2013-05-01T23:08:43.570</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -968,10 +968,6 @@
       <PackagePath>Domain\Location.js</PackagePath>
       <Modified>2013-04-10T22:10:23.045</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\MapBounds.js">
-      <PackagePath>Domain\MapBounds.js</PackagePath>
-      <Modified>2013-04-30T05:48:44.566</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Motorway.js">
       <PackagePath>Domain\Motorway.js</PackagePath>
       <Modified>2013-04-10T22:09:26.749</Modified>
@@ -992,13 +988,17 @@
       <PackagePath>js\navigator.js</PackagePath>
       <Modified>2013-04-08T03:19:57.728</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\MapBounds.js">
+      <PackagePath>MapBounds.js</PackagePath>
+      <Modified>2013-04-30T05:48:44.566</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
       <Modified>2013-05-01T01:40:19.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
-      <Modified>2013-05-01T22:55:43.153</Modified>
+      <Modified>2013-05-01T23:10:22.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\settings\settings.js">
       <PackagePath>pages\settings\settings.js</PackagePath>
@@ -1018,7 +1018,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
       <PackagePath>Repositories\NztaRepository.js</PackagePath>
-      <Modified>2013-05-01T03:40:06.718</Modified>
+      <Modified>2013-05-01T23:05:56.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\RoamingSettingsRepository.js">
       <PackagePath>Repositories\RoamingSettingsRepository.js</PackagePath>
@@ -1074,7 +1074,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileService.js">
       <PackagePath>Services\TileService.js</PackagePath>
-      <Modified>2013-05-01T05:12:21.065</Modified>
+      <Modified>2013-05-01T23:02:30.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
       <PackagePath>Services\UriEncoderService.js</PackagePath>
@@ -1439,7 +1439,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-05-01T02:13:22.461</Modified>
+      <Modified>2013-05-01T23:07:51.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
@@ -1455,7 +1455,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-05-01T22:40:57.221</Modified>
+      <Modified>2013-05-01T23:08:42.506</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
