@@ -53,7 +53,9 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="AutoCompleteTextBox.js" />
+    <Content Include="AutoCompleteTextBoxController.js" />
+    <Content Include="AutoCompleteTextBoxModel.js" />
+    <Content Include="AutoCompleteTextBoxView.js" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -175,9 +177,8 @@
     <Content Include="Services\TileService.js" />
     <Content Include="Services\UriEncoderService.js" />
     <Content Include="Services\ValidatorService.js" />
-    <Content Include="Strategies\AutoCompleteStrategy.js" />
     <Content Include="Task\UpdateTileTask.js" />
-    <Content Include="TextBoxFactory.js" />
+    <Content Include="AutoCompleteTextBox.js" />
     <None Include="TrafficInfo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿var AutoCompleteStrategy = (function(txtBox,onSuggestedResult, clearValidation) {
+﻿var AutoCompleteTextBoxController = (function(txtBox,onSuggestedResult, clearValidation) {
 
     "use strict";
     var self = this;
@@ -39,13 +39,14 @@
     var mapToBindProp = function (ajr) {
 
         var list = JSLINQ(ajr.results);
-        var formattedList = list.Select(function (i) { return { bind_prop: i.formatted_address, location: { latitude: i.geometry.location.lat, longitude: i.geometry.location.lng } }; });
+        var formattedList = list.Select(function (i) {
+            return new AutoCompleteTextBoxModel(i.formatted_address, i.geometry.location.lat, i.geometry.location.lng);
+        });
 
-        return JSLINQ(formattedList.items).Where(function(itm) {
-
+        return JSLINQ(formattedList.items)
+        .Where(function (itm) {
             return MapBounds.boundsCheck(itm.location);
         }).Distinct(function (i) {
-            
             return i.bind_prop;
         });;
     };

@@ -16,10 +16,9 @@
 
     var allErrors = "#allErrors";
 
-    var startLocDetails = null;
-    var endLocDetails = null;
+    var startLocDataModel = null;
+    var endLocDataModel = null;
 
-    var textBoxFactory;
     var presenter;
 
     WinJS.UI.Pages.define("/pages/searchRoute/searchRoute.html", {
@@ -27,10 +26,9 @@
         ready: function (element, options) {
             
             presenter = new SearchRoutePresenter(showSettings);
-            textBoxFactory = new TextBoxFactory();
             
-            textBox1 = textBoxFactory.createTextBox(startTxtBxIdName, "startSearchResultList", onStartSuggestedResult, onStartSuggestedResult, onStartSuggestedResult, startLocIsInvalid);
-            textBox2 = textBoxFactory.createTextBox(endTxtBxIdName, "endSearchResultList", onEndSuggestedResult, onEndSuggestedResult, onEndSuggestedResult, endLocIsInvalid);
+            textBox1 = new AutoCompleteTextBox(startTxtBxIdName, "startSearchResultList", onStartSuggestedResult, onStartSuggestedResult, onStartSuggestedResult, startLocIsInvalid);
+            textBox2 = new AutoCompleteTextBox(endTxtBxIdName, "endSearchResultList", onEndSuggestedResult, onEndSuggestedResult, onEndSuggestedResult, endLocIsInvalid);
 
             $("#helpButton").click(function(evt) {
                 WinJS.Navigation.navigate("/pages/help/help.html");
@@ -64,12 +62,12 @@
     };
 
     function startLocIsInvalid() {
-        startLocDetails = null;
+        startLocDataModel = null;
         $(startLocValid).show();
     }
 
     function endLocIsInvalid() {
-        endLocDetails = null;
+        endLocDataModel = null;
         $(endLocValid).show();
     }
 
@@ -83,13 +81,13 @@
 
     function submit() {
 
-        if (validateErrors(startLocDetails, "Start location is not valid") && validateErrors(endLocDetails, "End location is not valid")) {
+        if (validateErrors(startLocDataModel, "Start location is not valid") && validateErrors(endLocDataModel, "End location is not valid")) {
 
-            var startLocation = startLocDetails.location;
-            var endLocation = endLocDetails.location;
+            var startLocation = startLocDataModel.location;
+            var endLocation = endLocDataModel.location;
 
-            var startPlace = new Place(startLocation.latitude, startLocation.longitude, startLocDetails.bind_prop);
-            var endPlace = new Place(endLocation.latitude, endLocation.longitude, endLocDetails.bind_prop);
+            var startPlace = new Place(startLocation.latitude, startLocation.longitude, startLocDataModel.bind_prop);
+            var endPlace = new Place(endLocation.latitude, endLocation.longitude, endLocDataModel.bind_prop);
 
             presenter.storeLocations(startPlace, endPlace);
             
@@ -101,7 +99,7 @@
 
     function validateErrors(locDetails, validationMessage) {
         
-        if (startLocDetails == null) {
+        if (startLocDataModel == null) {
             
             $(allErrors).text(validationMessage);
             $(allErrors).css('display', 'block');
@@ -115,17 +113,17 @@
         textBox2.clear();
     }
 
-    function onStartSuggestedResult(item) {
+    function onStartSuggestedResult(model) {
         
-        startLocDetails = item;
-        $(startTxtBxId).val(item.bind_prop);
+        startLocDataModel = model;
+        $(startTxtBxId).val(model.bind_prop);
         $(startLocValid).hide();
     }
     
-    function onEndSuggestedResult(item) {
+    function onEndSuggestedResult(model) {
         
-        endLocDetails = item;
-        $(endTxtBxId).val(item.bind_prop);
+        endLocDataModel = model;
+        $(endTxtBxId).val(model.bind_prop);
         $("#endLocValid").hide();
     }
 

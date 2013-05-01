@@ -1,4 +1,7 @@
 AutoCompleteTextBox.js
+AutoCompleteTextBoxController.js
+AutoCompleteTextBoxModel.js
+AutoCompleteTextBoxView.js
 Content\themes\base\images\animated-overlay.gif
 Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png
 Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png
@@ -120,6 +123,4 @@ Services\MapService.js
 Services\TileService.js
 Services\UriEncoderService.js
 Services\ValidatorService.js
-Strategies\AutoCompleteStrategy.js
 Task\UpdateTileTask.js
-TextBoxFactory.js
