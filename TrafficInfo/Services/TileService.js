@@ -6,6 +6,7 @@
     repo.retrieveAllIncidentsResponse = notifyTile;
     var notifier = null;
     var updater = null;
+    
     var register = function() {
 
         var builder = new Windows.ApplicationModel.Background.BackgroundTaskBuilder();
