@@ -5,7 +5,7 @@
     <WindowsUser>annon</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>73FAFD40669E6287B398C1E56252301399A34FE8DACC871108085D59D800986F</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>2889AA70DCC76A29552E15C8AAA8988A188508680B77C7EC93244C02D1B71979</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3e53a469-4019-4682-82a8-1dad69748c5a_1.0.0.0_neutral__wztdtvqxwhg7j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3e53a469-4019-4682-82a8-1dad69748c5a_wztdtvqxwhg7j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3e53a469-4019-4682-82a8-1dad69748c5a</RegisteredPackageID>
@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-30T01:32:35.035</Modified>
+      <Modified>2013-05-01T02:10:17.049</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -982,7 +982,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-04-22T05:12:00.683</Modified>
+      <Modified>2013-05-01T02:24:48.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -990,7 +990,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-04-30T23:04:55.213</Modified>
+      <Modified>2013-05-01T01:40:19.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
@@ -1010,7 +1010,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
       <PackagePath>Repositories\NztaRepository.js</PackagePath>
-      <Modified>2013-04-18T04:52:09.023</Modified>
+      <Modified>2013-05-01T03:40:06.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\TrafficSettingsRepository.js">
       <PackagePath>Repositories\TrafficSettingsRepository.js</PackagePath>
@@ -1060,6 +1060,10 @@
       <PackagePath>Services\MapService.js</PackagePath>
       <Modified>2013-04-30T23:14:45.980</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileService.js">
+      <PackagePath>Services\TileService.js</PackagePath>
+      <Modified>2013-05-01T04:01:45.501</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
       <PackagePath>Services\UriEncoderService.js</PackagePath>
       <Modified>2013-04-29T04:39:11.444</Modified>
@@ -1070,7 +1074,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Strategies\AutoCompleteStrategy.js">
       <PackagePath>Strategies\AutoCompleteStrategy.js</PackagePath>
-      <Modified>2013-04-30T23:33:15.590</Modified>
+      <Modified>2013-04-30T23:52:49.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Task\UpdateTileTask.js">
+      <PackagePath>Task\UpdateTileTask.js</PackagePath>
+      <Modified>2013-05-01T04:02:24.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\TextBoxFactory.js">
       <PackagePath>TextBoxFactory.js</PackagePath>
@@ -1190,7 +1198,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Live_Traffic_NSW_logoNoTextBig.png">
       <PackagePath>images\Live_Traffic_NSW_logoNoTextBig.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-04-18T23:29:12.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Live_Traffic_NSW_logoNoTextSmll.png">
@@ -1199,11 +1206,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Live_Traffic_NSW_logoNoTextWide.png">
       <PackagePath>images\Live_Traffic_NSW_logoNoTextWide.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-04-30T01:32:14.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2012-07-25T23:30:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\push_pin_orang.png">
@@ -1401,6 +1408,11 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-04-19T01:41:49.110</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-notificonsmll.jpg">
+      <PackagePath>images\DUI81-notificonsmll.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-01T02:05:59.439</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Increase-Blog-Traffic-Free.jpg">
       <PackagePath>images\Increase-Blog-Traffic-Free.jpg</PackagePath>
       <Modified>2013-04-18T22:18:29.614</Modified>
@@ -1415,7 +1427,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-04-23T03:50:42.539</Modified>
+      <Modified>2013-05-01T02:13:22.461</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
@@ -1431,7 +1443,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-04-30T01:32:34.219</Modified>
+      <Modified>2013-05-01T02:10:16.826</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

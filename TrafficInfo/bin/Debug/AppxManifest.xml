@@ -22,8 +22,9 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="TrafficInfo" Logo="images\Live_Traffic_NSW_logoNoTextBig.png" SmallLogo="images\DUI81-620x300smll.jpg" Description="TrafficInfo" ForegroundText="dark" BackgroundColor="#1A1A1A">
-        <DefaultTile ShowName="allLogos" WideLogo="images\Live_Traffic_NSW_logoNoTextWide.png" />
+      <VisualElements DisplayName="TrafficInfo" Logo="images\logo.png" SmallLogo="images\DUI81-620x300smll.jpg" Description="TrafficInfo" ForegroundText="light" BackgroundColor="#1A1A1A">
+        <LockScreen Notification="badge" BadgeLogo="images\DUI81-notificonsmll.jpg" />
+        <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="images\DUI81-620x300.jpg" BackgroundColor="#1A1A1A" />
         <InitialRotationPreference>
           <Rotation Preference="landscape" />
@@ -34,6 +35,12 @@
       </ApplicationContentUriRules>
       <Extensions>
         <Extension Category="windows.search" />
+        <Extension Category="windows.backgroundTasks" StartPage="Task\UpdateTileTask.js">
+          <BackgroundTasks>
+            <Task Type="timer" />
+            <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
       </Extensions>
     </Application>
   </Applications>

@@ -126,6 +126,7 @@
     <Content Include="Domain\TrafficConditions.js" />
     <Content Include="images\DUI81-620x300.jpg" />
     <Content Include="images\DUI81-620x300smll.jpg" />
+    <Content Include="images\DUI81-notificonsmll.jpg" />
     <Content Include="images\Increase-Blog-Traffic-Free.jpg" />
     <Content Include="images\Live_Traffic_NSW_logoNoTextBig.png" />
     <Content Include="images\Live_Traffic_NSW_logoNoTextSmll.png" />
@@ -168,9 +169,11 @@
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Services\CharmBarService.js" />
     <Content Include="Services\MapService.js" />
+    <Content Include="Services\TileService.js" />
     <Content Include="Services\UriEncoderService.js" />
     <Content Include="Services\ValidatorService.js" />
     <Content Include="Strategies\AutoCompleteStrategy.js" />
+    <Content Include="Task\UpdateTileTask.js" />
     <Content Include="TextBoxFactory.js" />
     <None Include="TrafficInfo_TemporaryKey.pfx" />
   </ItemGroup>

@@ -72,6 +72,7 @@ Domain\Motorway.js
 Domain\TrafficConditions.js
 images\DUI81-620x300.jpg
 images\DUI81-620x300smll.jpg
+images\DUI81-notificonsmll.jpg
 images\Increase-Blog-Traffic-Free.jpg
 images\Live_Traffic_NSW_logoNoTextBig.png
 images\Live_Traffic_NSW_logoNoTextSmll.png
@@ -113,7 +114,9 @@ Scripts\underscore.js
 Scripts\underscore.min.js
 Services\CharmBarService.js
 Services\MapService.js
+Services\TileService.js
 Services\UriEncoderService.js
 Services\ValidatorService.js
 Strategies\AutoCompleteStrategy.js
+Task\UpdateTileTask.js
 TextBoxFactory.js

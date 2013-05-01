@@ -793,6 +793,9 @@
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileService.js">
+      <PackagePath>Services\TileService.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
       <PackagePath>Services\UriEncoderService.js</PackagePath>
     </AppxPackagedFile>
@@ -801,6 +804,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Strategies\AutoCompleteStrategy.js">
       <PackagePath>Strategies\AutoCompleteStrategy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Task\UpdateTileTask.js">
+      <PackagePath>Task\UpdateTileTask.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\TextBoxFactory.js">
       <PackagePath>TextBoxFactory.js</PackagePath>
@@ -891,17 +897,16 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Live_Traffic_NSW_logoNoTextBig.png">
       <PackagePath>images\Live_Traffic_NSW_logoNoTextBig.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Live_Traffic_NSW_logoNoTextSmll.png">
       <PackagePath>images\Live_Traffic_NSW_logoNoTextSmll.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Live_Traffic_NSW_logoNoTextWide.png">
       <PackagePath>images\Live_Traffic_NSW_logoNoTextWide.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\push_pin_orang.png">
       <PackagePath>images\push_pin_orang.png</PackagePath>
@@ -1048,6 +1053,10 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-620x300smll.jpg">
       <PackagePath>images\DUI81-620x300smll.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\DUI81-notificonsmll.jpg">
+      <PackagePath>images\DUI81-notificonsmll.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Increase-Blog-Traffic-Free.jpg">

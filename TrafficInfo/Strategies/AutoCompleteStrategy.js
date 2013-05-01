@@ -33,7 +33,6 @@
             if (formattedList.items.length >= 1)
                 txtBox.bind(formattedList.items);
         }
-        
         called = true;
     };
     
