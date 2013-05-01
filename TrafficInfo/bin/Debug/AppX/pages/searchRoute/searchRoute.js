@@ -54,8 +54,11 @@
 
         enableControls();
 
-        $(startTxtBxId).val(startPlace);
-        $(endTxtBxId).val(endPlace);
+        $(startTxtBxId).val(startPlace.name);
+        $(endTxtBxId).val(endPlace.name);
+
+        startLocDataModel = new AutoCompleteTextBoxModel(startPlace.name, startPlace.lat, startPlace.long);
+        endLocDataModel = new AutoCompleteTextBoxModel(endPlace.name, endPlace.lat, endPlace.long);
 
         $(startLocValid).hide();
         $(endLocValid).hide();
