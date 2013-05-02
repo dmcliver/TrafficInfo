@@ -7,7 +7,7 @@
 
         var key = null, settings = Windows.Storage.ApplicationData.current.localSettings;
 
-        TileService.UpdateTile(onDone);
+        new TileService().UpdateTile(onDone);
 
         key = backgroundTaskInstance.task.taskId.toString();
         settings.values[key] = "Succeeded";

@@ -27,7 +27,7 @@
             
             mapService = new MapService();
             nztaRepository = new NztaRepository();
-            TileService.RegisterAndUpdate();
+            new TileService().RegisterAndUpdate();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
             charmBarService = new CharmBarService();
             var trafficSettingsRepository = new TrafficSettingsRepository();

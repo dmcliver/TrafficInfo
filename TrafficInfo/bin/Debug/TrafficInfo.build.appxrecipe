@@ -736,6 +736,9 @@
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Place.js">
       <PackagePath>Domain\Place.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Tile.js">
+      <PackagePath>Domain\Tile.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\TrafficConditions.js">
       <PackagePath>Domain\TrafficConditions.js</PackagePath>
     </AppxPackagedFile>
@@ -744,6 +747,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\LiveTileServiceDecorator.js">
+      <PackagePath>LiveTileServiceDecorator.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\MapBounds.js">
       <PackagePath>MapBounds.js</PackagePath>
@@ -817,11 +823,17 @@
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\ValidatorService.js">
       <PackagePath>Services\ValidatorService.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\SquareTileBehaviour.js">
+      <PackagePath>SquareTileBehaviour.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Task\UpdateTileTask.js">
       <PackagePath>Task\UpdateTileTask.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\AutoCompleteTextBox.js">
       <PackagePath>AutoCompleteTextBox.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\WideTileBehaviour.js">
+      <PackagePath>WideTileBehaviour.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\animated-overlay.gif">
       <PackagePath>Content\themes\base\images\animated-overlay.gif</PackagePath>
@@ -911,17 +923,23 @@
       <PackagePath>images\ryanlerch_Warning_Sheep_Roadsign %281%29.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\ryanlerch_Warning_Sheep_Roadsign %282%29.png">
+      <PackagePath>images\ryanlerch_Warning_Sheep_Roadsign %282%29.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\ryanlerch_Warning_Sheep_Roadsign %283%29.png">
+      <PackagePath>images\ryanlerch_Warning_Sheep_Roadsign %283%29.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\ryanlerch_Warning_Sheep_Roadsign %28w%29.png">
       <PackagePath>images\ryanlerch_Warning_Sheep_Roadsign %28w%29.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\UK_traffic_sign_811 %281%29.png">
       <PackagePath>images\UK_traffic_sign_811 %281%29.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\UK_traffic_sign_811 %282%29.png">
       <PackagePath>images\UK_traffic_sign_811 %282%29.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\UK_traffic_sign_811 %28w%29.png">
       <PackagePath>images\UK_traffic_sign_811 %28w%29.png</PackagePath>

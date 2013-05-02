@@ -5,7 +5,7 @@
     <WindowsUser>annon</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>32672972EB5920B36E1F8353F2175B0F540A93B57402C649CB819646396ACEDB</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>9B2D43E3F46E949BA2D71B41BEFBC8FE2F3BE6AC5C9CA84D70273BE2B41A63FC</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3e53a469-4019-4682-82a8-1dad69748c5a_1.0.0.0_neutral__wztdtvqxwhg7j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3e53a469-4019-4682-82a8-1dad69748c5a_wztdtvqxwhg7j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3e53a469-4019-4682-82a8-1dad69748c5a</RegisteredPackageID>
@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-05-02T02:51:54.518</Modified>
+      <Modified>2013-05-02T05:28:38.915</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -984,6 +984,10 @@
       <PackagePath>Domain\Place.js</PackagePath>
       <Modified>2013-05-01T22:33:59.480</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Tile.js">
+      <PackagePath>Domain\Tile.js</PackagePath>
+      <Modified>2013-05-02T05:39:01.273</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\TrafficConditions.js">
       <PackagePath>Domain\TrafficConditions.js</PackagePath>
       <Modified>2013-04-10T22:07:34.057</Modified>
@@ -996,13 +1000,17 @@
       <PackagePath>js\navigator.js</PackagePath>
       <Modified>2013-04-08T03:19:57.728</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\LiveTileServiceDecorator.js">
+      <PackagePath>LiveTileServiceDecorator.js</PackagePath>
+      <Modified>2013-05-02T05:35:33.261</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\MapBounds.js">
       <PackagePath>MapBounds.js</PackagePath>
       <Modified>2013-04-30T05:48:44.566</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-05-02T01:34:52.634</Modified>
+      <Modified>2013-05-02T05:31:02.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
@@ -1082,7 +1090,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileService.js">
       <PackagePath>Services\TileService.js</PackagePath>
-      <Modified>2013-05-01T23:02:30.889</Modified>
+      <Modified>2013-05-02T05:42:29.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
       <PackagePath>Services\UriEncoderService.js</PackagePath>
@@ -1092,13 +1100,21 @@
       <PackagePath>Services\ValidatorService.js</PackagePath>
       <Modified>2013-04-29T03:53:42.879</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\SquareTileBehaviour.js">
+      <PackagePath>SquareTileBehaviour.js</PackagePath>
+      <Modified>2013-05-02T05:18:22.913</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Task\UpdateTileTask.js">
       <PackagePath>Task\UpdateTileTask.js</PackagePath>
-      <Modified>2013-05-01T04:02:24.721</Modified>
+      <Modified>2013-05-02T05:30:50.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\AutoCompleteTextBox.js">
       <PackagePath>AutoCompleteTextBox.js</PackagePath>
       <Modified>2013-05-01T23:20:10.686</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\WideTileBehaviour.js">
+      <PackagePath>WideTileBehaviour.js</PackagePath>
+      <Modified>2013-05-02T05:16:18.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\images\animated-overlay.gif">
       <PackagePath>Content\themes\base\images\animated-overlay.gif</PackagePath>
@@ -1217,6 +1233,16 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-05-02T02:49:28.580</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\ryanlerch_Warning_Sheep_Roadsign %282%29.png">
+      <PackagePath>images\ryanlerch_Warning_Sheep_Roadsign %282%29.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-02T02:58:14.475</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\ryanlerch_Warning_Sheep_Roadsign %283%29.png">
+      <PackagePath>images\ryanlerch_Warning_Sheep_Roadsign %283%29.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-02T02:58:32.013</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\ryanlerch_Warning_Sheep_Roadsign %28w%29.png">
       <PackagePath>images\ryanlerch_Warning_Sheep_Roadsign %28w%29.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -1224,12 +1250,10 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\UK_traffic_sign_811 %281%29.png">
       <PackagePath>images\UK_traffic_sign_811 %281%29.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-05-02T01:57:42.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\UK_traffic_sign_811 %282%29.png">
       <PackagePath>images\UK_traffic_sign_811 %282%29.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-05-02T01:58:32.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\UK_traffic_sign_811 %28w%29.png">
@@ -1419,7 +1443,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-05-02T02:04:23.912</Modified>
+      <Modified>2013-05-02T05:27:10.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
@@ -1435,7 +1459,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-05-02T02:51:54.088</Modified>
+      <Modified>2013-05-02T05:28:38.589</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

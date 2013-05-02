@@ -6,6 +6,8 @@
     repo.retrieveAllIncidentsResponse = notifyTile;
     var notifier = null;
     var updater = null;
+    var squareTileDecorator = new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText04, null, new SquareTileBehaviour());
+    var wideTileDecorator = new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileWidePeekImageAndText01, squareTileDecorator, new WideTileBehaviour());
     
     var register = function() {
 
@@ -19,33 +21,30 @@
 
     function notifyTile(result) {
 
+        result = [{ eventComments: "I went to the store to buy some milk" },{ eventComments: "I ate some grass coz I like the color green"}];
+
         for (var j = 0; j < result.length && j < 5; j++) {
 
             var mess = result[j].eventComments;
-
-            var template = Windows.UI.Notifications.TileTemplateType.tileSquareText04;
-            var tileXml = Windows.UI.Notifications.TileUpdateManager.getTemplateContent(template);
-            var tileTextAttributes = tileXml.getElementsByTagName("text");
             
-            tileTextAttributes[0].appendChild(tileXml.createTextNode(mess));
-
-            var currentTime = new Date();
-            var tileNotification = new Windows.UI.Notifications.TileNotification(tileXml);
-            tileNotification.expirationTime = new Date(currentTime.getTime() + 60 * 13 * 1000);
+            var tile = wideTileDecorator.createTile(mess, "name", "images/ryanlerch_Warning_Sheep_Roadsign (1).png");
             
+            var tileNotification = new Windows.UI.Notifications.TileNotification(tile.templateContent);
+            tileNotification.expirationTime = new Date(new Date().getTime() + 60 * 13 * 1000);
+
             if (updater == null) {
 
                 updater = Windows.UI.Notifications.TileUpdateManager.createTileUpdaterForApplication();
                 updater.enableNotificationQueue(true);
             }
-            
+
             updater.update(tileNotification);
 
             if (notifier != null)
                 notifier();
         }
     }
-
+    
     var updateTile = function (notifyDone) {
         notifier = notifyDone;
         repo.retrieveAllIncidents();
@@ -58,5 +57,5 @@
     };
     
     return { RegisterAndUpdate: registerAndUpdateTile, UpdateTile: updateTile };
-})();
+});
 

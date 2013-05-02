@@ -72,8 +72,11 @@ Domain\CameraPushpinInfo.js
 Domain\Location.js
 Domain\Motorway.js
 Domain\Place.js
+Domain\Tile.js
 Domain\TrafficConditions.js
 images\ryanlerch_Warning_Sheep_Roadsign (1).png
+images\ryanlerch_Warning_Sheep_Roadsign (2).png
+images\ryanlerch_Warning_Sheep_Roadsign (3).png
 images\ryanlerch_Warning_Sheep_Roadsign (w).png
 images\SH20A_And_Kirkbride_Road_Intersection.jpg
 images\SH20A_And_Kirkbride_Road_IntersectionSplash.jpg
@@ -84,6 +87,7 @@ images\UK_traffic_sign_811.png
 images\video-icon.png
 js\default.js
 js\navigator.js
+LiveTileServiceDecorator.js
 MapBounds.js
 packages.config
 pages\help\help.css
@@ -117,4 +121,6 @@ Services\MapService.js
 Services\TileService.js
 Services\UriEncoderService.js
 Services\ValidatorService.js
+SquareTileBehaviour.js
 Task\UpdateTileTask.js
+WideTileBehaviour.js

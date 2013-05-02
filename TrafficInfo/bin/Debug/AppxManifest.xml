@@ -22,8 +22,8 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Kiwi Traffic" Logo="images\ryanlerch_Warning_Sheep_Roadsign (1).png" SmallLogo="images\UK_traffic_sign_811 (1).png" Description="Kiwi Traffic" ForegroundText="light" BackgroundColor="#000000">
-        <LockScreen Notification="badge" BadgeLogo="images\UK_traffic_sign_811 (2).png" />
+      <VisualElements DisplayName="Kiwi Traffic" Logo="images\ryanlerch_Warning_Sheep_Roadsign (1).png" SmallLogo="images\ryanlerch_Warning_Sheep_Roadsign (2).png" Description="Kiwi Traffic" ForegroundText="light" BackgroundColor="#000000">
+        <LockScreen Notification="badgeAndTileText" BadgeLogo="images\ryanlerch_Warning_Sheep_Roadsign (3).png" />
         <DefaultTile ShowName="allLogos" WideLogo="images\ryanlerch_Warning_Sheep_Roadsign (w).png" />
         <SplashScreen Image="images\SH20A_And_Kirkbride_Road_IntersectionSplash.jpg" BackgroundColor="#1A1A1A" />
         <InitialRotationPreference>
@@ -37,8 +37,8 @@
         <Extension Category="windows.search" />
         <Extension Category="windows.backgroundTasks" StartPage="Task\UpdateTileTask.js">
           <BackgroundTasks>
-            <Task Type="timer" />
             <Task Type="systemEvent" />
+            <Task Type="timer" />
           </BackgroundTasks>
         </Extension>
       </Extensions>

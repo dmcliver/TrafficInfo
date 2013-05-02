@@ -125,6 +125,7 @@
     <Content Include="Domain\Location.js" />
     <Content Include="Domain\Motorway.js" />
     <Content Include="Domain\Place.js" />
+    <Content Include="Domain\Tile.js" />
     <Content Include="Domain\TrafficConditions.js" />
     <Content Include="images\ryanlerch_Warning_Sheep_Roadsign %281%29.png" />
     <Content Include="images\ryanlerch_Warning_Sheep_Roadsign %282%29.png" />
@@ -139,6 +140,7 @@
     <Content Include="images\video-icon.png" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
+    <Content Include="LiveTileServiceDecorator.js" />
     <Content Include="MapBounds.js" />
     <Content Include="packages.config" />
     <Content Include="pages\help\help.css" />
@@ -173,8 +175,10 @@
     <Content Include="Services\TileService.js" />
     <Content Include="Services\UriEncoderService.js" />
     <Content Include="Services\ValidatorService.js" />
+    <Content Include="SquareTileBehaviour.js" />
     <Content Include="Task\UpdateTileTask.js" />
     <Content Include="AutoCompleteTextBox.js" />
+    <Content Include="WideTileBehaviour.js" />
     <None Include="TrafficInfo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
