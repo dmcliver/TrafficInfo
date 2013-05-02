@@ -920,15 +920,6 @@
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\push_pin_orang.png">
-      <PackagePath>images\push_pin_orang.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\push_pin_red.png">
-      <PackagePath>images\push_pin_red.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\push_pin_yellow.png">
-      <PackagePath>images\push_pin_yellow.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
     </AppxPackagedFile>
@@ -939,8 +930,8 @@
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\webcam.png">
-      <PackagePath>images\webcam.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\video-icon.png">
+      <PackagePath>images\video-icon.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\Content\themes\base\jquery-ui.css">
       <PackagePath>Content\themes\base\jquery-ui.css</PackagePath>
@@ -1073,6 +1064,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\Increase-Blog-Traffic-Free.jpg">
       <PackagePath>images\Increase-Blog-Traffic-Free.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\images\SH20A_And_Kirkbride_Road_Intersection.jpg">
+      <PackagePath>images\SH20A_And_Kirkbride_Road_Intersection.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\annon\Documents\TrafficInfoSrc\TrafficInfo\packages.config">
       <PackagePath>packages.config</PackagePath>

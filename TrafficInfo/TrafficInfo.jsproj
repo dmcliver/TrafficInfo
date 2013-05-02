@@ -134,13 +134,11 @@
     <Content Include="images\Live_Traffic_NSW_logoNoTextSmll.png" />
     <Content Include="images\Live_Traffic_NSW_logoNoTextWide.png" />
     <Content Include="images\logo.png" />
-    <Content Include="images\push_pin_orang.png" />
-    <Content Include="images\push_pin_red.png" />
-    <Content Include="images\push_pin_yellow.png" />
+    <Content Include="images\SH20A_And_Kirkbride_Road_Intersection.jpg" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
-    <Content Include="images\webcam.png" />
+    <Content Include="images\video-icon.png" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
     <Content Include="MapBounds.js" />

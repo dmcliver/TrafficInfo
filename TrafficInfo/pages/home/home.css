@@ -45,3 +45,10 @@
     left:120px;
     float: left;
 }
+
+.pagetitle {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid navy;
+}

@@ -46,13 +46,15 @@
             thisMap.setView({ bounds: fromSettings, zoom: 16 });
             self.mapInitializedCallback(thisMap);
         }
-        else
-            Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
+        Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
     };
 
     function loadCurrentLocation() {
 
         searchManager = new Microsoft.Maps.Search.SearchManager(thisMap);
+
+        if (Windows.Storage.ApplicationData.current.roamingSettings.values["SettingsLocation"])
+            return;
 
         var geoLocationProvider = new Microsoft.Maps.GeoLocationProvider(thisMap);
 
@@ -123,7 +125,7 @@
             var pushPinLocation = new Microsoft.Maps.Location(camera.Lat, camera.Lon);
             var htmlImageContent = "<div style='background-color:White;color:Black'><p>"+ camera.Name + "</p><img src='"+ camera.Url +"' /></div>";
             var infoBox = new Microsoft.Maps.Infobox(pushPinLocation, { visible: false, htmlContent: htmlImageContent });
-            var pushPin = new Microsoft.Maps.Pushpin(pushPinLocation, { icon: "images/webcam.png", draggable: false });
+            var pushPin = new Microsoft.Maps.Pushpin(pushPinLocation, { icon: "images/video-icon.png", draggable: false });
             Microsoft.Maps.Events.addHandler(pushPin, 'click', onCameraPushpinClick);
             map.entities.push(pushPin);
             map.entities.push(infoBox);

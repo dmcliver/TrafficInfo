@@ -3,6 +3,12 @@
     width: 100%;
 }
 
+body {
+    background-image: url('/images/SH20A_And_Kirkbride_Road_Intersection.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 2560px 1440px;
+}
+
 .fragment {
     /* Define a grid with rows for a banner and a body */
     -ms-grid-columns: 1fr;
