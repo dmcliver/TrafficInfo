@@ -73,18 +73,14 @@ Domain\Location.js
 Domain\Motorway.js
 Domain\Place.js
 Domain\TrafficConditions.js
-images\DUI81-620x300.jpg
-images\DUI81-620x300smll.jpg
-images\DUI81-notificonsmll.jpg
-images\Increase-Blog-Traffic-Free.jpg
-images\Live_Traffic_NSW_logoNoTextBig.png
-images\Live_Traffic_NSW_logoNoTextSmll.png
-images\Live_Traffic_NSW_logoNoTextWide.png
-images\logo.png
+images\ryanlerch_Warning_Sheep_Roadsign (1).png
+images\ryanlerch_Warning_Sheep_Roadsign (w).png
 images\SH20A_And_Kirkbride_Road_Intersection.jpg
-images\smalllogo.png
-images\splashscreen.png
-images\storelogo.png
+images\SH20A_And_Kirkbride_Road_IntersectionSplash.jpg
+images\UK_traffic_sign_811 (1).png
+images\UK_traffic_sign_811 (2).png
+images\UK_traffic_sign_811 (w).png
+images\UK_traffic_sign_811.png
 images\video-icon.png
 js\default.js
 js\navigator.js
