@@ -1,4 +1,4 @@
-﻿var MapService = (function() {
+﻿var MapService = (function (map, trafficManager) {
 
     "use strict";
 
@@ -6,8 +6,8 @@
     this.mapInitializedCallback = null;
 
     var searchManager = null;
-    var trafficeManager = null;
-    var thisMap = null;
+    var trafficeManager = trafficManager;
+    var thisMap = map;
 
     this.createMap = function (initMap) {
 
@@ -83,6 +83,19 @@
         trafficeManager = new Microsoft.Maps.Traffic.TrafficManager(thisMap);
         showTraffic();
     }
+    
+    this.clearMap = function () {
+
+        for (var i = 0; i < thisMap.entities.getLength() ; i++) {
+
+            var currentEntity = thisMap.entities[i];
+
+            if (currentEntity instanceof Microsoft.Maps.Pushpin || currentEntity instanceof Microsoft.Maps.Infobox) {
+                thisMap.entities.remove(currentEntity);
+            }
+        }
+        showTraffic();
+    };
 
     function showTraffic() {
         trafficeManager.show();
@@ -132,19 +145,6 @@
             cameraInfos.push(new CameraPushpinInfo(pushPin, infoBox, camera.Url));
         }
         return cameraInfos;
-    };
-
-    this.clearMap = function () {
-        
-        for (var i = 0; i < thisMap.entities.getLength(); i++) {
-
-            var currentEntity = thisMap.entities[i];
-
-            if (currentEntity == typeof Microsoft.Maps.Pushpin || currentEntity == typeof Microsoft.Maps.Infobox) {
-                thisMap.entities.remove(currentEntity);
-            }
-        }
-        showTraffic();
     };
 });
 
