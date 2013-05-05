@@ -2,6 +2,6 @@
   <Module PersistentId="3E53A469-4019-4682-82A8-1DAD69748C5A" ModuleId="TrafficInfo" />
   <Module PersistentId="d:Bing.Maps.JavaScript" ModuleId="Bing.Maps.JavaScript" />
   <Module PersistentId="d:Microsoft.WinJS.1.0" ModuleId="Microsoft.WinJS.1.0" />
-  <Module PersistentId="Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null" ModuleId="Windows" />
   <Module PersistentId="d:Windows" ModuleId="Windows_1" />
+  <Module PersistentId="Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null" ModuleId="Windows" />
 </Modules>

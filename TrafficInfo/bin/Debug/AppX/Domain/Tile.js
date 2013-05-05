@@ -20,7 +20,7 @@
 
     Object.defineProperty(this, "branding", {
         set :function (prop) {
-            tileBindingAttributes[0].setAttribute("branding", "name");
+            tileBindingAttributes[0].setAttribute("branding", prop);
         }
     });
 

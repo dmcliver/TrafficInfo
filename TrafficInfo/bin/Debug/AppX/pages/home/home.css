@@ -36,6 +36,8 @@
 #mapDiv {
     position: relative;
     height: 90%;
+    border: 3px navy;
+    border-style: groove;
 }
 
 #searchResultList {
@@ -51,4 +53,5 @@
     padding-right: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 3px solid navy;
+    border-style: groove;
 }

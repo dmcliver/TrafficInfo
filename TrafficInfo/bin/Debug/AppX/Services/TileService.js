@@ -6,8 +6,8 @@
     repo.retrieveAllIncidentsResponse = notifyTile;
     var notifier = null;
     var updater = null;
-    var squareTileDecorator = new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText04, null, new SquareTileBehaviour());
-    var wideTileDecorator = new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileWidePeekImageAndText01, squareTileDecorator, new WideTileBehaviour());
+    var squareTileDecorator = new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText04, new NullTileServiceDecorator(), new SquareTileNullBehaviour());
+    var wideTileDecorator = new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileWidePeekImage04, squareTileDecorator, new WideTileBehaviour());
     
     var register = function() {
 
@@ -21,13 +21,11 @@
 
     function notifyTile(result) {
 
-        result = [{ eventComments: "I went to the store to buy some milk" },{ eventComments: "I ate some grass coz I like the color green"}];
-
         for (var j = 0; j < result.length && j < 5; j++) {
 
             var mess = result[j].eventComments;
             
-            var tile = wideTileDecorator.createTile(mess, "name", "images/ryanlerch_Warning_Sheep_Roadsign (1).png");
+            var tile = wideTileDecorator.createTile(mess, "name", "images/ryanlerch_Warning_Sheep_Roadsign (w).png");
             
             var tileNotification = new Windows.UI.Notifications.TileNotification(tile.templateContent);
             tileNotification.expirationTime = new Date(new Date().getTime() + 60 * 13 * 1000);

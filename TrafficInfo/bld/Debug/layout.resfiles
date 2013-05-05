@@ -1,7 +1,3 @@
-AutoCompleteTextBox.js
-AutoCompleteTextBoxController.js
-AutoCompleteTextBoxModel.js
-AutoCompleteTextBoxView.js
 Content\themes\base\images\animated-overlay.gif
 Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png
 Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png
@@ -64,6 +60,10 @@ Content\themes\base\minified\jquery.ui.tabs.min.css
 Content\themes\base\minified\jquery.ui.theme.min.css
 Content\themes\base\minified\jquery.ui.tooltip.min.css
 Content\themes\base\minified\jquery-ui.min.css
+Controls\AutoCompleteTextBox.js
+Controls\AutoCompleteTextBoxController.js
+Controls\AutoCompleteTextBoxModel.js
+Controls\AutoCompleteTextBoxView.js
 Coordinators\LocationCoordinator.js
 css\default.css
 default.html
@@ -74,12 +74,16 @@ Domain\Motorway.js
 Domain\Place.js
 Domain\Tile.js
 Domain\TrafficConditions.js
+images\AklSthMwy.jpg
+images\AklSthMwySmll.jpg
+images\auckland_traffic.jpg
 images\ryanlerch_Warning_Sheep_Roadsign (1).png
 images\ryanlerch_Warning_Sheep_Roadsign (2).png
 images\ryanlerch_Warning_Sheep_Roadsign (3).png
 images\ryanlerch_Warning_Sheep_Roadsign (w).png
 images\SH20A_And_Kirkbride_Road_Intersection.jpg
 images\SH20A_And_Kirkbride_Road_IntersectionSplash.jpg
+images\Sheep_traffic_jam.jpg
 images\UK_traffic_sign_811 (1).png
 images\UK_traffic_sign_811 (2).png
 images\UK_traffic_sign_811 (w).png
@@ -89,6 +93,7 @@ js\default.js
 js\navigator.js
 LiveTileServiceDecorator.js
 MapBounds.js
+NullTileServiceDecorator.js
 packages.config
 pages\help\help.css
 pages\help\help.html
