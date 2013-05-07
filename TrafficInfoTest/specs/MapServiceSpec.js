@@ -18,7 +18,7 @@ describe("MapService", function () {
             showFlow: function () { return flowCalls++; }
         };
 
-        thisMap.entities = [new Microsoft.Maps.Pushpin(), new Microsoft.Maps.Infobox(), {desc: "This is a fake obj"}];
+        thisMap.entities = [new Microsoft.Maps.Pushpin(), new Microsoft.Maps.Infobox(), {desc: "This is a fake obj"}, null, undefined];
         thisMap.entities.getLength = function () { return length; };
         thisMap.entities.remove = function (entity) { removeCalls++; };
         var mapService = new MapService(thisMap, trafficManager);
