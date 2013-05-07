@@ -1,4 +1,5 @@
-﻿describe("GecodeRepository",function() {
+﻿describe("GecodeRepository", function () {
+    
     it("should show error message if no internet connection", function() {
 
         var errorCalled = false;
@@ -41,3 +42,4 @@
         });
     });
 })
+

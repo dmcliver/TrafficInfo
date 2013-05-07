@@ -5,8 +5,15 @@
 
     var encodeService = new UriEncoderService();
     var geocodeRepo = new GeocodeRepository();
+    geocodeRepo.onError = displayError;
+    
     var validator = new ValidatorService();
     var called;
+
+    function displayError() {
+        var msg = new Windows.UI.Popups.MessageDialog("No internet connection has been found.");
+        msg.showAsync();
+    }
 
     this.getSourceData = function (text) {
         called = false;

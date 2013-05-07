@@ -2,7 +2,7 @@
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
   <Identity Name="3e53a469-4019-4682-82a8-1dad69748c5a" Version="1.0.0.0" Publisher="CN=annon" />
   <Properties>
-    <DisplayName>TrafficInfo</DisplayName>
+    <DisplayName>KiwiTraffic</DisplayName>
     <PublisherDisplayName>annon</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>

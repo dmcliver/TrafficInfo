@@ -13,6 +13,16 @@
     border: 3px solid navy;
 }
 
+#rightLabelCenter,#leftLabelCenter{
+	-ms-grid-row:1;
+	-ms-grid-column:1;
+	display:-ms-grid;
+	-ms-grid-rows:1fr 1fr 1fr;
+	-ms-grid-columns:1fr;
+	margin: 13px 1px 352px -1px;
+	-ms-grid-row-span: 2;
+}
+
 #formBackgnd {
     padding-bottom: 20px;
     padding-top: 20px;
@@ -45,7 +55,8 @@
 
 #firstFormLbl, #sndFormLbl {
     -ms-grid-column: 1;
-    -ms-grid-row: 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
 }
 
 #startLoc, #endLoc {

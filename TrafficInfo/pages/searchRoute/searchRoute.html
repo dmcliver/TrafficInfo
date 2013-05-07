@@ -37,12 +37,14 @@
 
             <section role="main" id="bod">
                 <div id="content">
-                    <div id="settingSwitch" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title: 'Location switch', labelOff: 'Use GPS', labelOn: 'Use settings'}"></div>
+                    <div id="settingSwitch" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title: 'Location switch', labelOff: 'Use current location', labelOn: 'Use settings'}"></div>
 
                     <form>
                         <div id="formBackgnd">
                             <div id="startControl">
-                                <label id="firstFormLbl">Start location:</label>
+                                <div id="leftLabelCenter">
+                                    <label id="firstFormLbl">Start location:</label>
+                                </div>
                                 <input id="startLoc" required disabled="disabled" type="text" />
                                 <div id="startVal">
                                     <span id="startLocValid" style="color: red">*</span>
@@ -59,7 +61,9 @@
                             </div>
                             
                             <div id="endControl">
-                                <label id="sndFormLbl" >End location:</label>
+								<div id="rightLabelCenter">
+                                    <label id="sndFormLbl" >End location:</label>
+								</div>
                                 <input id="endLoc" required disabled="disabled" type="text" />
                                 <div id="endVal">
                                     <span id="endLocValid" style="color: red">*</span>

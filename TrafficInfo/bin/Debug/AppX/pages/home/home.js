@@ -35,11 +35,17 @@
             charmBarService.getCurrentSelectedCamera = getCurrentCamera;
             charmBarService.invokeSuggestedResults = integratedSearchForNewLocation;
             nztaRepository.retrieveAllCamerasResponse = retrieveAllCamerasResponse;
+            nztaRepository.onError = showError;
             value = trafficSettingsRepository.retrieveCameraRefreshRate();
             mapService.createMap(onMapCreated);
         }
     });
     
+    function showError() {
+        var msg = new Windows.UI.Popups.MessageDialog("No internet connection has been found.");
+        msg.showAsync();
+    }
+
     function firePopupLeftClick(evt) {
 
         var index = evt.detail.itemIndex;

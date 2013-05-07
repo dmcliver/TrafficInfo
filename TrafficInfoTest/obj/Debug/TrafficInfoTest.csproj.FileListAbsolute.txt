@@ -1,0 +1,5 @@
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfoTest\bin\Debug\TrafficInfoTest.dll
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfoTest\bin\Debug\TrafficInfoTest.pdb
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfoTest\obj\Debug\TrafficInfoTest.csprojResolveAssemblyReference.cache
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfoTest\obj\Debug\TrafficInfoTest.dll
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfoTest\obj\Debug\TrafficInfoTest.pdb
