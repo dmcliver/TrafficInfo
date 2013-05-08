@@ -162,6 +162,7 @@
     <Content Include="pages\settings\settings.html" />
     <Content Include="pages\settings\settings.js" />
     <Content Include="Presenters\SearchRoutePresenter.js" />
+    <Content Include="PushpinFactory.js" />
     <Content Include="Repositories\CameraCoordinateRepository.js" />
     <Content Include="Repositories\GeocodeRepository.js" />
     <Content Include="Repositories\NztaRepository.js" />

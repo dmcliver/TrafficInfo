@@ -47,6 +47,7 @@
     <Content Include="Scripts\jasmine.js" />
     <Content Include="SpecRunner.html" />
     <Content Include="specs\GeocodeRepositorySpec.js" />
+    <Content Include="specs\MapBoundsSpec.js" />
     <Content Include="specs\MapServiceSpec.js" />
     <Content Include="specs\NztaRepositorySpec.js" />
   </ItemGroup>

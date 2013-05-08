@@ -25,7 +25,7 @@
             document.getElementById("helpCmd").winControl.addEventListener("click", showHelp);
             document.getElementById("favCmd").winControl.addEventListener("click", showSettings);
             
-            mapService = new MapService();
+            mapService = new MapService(new PushPinFactory());
             nztaRepository = new NztaRepository();
             new TileService().RegisterAndUpdate();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
@@ -131,7 +131,7 @@
     function retrieveAllCamerasResponse(camerasXml) {
         
         var cameras = coordinator.mapXmlToCameras(camerasXml);
-        cameraInfos = mapService.setMapWithCameras(thisMap, cameras, onCameraPushpinClick);
+        cameraInfos = mapService.setMapWithCameras(cameras, onCameraPushpinClick);
     }
 
     function onCameraPushpinClick(e) {

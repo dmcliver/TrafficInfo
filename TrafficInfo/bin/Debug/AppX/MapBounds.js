@@ -4,8 +4,8 @@
 
     var firstCorner = new Microsoft.Maps.Location(-32.657876, 166.157227);
     var secondCorner = new Microsoft.Maps.Location(-48.253941, 178.549805);
-    
-    var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
+
+    var roamingSettings = RoamingSettingsBehaviour;
 
     function boundaryCheck(placeResult) {
         
@@ -79,3 +79,6 @@
     };
 })();
 
+var RoamingSettingsBehaviour = function() {
+    return Windows.Storage.ApplicationData.current.roamingSettings;
+}

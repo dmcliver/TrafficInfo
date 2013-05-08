@@ -21,13 +21,67 @@ describe("MapService", function () {
         thisMap.entities = [new Microsoft.Maps.Pushpin(), new Microsoft.Maps.Infobox(), {desc: "This is a fake obj"}, null, undefined];
         thisMap.entities.getLength = function () { return length; };
         thisMap.entities.remove = function (entity) { removeCalls++; };
-        var mapService = new MapService(thisMap, trafficManager);
+        var mapService = new MapService(null, thisMap, trafficManager);
         mapService.clearMap();
 
         expect(removeCalls).toEqual(length);
         expect(showCalls).toEqual(1);
         expect(incidentCalls).toEqual(1);
         expect(flowCalls).toEqual(1);
+    });
+
+    it("should create a push pin for each camera object", function () {
+        var factory = {
+            createPin: function (c) { return 1; },
+            createInfobox: function (c) { return 2; }
+        };
+
+        var map = {};
+        map.entities = [];
+
+        var cams = [{ Url: "Blah" }, { Url: "Nah" }, { Url: "Tah" }];
+
+        var mapService = new MapService(factory, map);
+        var cameraInfos = mapService.setMapWithCameras(cams, null);
+        
+        expect(map.entities.length).toEqual(6);
+        expect(cameraInfos.length).toEqual(3);
+    });
+    
+    it("should not create push pins for a non set of camera data", function () {
+        var factory = {
+            createPin: function (c) { return 1; },
+            createInfobox: function (c) { return 2; }
+        };
+
+        var map = {};
+        map.entities = [];
+
+        var cams = [];
+
+        var mapService = new MapService(factory, map);
+        var cameraInfos = mapService.setMapWithCameras(cams, null);
+
+        expect(map.entities.length).toEqual(0);
+        expect(cameraInfos.length).toEqual(0);
+    });
+    
+    it("should not create push pins for a set of null camera data", function () {
+        var factory = {
+            createPin: function (c) { return 1; },
+            createInfobox: function (c) { return 2; }
+        };
+
+        var map = {};
+        map.entities = [];
+
+        var cams = null;
+
+        var mapService = new MapService(factory, map);
+        var cameraInfos = mapService.setMapWithCameras(cams, null);
+
+        expect(map.entities.length).toEqual(0);
+        expect(cameraInfos.length).toEqual(0);
     });
 });
 

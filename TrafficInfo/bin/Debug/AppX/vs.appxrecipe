@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-05-07T05:37:45.787</Modified>
+      <Modified>2013-05-07T22:23:12.555</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -1318,7 +1318,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\MapBounds.js">
       <PackagePath>MapBounds.js</PackagePath>
-      <Modified>2013-05-06T22:19:22.461</Modified>
+      <Modified>2013-05-07T23:32:08.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\NullTileServiceDecorator.js">
       <PackagePath>NullTileServiceDecorator.js</PackagePath>
@@ -1326,7 +1326,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-05-07T04:18:01.723</Modified>
+      <Modified>2013-05-07T23:02:53.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
@@ -1339,6 +1339,10 @@
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Presenters\SearchRoutePresenter.js">
       <PackagePath>Presenters\SearchRoutePresenter.js</PackagePath>
       <Modified>2013-05-06T22:19:22.469</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\PushpinFactory.js">
+      <PackagePath>PushpinFactory.js</PackagePath>
+      <Modified>2013-05-07T21:54:56.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\CameraCoordinateRepository.js">
       <PackagePath>Repositories\CameraCoordinateRepository.js</PackagePath>
@@ -1402,7 +1406,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
-      <Modified>2013-05-07T03:51:09.721</Modified>
+      <Modified>2013-05-07T23:03:41.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileService.js">
       <PackagePath>Services\TileService.js</PackagePath>
@@ -1463,7 +1467,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-05-06T22:19:24.575</Modified>
+      <Modified>2013-05-07T22:01:03.939</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
@@ -1479,7 +1483,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-05-07T05:37:44.730</Modified>
+      <Modified>2013-05-07T22:23:10.706</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

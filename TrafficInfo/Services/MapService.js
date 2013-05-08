@@ -1,4 +1,4 @@
-﻿var MapService = (function (map, trafficManager) {
+﻿var MapService = (function (factory, map, trafficManager) {
 
     "use strict";
 
@@ -8,7 +8,7 @@
     var searchManager = null;
     var trafficeManager = trafficManager;
     var thisMap = map;
-
+    
     this.createMap = function (initMap) {
 
         self.mapInitializedCallback = initMap;
@@ -129,19 +129,21 @@
         }
     };
     
-    this.setMapWithCameras = function(map, cameras, onCameraPushpinClick) {
+    this.setMapWithCameras = function(cameras, onCameraPushpinClick) {
 
         var cameraInfos = [];
+
+        if (cameras == null)
+            return cameraInfos;
+        
         for (var i = 0; i < cameras.length; i++) {
             
             var camera = cameras[i];
-            var pushPinLocation = new Microsoft.Maps.Location(camera.Lat, camera.Lon);
-            var htmlImageContent = "<div style='background-color:White;color:Black'><p>"+ camera.Name + "</p><img src='"+ camera.Url +"' /></div>";
-            var infoBox = new Microsoft.Maps.Infobox(pushPinLocation, { visible: false, htmlContent: htmlImageContent });
-            var pushPin = new Microsoft.Maps.Pushpin(pushPinLocation, { icon: "images/video-icon.png", draggable: false });
+            var pushPin = factory.createPin(camera);
+            var infoBox = factory.createInfobox(camera);
             Microsoft.Maps.Events.addHandler(pushPin, 'click', onCameraPushpinClick);
-            map.entities.push(pushPin);
-            map.entities.push(infoBox);
+            thisMap.entities.push(pushPin);
+            thisMap.entities.push(infoBox);
             cameraInfos.push(new CameraPushpinInfo(pushPin, infoBox, camera.Url));
         }
         return cameraInfos;

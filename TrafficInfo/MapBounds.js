@@ -4,8 +4,10 @@
 
     var firstCorner = new Microsoft.Maps.Location(-32.657876, 166.157227);
     var secondCorner = new Microsoft.Maps.Location(-48.253941, 178.549805);
-    
-    var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
+
+    function getRoamingSettings() {
+        return Windows.Storage.ApplicationData.current.roamingSettings;
+    }
 
     function boundaryCheck(placeResult) {
         
@@ -32,10 +34,10 @@
 
     function fromAppSettings() {
 
-        var startLat = roamingSettings.values["StartLat"];
-        var startLong = roamingSettings.values["StartLong"];
-        var endLat = roamingSettings.values["EndLat"];
-        var endLong = roamingSettings.values["EndLong"];
+        var startLat = getRoamingSettings().values["StartLat"];
+        var startLong = getRoamingSettings().values["StartLong"];
+        var endLat = getRoamingSettings().values["EndLat"];
+        var endLong = getRoamingSettings().values["EndLong"];
 
         var edges = getLongitudeEdges(startLong, endLong);
         addLatitudeEdges(startLat, endLat, edges);
@@ -75,7 +77,8 @@
         Boundary: new Microsoft.Maps.LocationRect.fromCorners(firstCorner, secondCorner),
         isInBoundary: boundaryCheck,
         boundsCheck: checkBoundary,
-        fromSettings: fromAppSettings
+        fromSettings: fromAppSettings,
+        getLongEdges: getLongitudeEdges,
+        getLatEdges: addLatitudeEdges
     };
 })();
-

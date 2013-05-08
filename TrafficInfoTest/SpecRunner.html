@@ -1,58 +1,62 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Jasmine runner</title>
-
-    <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0">
-    </script>
+    <head>
+        <meta charset="utf-8" />
+        <title>Jasmine runner</title>
     
-    <link rel="stylesheet" type="text/css" href="css/jasmine.css" />
-    <script type="text/javascript" src="Scripts/jasmine.js"></script>
-    <script type="text/javascript" src="Scripts/jasmine-html.js"></script>
+        <!-- Jasmine dependencies -->
+        <link rel="stylesheet" type="text/css" href="css/jasmine.css" />
+        <script type="text/javascript" src="Scripts/jasmine.js"></script>
+        <script type="text/javascript" src="Scripts/jasmine-html.js"></script>
+    
+        <!-- Win 8 dependencies -->
+        <script src="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\DesignTime\CommonConfiguration\Neutral\Microsoft.WinJS.1.0\js\base.js"></script>
+        <script src="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\DesignTime\CommonConfiguration\Neutral\Microsoft.WinJS.1.0\js\ui.js"></script>
+        <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
 
-    <script type="text/javascript" src="specs/MapServiceSpec.js"></script>
-    <script type="text/javascript" src="specs/NztaRepositorySpec.js"></script>
-    <script type="text/javascript" src="specs/GeocodeRepositorySpec.js"></script>
+        <!-- Test scripts -->
+        <script type="text/javascript" src="specs/MapServiceSpec.js"></script>
+        <script type="text/javascript" src="specs/NztaRepositorySpec.js"></script>
+        <script type="text/javascript" src="specs/GeocodeRepositorySpec.js"></script>
+        <script type="text/javascript" src="specs/MapBoundsSpec.js"></script>
+        
+        <!-- Scripts being tested -->
+        <script type="text/javascript" src="../TrafficInfo/Services/MapService.js"></script>
+        <script type="text/javascript" src="../TrafficInfo/Repositories/NztaRepository.js"></script>
+        <script type="text/javascript" src="../TrafficInfo/Repositories/GeocodeRepository.js"></script>
+        <script type="text/javascript" src="../TrafficInfo/Scripts/JSLINQ.js"></script>
+        <script type="text/javascript" src="../TrafficInfo/Domain/CameraPushpinInfo.js"></script>
+        <script type="text/javascript" src="../TrafficInfo/MapBounds.js"></script> 
 
-    <script src="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\DesignTime\CommonConfiguration\Neutral\Microsoft.WinJS.1.0\js\base.js"></script>
-    <script src="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\DesignTime\CommonConfiguration\Neutral\Microsoft.WinJS.1.0\js\ui.js"></script>
-    <script type="text/javascript" src="../TrafficInfo/Services/MapService.js"></script>
-    <script type="text/javascript" src="../TrafficInfo/Repositories/NztaRepository.js"></script>
-    <script type="text/javascript" src="../TrafficInfo/Repositories/GeocodeRepository.js"></script>
-    <script type="text/javascript" src="../TrafficInfo/Scripts/JSLINQ.js"></script>
+        <script type="text/javascript">
+            (function () {
+                var jasmineEnv = jasmine.getEnv();
+                jasmineEnv.updateInterval = 1000;
 
-    <script type="text/javascript">
-        (function () {
-            var jasmineEnv = jasmine.getEnv();
-            jasmineEnv.updateInterval = 1000;
+                var htmlReporter = new jasmine.HtmlReporter();
 
-            var htmlReporter = new jasmine.HtmlReporter();
+                jasmineEnv.addReporter(htmlReporter);
 
-            jasmineEnv.addReporter(htmlReporter);
+                jasmineEnv.specFilter = function (spec) {
+                    return htmlReporter.specFilter(spec);
+                };
 
-            jasmineEnv.specFilter = function (spec) {
-                return htmlReporter.specFilter(spec);
-            };
+                var currentWindowOnload = window.onload;
 
-            var currentWindowOnload = window.onload;
+                window.onload = function () {
+                    if (currentWindowOnload) {
+                        currentWindowOnload();
+                    }
+                    execJasmine();
+                };
 
-            window.onload = function () {
-                if (currentWindowOnload) {
-                    currentWindowOnload();
+                function execJasmine() {
+                    jasmineEnv.execute();
                 }
-                execJasmine();
-            };
+            })();
+        </script>
+    </head>
 
-            function execJasmine() {
-                jasmineEnv.execute();
-            }
-        })();
-    </script>
-
-</head>
-
-<body>
-</body>
+    <body></body>
 </html>
