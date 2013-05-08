@@ -54,7 +54,8 @@
         },
             
         function error(result) {
-            self.onError();
+            if(self.onError != null)
+                self.onError();
         });
     };
 });

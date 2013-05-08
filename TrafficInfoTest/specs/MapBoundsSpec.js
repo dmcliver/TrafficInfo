@@ -25,7 +25,7 @@
         expect(isInNz).toBeTruthy("seventh condition failed");
     });
 
-    it("should set longitude with biggest value as east", function () {
+    it("should set longitude with biggest value as east and least value to west", function () {
 
         var edges = MapBounds.getLongEdges(10, 12);
 
@@ -38,6 +38,23 @@
         expect(edges).not.toBeNull();
         expect(edges.east).toEqual(7);
         expect(edges.west).toEqual(5);
+    });
+    
+    it("should set latitude with biggest value as north and least value to south", function () {
+
+        var edges = { east: -1, west: 0 };
+        MapBounds.getLatEdges(7, 11, edges);
+
+        expect(edges).not.toBeNull();
+        expect(edges.north).toEqual(11);
+        expect(edges.south).toEqual(7);
+        
+        edges = { east: -1, west: 0 };
+        MapBounds.getLatEdges(90, 1, edges);
+
+        expect(edges).not.toBeNull();
+        expect(edges.north).toEqual(90);
+        expect(edges.south).toEqual(1);
     });
 });
 
