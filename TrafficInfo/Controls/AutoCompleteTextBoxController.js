@@ -1,10 +1,10 @@
-﻿var AutoCompleteTextBoxController = (function(txtBox,onSuggestedResult, clearValidation) {
+﻿var AutoCompleteTextBoxController = (function(txtBox,onSuggestedResult, clearValidation,repo) {
 
     "use strict";
     var self = this;
 
     var encodeService = new UriEncoderService();
-    var geocodeRepo = new GeocodeRepository();
+    var geocodeRepo = repo || new GeocodeRepository();
     geocodeRepo.onError = displayError;
     
     var validator = new ValidatorService();

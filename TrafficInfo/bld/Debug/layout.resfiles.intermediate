@@ -65,6 +65,8 @@ Controls\AutoCompleteTextBoxController.js
 Controls\AutoCompleteTextBoxModel.js
 Controls\AutoCompleteTextBoxView.js
 Coordinators\LocationCoordinator.js
+Coordinators\ShareCoordinator.js
+Coordinators\UriBuilder.js
 css\default.css
 default.html
 Domain\Camera.js

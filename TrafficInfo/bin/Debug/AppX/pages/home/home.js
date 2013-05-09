@@ -29,7 +29,7 @@
             nztaRepository = new NztaRepository();
             new TileService().RegisterAndUpdate();
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
-            charmBarService = new CharmBarService();
+            charmBarService = new CharmBarService(new ShareCoordinator(Windows.Storage.Streams.RandomAccessStreamReference, new UriBuilder()));
             var trafficSettingsRepository = new TrafficSettingsRepository();
 
             charmBarService.getCurrentSelectedCamera = getCurrentCamera;
@@ -71,7 +71,7 @@
     function getCurrentCamera() {
         
         if(cameraInfo != null)
-            return cameraInfo.CameraUri;
+            return { Url: cameraInfo.CameraUri, Name: cameraInfo.CameraName };
         return null;
     }
 

@@ -144,7 +144,7 @@
             Microsoft.Maps.Events.addHandler(pushPin, 'click', onCameraPushpinClick);
             thisMap.entities.push(pushPin);
             thisMap.entities.push(infoBox);
-            cameraInfos.push(new CameraPushpinInfo(pushPin, infoBox, camera.Url));
+            cameraInfos.push(new CameraPushpinInfo(pushPin, infoBox, camera.Url,camera.Name));
         }
         return cameraInfos;
     };

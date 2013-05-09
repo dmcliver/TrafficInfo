@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-05-08T02:31:57.529</Modified>
+      <Modified>2013-05-09T01:10:44.803</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -1262,7 +1262,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Controls\AutoCompleteTextBoxController.js">
       <PackagePath>Controls\AutoCompleteTextBoxController.js</PackagePath>
-      <Modified>2013-05-07T05:02:24.586</Modified>
+      <Modified>2013-05-08T03:20:37.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Controls\AutoCompleteTextBoxModel.js">
       <PackagePath>Controls\AutoCompleteTextBoxModel.js</PackagePath>
@@ -1276,13 +1276,21 @@
       <PackagePath>Coordinators\LocationCoordinator.js</PackagePath>
       <Modified>2013-05-06T22:19:22.297</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\ShareCoordinator.js">
+      <PackagePath>Coordinators\ShareCoordinator.js</PackagePath>
+      <Modified>2013-05-09T01:18:18.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\UriBuilder.js">
+      <PackagePath>Coordinators\UriBuilder.js</PackagePath>
+      <Modified>2013-05-09T00:56:46.859</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Camera.js">
       <PackagePath>Domain\Camera.js</PackagePath>
       <Modified>2013-05-06T22:19:22.299</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\CameraPushpinInfo.js">
       <PackagePath>Domain\CameraPushpinInfo.js</PackagePath>
-      <Modified>2013-05-06T22:19:22.305</Modified>
+      <Modified>2013-05-08T22:55:27.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Location.js">
       <PackagePath>Domain\Location.js</PackagePath>
@@ -1326,7 +1334,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-05-07T23:02:53.760</Modified>
+      <Modified>2013-05-09T00:59:00.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
@@ -1402,11 +1410,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\CharmBarService.js">
       <PackagePath>Services\CharmBarService.js</PackagePath>
-      <Modified>2013-05-06T22:19:22.991</Modified>
+      <Modified>2013-05-09T01:13:40.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
-      <Modified>2013-05-07T23:03:41.030</Modified>
+      <Modified>2013-05-08T22:55:27.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileService.js">
       <PackagePath>Services\TileService.js</PackagePath>
@@ -1467,7 +1475,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-05-07T22:01:03.939</Modified>
+      <Modified>2013-05-09T00:58:49.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
@@ -1483,7 +1491,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-05-07T22:23:10.706</Modified>
+      <Modified>2013-05-09T01:10:43.694</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

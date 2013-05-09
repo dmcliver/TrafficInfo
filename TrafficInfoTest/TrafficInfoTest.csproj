@@ -50,6 +50,7 @@
     <Content Include="specs\MapBoundsSpec.js" />
     <Content Include="specs\MapServiceSpec.js" />
     <Content Include="specs\NztaRepositorySpec.js" />
+    <Content Include="specs\ShareCoordinatorSpec.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

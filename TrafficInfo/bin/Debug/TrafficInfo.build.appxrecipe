@@ -956,6 +956,12 @@
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\LocationCoordinator.js">
       <PackagePath>Coordinators\LocationCoordinator.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\ShareCoordinator.js">
+      <PackagePath>Coordinators\ShareCoordinator.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Coordinators\UriBuilder.js">
+      <PackagePath>Coordinators\UriBuilder.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Camera.js">
       <PackagePath>Domain\Camera.js</PackagePath>
     </AppxPackagedFile>

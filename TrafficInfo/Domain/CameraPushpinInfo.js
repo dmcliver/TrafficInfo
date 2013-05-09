@@ -1,10 +1,16 @@
-﻿var CameraPushpinInfo = (function(pushPin,infoBox, cameraUri) {
+﻿var CameraPushpinInfo = (function(pushPin,infoBox, cameraUri,cameraName) {
 
     "use strict";
 
     Object.defineProperty(this, "CameraUri", {
         get : function () {
             return cameraUri;
+        }
+    });
+
+    Object.defineProperty(this, "CameraName", {
+        get: function() {
+            return cameraName;
         }
     });
 

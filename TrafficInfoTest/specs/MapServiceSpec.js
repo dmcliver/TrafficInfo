@@ -39,13 +39,21 @@ describe("MapService", function () {
         var map = {};
         map.entities = [];
 
-        var cams = [{ Url: "Blah" }, { Url: "Nah" }, { Url: "Tah" }];
+        var cams = [{ Url: "Blah", Name:"One" }, { Url: "Nah", Name:"Two" }, { Url: "Tah",Name:"Three" }];
 
         var mapService = new MapService(factory, map);
         var cameraInfos = mapService.setMapWithCameras(cams, null);
         
         expect(map.entities.length).toEqual(6);
         expect(cameraInfos.length).toEqual(3);
+        
+        expect(cameraInfos[0].CameraName).toEqual("One");
+        expect(cameraInfos[1].CameraName).toEqual("Two");
+        expect(cameraInfos[2].CameraName).toEqual("Three");
+        
+        expect(cameraInfos[0].CameraUri).toEqual("Blah");
+        expect(cameraInfos[1].CameraUri).toEqual("Nah");
+        expect(cameraInfos[2].CameraUri).toEqual("Tah");
     });
     
     it("should not create push pins for a non set of camera data", function () {

@@ -120,6 +120,8 @@
     <Content Include="Controls\AutoCompleteTextBoxModel.js" />
     <Content Include="Controls\AutoCompleteTextBoxView.js" />
     <Content Include="Coordinators\LocationCoordinator.js" />
+    <Content Include="Coordinators\ShareCoordinator.js" />
+    <Content Include="Coordinators\UriBuilder.js" />
     <Content Include="css\default.css" />
     <Content Include="Domain\Camera.js" />
     <Content Include="Domain\CameraPushpinInfo.js" />
