@@ -26,7 +26,8 @@
 
             document.getElementById("helpCmd").winControl.addEventListener("click", showHelp);
             document.getElementById("favCmd").winControl.addEventListener("click", showSettings);
-
+            document.getElementById("searchCmd").winControl.addEventListener("click", showSearch);
+            
             mapService = new MapService(new PushPinFactory());
             nztaRepository = new NztaRepository();
             new TileService().RegisterAndUpdate();
@@ -175,6 +176,10 @@
 
     function showSettings() {
         WinJS.Navigation.navigate('/pages/searchRoute/searchRoute.html');
+    }
+    
+    function showSearch() {
+        Windows.ApplicationModel.Search.SearchPane.getForCurrentView().show();
     }
 })();
 

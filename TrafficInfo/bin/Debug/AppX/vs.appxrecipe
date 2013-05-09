@@ -1334,7 +1334,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-05-09T03:25:27.671</Modified>
+      <Modified>2013-05-09T04:57:42.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
@@ -1350,7 +1350,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\PushpinFactory.js">
       <PackagePath>PushpinFactory.js</PackagePath>
-      <Modified>2013-05-07T21:54:56.194</Modified>
+      <Modified>2013-05-09T03:48:17.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\CameraCoordinateRepository.js">
       <PackagePath>Repositories\CameraCoordinateRepository.js</PackagePath>
@@ -1475,11 +1475,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-05-09T00:58:49.812</Modified>
+      <Modified>2013-05-09T04:02:36.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2013-05-06T22:19:24.403</Modified>
+      <Modified>2013-05-09T03:44:56.170</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.html">
       <PackagePath>pages\searchRoute\searchRoute.html</PackagePath>
