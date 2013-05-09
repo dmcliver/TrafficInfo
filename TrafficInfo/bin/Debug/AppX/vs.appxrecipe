@@ -1334,7 +1334,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2013-05-09T00:59:00.922</Modified>
+      <Modified>2013-05-09T03:25:27.671</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\searchRoute\searchRoute.js">
       <PackagePath>pages\searchRoute\searchRoute.js</PackagePath>
@@ -1410,7 +1410,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\CharmBarService.js">
       <PackagePath>Services\CharmBarService.js</PackagePath>
-      <Modified>2013-05-09T01:13:40.453</Modified>
+      <Modified>2013-05-09T03:24:24.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
