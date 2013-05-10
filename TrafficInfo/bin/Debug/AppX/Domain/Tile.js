@@ -5,7 +5,7 @@
     var tileTextAttributes = tileXml.getElementsByTagName("text");
     var tileBindingAttributes = tileXml.getElementsByTagName("binding");
     var titleImageAttributes = tileXml.getElementsByTagName("image");
-
+ 
     Object.defineProperty(this, "text", {
         set :function (text) {
             tileTextAttributes[0].appendChild(tileXml.createTextNode(text));

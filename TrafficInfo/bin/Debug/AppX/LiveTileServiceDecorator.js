@@ -8,7 +8,7 @@
         tile.text = mess;
         tile.branding = prop;
         tile.image = img;
-
+        
         tileChildStrategy.setChild(tile, squareTile);
         
         return tile;

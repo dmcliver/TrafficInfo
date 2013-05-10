@@ -1061,6 +1061,9 @@
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\MapService.js">
       <PackagePath>Services\MapService.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileNotificationFactory.js">
+      <PackagePath>Services\TileNotificationFactory.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileService.js">
       <PackagePath>Services\TileService.js</PackagePath>
     </AppxPackagedFile>
@@ -1075,6 +1078,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Task\UpdateTileTask.js">
       <PackagePath>Task\UpdateTileTask.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\TileBadgeUpdater.js">
+      <PackagePath>TileBadgeUpdater.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\WideTileBehaviour.js">
       <PackagePath>WideTileBehaviour.js</PackagePath>

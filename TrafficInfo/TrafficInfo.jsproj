@@ -181,11 +181,13 @@
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Services\CharmBarService.js" />
     <Content Include="Services\MapService.js" />
+    <Content Include="Services\TileNotificationFactory.js" />
     <Content Include="Services\TileService.js" />
     <Content Include="Services\UriEncoderService.js" />
     <Content Include="Services\ValidatorService.js" />
     <Content Include="SquareTileBehaviour.js" />
     <Content Include="Task\UpdateTileTask.js" />
+    <Content Include="TileBadgeUpdater.js" />
     <Content Include="WideTileBehaviour.js" />
     <None Include="TrafficInfo_TemporaryKey.pfx" />
   </ItemGroup>

@@ -1,14 +1,16 @@
-﻿var TileService = (function() {
+﻿var TileService = (function(squareDecorator, wideDecorator, tileUpdater, badgeUpdater, factory, repository) {
 
     "use strict";
 
-    var repo = new NztaRepository();
+    var repo = repository || new NztaRepository();
     repo.retrieveAllIncidentsResponse = notifyTile;
     var notifier = null;
-    var updater = null;
-    var squareTileDecorator = new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText04, new NullTileServiceDecorator(), new SquareTileNullBehaviour());
-    var wideTileDecorator = new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileWidePeekImage04, squareTileDecorator, new WideTileBehaviour());
-    
+    var updater = tileUpdater;
+    var squareTileDecorator = squareDecorator || new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText04, new NullTileServiceDecorator(), new SquareTileNullBehaviour());
+    var wideTileDecorator = wideDecorator || new LiveTileServiceDecorator(Windows.UI.Notifications.TileTemplateType.tileWidePeekImage04, squareTileDecorator, new WideTileBehaviour());
+    var tileBadgeUpdater = badgeUpdater || new TileBadgeUpdater();
+    var tileNotifcationFactory = factory || new TileNotificationFactory();
+
     var register = function() {
 
         var builder = new Windows.ApplicationModel.Background.BackgroundTaskBuilder();
@@ -26,8 +28,8 @@
             var mess = result[j].eventComments;
             
             var tile = wideTileDecorator.createTile(mess, "name", "images/ryanlerch_Warning_Sheep_Roadsign (w).png");
-            
-            var tileNotification = new Windows.UI.Notifications.TileNotification(tile.templateContent);
+
+            var tileNotification = tileNotifcationFactory.create(tile.templateContent);
             tileNotification.expirationTime = new Date(new Date().getTime() + 60 * 13 * 1000);
 
             if (updater == null) {
@@ -41,6 +43,8 @@
             if (notifier != null)
                 notifier();
         }
+
+        tileBadgeUpdater.update(result.length);
     }
     
     var updateTile = function (notifyDone) {

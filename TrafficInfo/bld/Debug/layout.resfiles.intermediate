@@ -126,9 +126,11 @@ Scripts\underscore.js
 Scripts\underscore.min.js
 Services\CharmBarService.js
 Services\MapService.js
+Services\TileNotificationFactory.js
 Services\TileService.js
 Services\UriEncoderService.js
 Services\ValidatorService.js
 SquareTileBehaviour.js
 Task\UpdateTileTask.js
+TileBadgeUpdater.js
 WideTileBehaviour.js

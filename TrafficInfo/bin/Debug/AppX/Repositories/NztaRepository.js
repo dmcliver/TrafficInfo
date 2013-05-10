@@ -44,10 +44,12 @@
 
                     eventComments: re.querySelector("eventComments").textContent,
                     eventType: re.querySelector("eventType").textContent,
-                    location: re.querySelector("locationArea").textContent
+                    location: re.querySelector("locationArea").textContent,
+                    description: re.querySelector("eventDescription").textContent
                 };
             }).Where(function (evt) {
-                return evt.eventType == "Damage Report";
+                var comments = evt.eventComments.toLowerCase();
+                return evt.eventType == "Damage Report" || evt.description == "Crash" || comments.indexOf("incident") != -1 || comments.indexOf("accident") != -1 || comments.indexOf("collision") != -1;
             }).items;
 
             self.retrieveAllIncidentsResponse(queryResult);

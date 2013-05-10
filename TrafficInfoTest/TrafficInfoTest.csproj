@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\jasmine.css" />
+    <Content Include="IncidentFixtureBuilder.js" />
     <Content Include="Scripts\jasmine-html.js" />
     <Content Include="Scripts\jasmine.js" />
     <Content Include="SpecRunner.html" />
@@ -51,6 +52,7 @@
     <Content Include="specs\MapServiceSpec.js" />
     <Content Include="specs\NztaRepositorySpec.js" />
     <Content Include="specs\ShareCoordinatorSpec.js" />
+    <Content Include="specs\TileServiceSpec.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

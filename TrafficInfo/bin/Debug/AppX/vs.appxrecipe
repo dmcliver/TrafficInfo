@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-05-09T01:10:44.803</Modified>
+      <Modified>2013-05-10T00:27:47.569</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -1306,7 +1306,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\Tile.js">
       <PackagePath>Domain\Tile.js</PackagePath>
-      <Modified>2013-05-06T22:19:22.449</Modified>
+      <Modified>2013-05-09T23:15:33.449</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Domain\TrafficConditions.js">
       <PackagePath>Domain\TrafficConditions.js</PackagePath>
@@ -1322,7 +1322,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\LiveTileServiceDecorator.js">
       <PackagePath>LiveTileServiceDecorator.js</PackagePath>
-      <Modified>2013-05-06T22:19:22.455</Modified>
+      <Modified>2013-05-09T23:15:54.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\MapBounds.js">
       <PackagePath>MapBounds.js</PackagePath>
@@ -1362,7 +1362,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\NztaRepository.js">
       <PackagePath>Repositories\NztaRepository.js</PackagePath>
-      <Modified>2013-05-08T02:33:17.559</Modified>
+      <Modified>2013-05-09T22:13:21.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Repositories\RoamingSettingsRepository.js">
       <PackagePath>Repositories\RoamingSettingsRepository.js</PackagePath>
@@ -1416,9 +1416,13 @@
       <PackagePath>Services\MapService.js</PackagePath>
       <Modified>2013-05-08T22:55:27.397</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileNotificationFactory.js">
+      <PackagePath>Services\TileNotificationFactory.js</PackagePath>
+      <Modified>2013-05-10T00:10:38.511</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\TileService.js">
       <PackagePath>Services\TileService.js</PackagePath>
-      <Modified>2013-05-06T22:19:22.999</Modified>
+      <Modified>2013-05-10T00:16:38.262</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Services\UriEncoderService.js">
       <PackagePath>Services\UriEncoderService.js</PackagePath>
@@ -1435,6 +1439,10 @@
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\Task\UpdateTileTask.js">
       <PackagePath>Task\UpdateTileTask.js</PackagePath>
       <Modified>2013-05-06T22:19:23.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\TileBadgeUpdater.js">
+      <PackagePath>TileBadgeUpdater.js</PackagePath>
+      <Modified>2013-05-09T23:38:14.899</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\WideTileBehaviour.js">
       <PackagePath>WideTileBehaviour.js</PackagePath>
@@ -1475,7 +1483,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2013-05-09T04:02:36.066</Modified>
+      <Modified>2013-05-10T00:09:59.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\default.html">
       <PackagePath>default.html</PackagePath>
@@ -1491,7 +1499,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-05-09T01:10:43.694</Modified>
+      <Modified>2013-05-10T00:27:47.101</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
