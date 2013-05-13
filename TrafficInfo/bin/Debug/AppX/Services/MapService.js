@@ -8,7 +8,7 @@
     var searchManager = null;
     var trafficeManager = trafficManager;
     var thisMap = map;
-    
+    var backgroundImageUpdater = new BackgroundImageUpdater();
     this.createMap = function (initMap) {
 
         self.mapInitializedCallback = initMap;
@@ -38,6 +38,7 @@
         };
 
         thisMap = new Microsoft.Maps.Map(document.getElementById("mapDiv"), mapOptions);
+        Microsoft.Maps.Events.addHandler(thisMap, "viewchangeend", viewChanged);
         Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', { callback: trafficModuleLoaded });
 
         if (Windows.Storage.ApplicationData.current.roamingSettings.values["SettingsLocation"]) {
@@ -48,6 +49,15 @@
         }
         Microsoft.Maps.loadModule('Microsoft.Maps.Search', { callback: loadCurrentLocation });
     };
+
+    function setBackgroundImage(imgUrl) {
+        
+        $("#mainBody").css("background-image","url('/images/" + imgUrl + "');");
+    };
+
+    function viewChanged(evt) {
+        backgroundImageUpdater.updateImage(thisMap.getCenter(), {setBackground:setBackgroundImage});
+    }
 
     function loadCurrentLocation() {
 

@@ -43,5 +43,4 @@
                 .appendChild(tileXml.importNode(bindingItem, true));
         }
     });
-    
 });

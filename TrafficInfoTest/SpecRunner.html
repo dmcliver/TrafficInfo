@@ -22,6 +22,7 @@
         <script type="text/javascript" src="specs/MapBoundsSpec.js"></script>
         <script type="text/javascript" src="specs/ShareCoordinatorSpec.js"></script>
         <script type="text/javascript" src="specs/TileServiceSpec.js"></script>
+        <script type="text/javascript" src="specs/BackgroundImageUpdaterSpec.js"></script>
         <script type="text/javascript" src="IncidentFixtureBuilder.js"></script>
         
         <!-- Scripts being tested -->
@@ -40,6 +41,8 @@
         <script type="text/javascript" src="../TrafficInfo/WideTileBehaviour.js"></script> 
         <script type="text/javascript" src="../TrafficInfo/Services/TileService.js"></script> 
         <script type="text/javascript" src="../TrafficInfo/Services/TileNotificationFactory.js"></script> 
+        <script type="text/javascript" src="../TrafficInfo/Services/TileNotificationFactory.js"></script> 
+        <script src="../TrafficInfo/BackgroundImageUpdater.js"></script>
 
         <script type="text/javascript">
             (function () {
@@ -70,12 +73,12 @@
         </script>
         <script type="text/javascript">
             function callme() {
-                var i = 0;
+                location.reload();
             }
         </script>
     </head>
 
     <body>
-        <button onclick="javascript:callme();">Hi</button>
+        <button onclick="javascript:callme();">Re-run</button>
     </body>
 </html>

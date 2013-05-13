@@ -1,3 +1,4 @@
+BackgroundImageUpdater.js
 Content\themes\base\images\animated-overlay.gif
 Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png
 Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png
@@ -78,19 +79,14 @@ Domain\Tile.js
 Domain\TrafficConditions.js
 images\AklSthMwy.jpg
 images\AklSthMwySmll.jpg
-images\auckland_traffic.jpg
+images\ChrtchrchTrffc.JPG
+images\DunedinTrffc.JPG
 images\ryanlerch_Warning_Sheep_Roadsign (1).png
 images\ryanlerch_Warning_Sheep_Roadsign (2).png
 images\ryanlerch_Warning_Sheep_Roadsign (3).png
 images\ryanlerch_Warning_Sheep_Roadsign (w).png
-images\SH20A_And_Kirkbride_Road_Intersection.jpg
-images\SH20A_And_Kirkbride_Road_IntersectionSplash.jpg
-images\Sheep_traffic_jam.jpg
-images\UK_traffic_sign_811 (1).png
-images\UK_traffic_sign_811 (2).png
-images\UK_traffic_sign_811 (w).png
-images\UK_traffic_sign_811.png
 images\video-icon.png
+images\WlgMwy.JPG
 js\default.js
 js\navigator.js
 LiveTileServiceDecorator.js

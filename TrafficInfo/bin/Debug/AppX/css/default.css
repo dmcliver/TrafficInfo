@@ -3,7 +3,7 @@
     width: 100%;
 }
 
-body {
+#mainBody {
     background-image: url('/images/AklSthMwy.jpg'); 
     background-repeat: no-repeat;
     /*background-size: 2560px 1440px;*/
