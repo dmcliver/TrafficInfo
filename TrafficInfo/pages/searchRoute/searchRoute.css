@@ -102,3 +102,9 @@
         margin-left: 100px;
     }
 }
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    #formBackgnd {
+        margin-left: -0px;
+    }
+}

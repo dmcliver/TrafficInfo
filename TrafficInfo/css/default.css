@@ -3,11 +3,7 @@
     width: 100%;
 }
 
-#mainBody {
-    background-image: url('/images/AklSthMwy.jpg'); 
-    background-repeat: no-repeat;
-    /*background-size: 2560px 1440px;*/
-}
+
 
 .fragment {
     /* Define a grid with rows for a banner and a body */
@@ -42,6 +38,14 @@
     .fragment section[role=main] {
         -ms-grid-row: 2;
     }
+
+
+    #mainBody {
+        background-image: url('/images/AklSthMwy.jpg');
+        background-repeat: repeat-y;
+        background-size: 100%
+    }
+
 
 @media screen and (-ms-view-state: snapped) {
     .fragment header[role=banner] {

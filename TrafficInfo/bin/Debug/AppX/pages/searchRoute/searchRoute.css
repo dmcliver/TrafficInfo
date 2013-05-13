@@ -33,7 +33,7 @@
     -ms-grid-columns: 400px 400px;
     -ms-grid-rows: 1fr;
     height: 40px;
-    width: 840px;
+    width: 700px;
 }
 
 #startControl, #endControl {
@@ -100,5 +100,11 @@
 @media screen and (-ms-view-state: portrait) {
     .homepage section[role=main] {
         margin-left: 100px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    #formBackgnd {
+        margin-left: -0px;
     }
 }
