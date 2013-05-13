@@ -43,9 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\jasmine.css" />
+    <Content Include="Fixtures\DataPropertiesFixture.js" />
     <Content Include="IncidentFixtureBuilder.js" />
+    <Content Include="Mocks\BadgeUpdaterMock.js" />
     <Content Include="Mocks\MapViewMock.js" />
+    <Content Include="Mocks\RequestDataMock.js" />
     <Content Include="Mocks\SettingsViewMock.js" />
+    <Content Include="Mocks\TileUpdaterMock.js" />
+    <Content Include="Mocks\WideTileDecoratorMock.js" />
+    <Content Include="TileNotificationDummy.js" />
     <Content Include="Mocks\TrafficManagerMock.js" />
     <Content Include="Scripts\jasmine-html.js" />
     <Content Include="Scripts\jasmine.js" />
@@ -59,7 +65,10 @@
     <Content Include="specs\ShareCoordinatorSpec.js" />
     <Content Include="specs\TileServiceSpec.js" />
     <Content Include="Stubs\PushpinFactoryStub.js" />
+    <Content Include="Stubs\RandomAccessReferenceStub.js" />
     <Content Include="Stubs\RoamingSettingsRepositoryStub.js" />
+    <Content Include="Stubs\TileNotificationFactoryStub.js" />
+    <Content Include="Stubs\UriBuilderStub.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

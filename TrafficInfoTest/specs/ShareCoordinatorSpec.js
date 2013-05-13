@@ -1,25 +1,30 @@
 ﻿describe("ShareCoordinator", function () {
     
-    it("should set camera uri and name for data transfer manager event", function() {
-        var randomAccessReferenceStub = { createFromUri: function(uriStr) { return uriStr; } };
-        var uriBuilderStub = { build: function (uriStr) { return uriStr; } };
+    it("should set camera uri and name for data transfer manager event", function () {
+
+        var uri = "http://www.thisisntawebsite.com";
+        var cameraName = "Penrose - Station Rd";
+        
+        var randomAccessReferenceStub = new RandomAccessReferenceStub();
+        randomAccessReferenceStub.onCreateFromUriReturn(uri);
+
+        var uriBuilderStub = new UriBuilderStub();
+        uriBuilderStub.onBuildReturn(uri);
+
+        var dataProperties = new DataPropertiesFixture("", "", null);
+
+        var dataMock = new RequestDataMock();
+        dataMock.stubProperties(dataProperties);
         
         var shareCoordinator = new ShareCoordinator(randomAccessReferenceStub,uriBuilderStub);
+        shareCoordinator.setShareDetails(dataMock, { Url: uri, Name: cameraName });
 
-        this.uri = null;
-        var self = this;
-
-        var data = { setUri: function (u) { self.uri = u; }};
-        data.properties = { title: "", description: "", thumbnail: null };
-
-        shareCoordinator.setShareDetails(data, { Url: "www.blach.com", Name: "Penrose - Station Rd" });
-
-        expect(data.properties.title).toEqual("Traffic camera image");
-        expect(data.properties.description).toEqual("Traffic situation from selected camera: " + "Penrose - Station Rd");
-        expect(this.uri).not.toBeNull("Uri should not be null");
-        expect(data.properties.thumbnail).not.toBeNull("Thumbnail should not be null");
-        expect(this.uri).toEqual("www.blach.com");
-        expect(data.properties.thumbnail).toEqual("www.blach.com");
+        expect(dataProperties.title).toEqual("Traffic camera image");
+        expect(dataProperties.description).toEqual("Traffic situation from selected camera: " + cameraName);
+        expect(dataMock.getArgForSetUri()).not.toBeNull("Uri should not be null");
+        expect(dataProperties.thumbnail).not.toBeNull("Thumbnail should not be null");
+        expect(dataMock.getArgForSetUri()).toEqual(uri);
+        expect(dataProperties.thumbnail).toEqual(uri);
     });
 });
 
