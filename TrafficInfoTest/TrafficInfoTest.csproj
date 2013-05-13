@@ -44,6 +44,9 @@
   <ItemGroup>
     <Content Include="css\jasmine.css" />
     <Content Include="IncidentFixtureBuilder.js" />
+    <Content Include="Mocks\MapViewMock.js" />
+    <Content Include="Mocks\SettingsViewMock.js" />
+    <Content Include="Mocks\TrafficManagerMock.js" />
     <Content Include="Scripts\jasmine-html.js" />
     <Content Include="Scripts\jasmine.js" />
     <Content Include="SpecRunner.html" />
@@ -52,12 +55,16 @@
     <Content Include="specs\MapBoundsSpec.js" />
     <Content Include="specs\MapServiceSpec.js" />
     <Content Include="specs\NztaRepositorySpec.js" />
+    <Content Include="specs\SettingsPresenterSpec.js" />
     <Content Include="specs\ShareCoordinatorSpec.js" />
     <Content Include="specs\TileServiceSpec.js" />
+    <Content Include="Stubs\PushpinFactoryStub.js" />
+    <Content Include="Stubs\RoamingSettingsRepositoryStub.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

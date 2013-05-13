@@ -160,6 +160,7 @@
     <Content Include="pages\settings\settings.html" />
     <Content Include="pages\settings\settings.js" />
     <Content Include="Presenters\SearchRoutePresenter.js" />
+    <Content Include="Presenters\SettingsPresenter.js" />
     <Content Include="PushpinFactory.js" />
     <Content Include="Repositories\CameraCoordinateRepository.js" />
     <Content Include="Repositories\GeocodeRepository.js" />

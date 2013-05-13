@@ -3,48 +3,34 @@ describe("MapService", function () {
 
     it("should clear all pushpin & infobox entities associated with map & refresh traffic", function () {
         
-        var thisMap = {};
+        var trafficManagerMock = new TrafficManagerMock();
 
-        var showCalls = 0;
-        var incidentCalls = 0;
-        var flowCalls = 0;
-        var removeCalls = 0;
+        var mapViewMock = new MapViewMock();
+        mapViewMock.stubEntities([new Microsoft.Maps.Pushpin(), new Microsoft.Maps.Infobox(), {desc: "This is a fake obj"}, null, undefined]);
+        mapViewMock.onGetLengthReturn(2);
 
-        var length = 2;
-
-        var trafficManager = {
-            show: function () { showCalls++; },
-            showIncidents: function () { incidentCalls++; },
-            showFlow: function () { return flowCalls++; }
-        };
-
-        thisMap.entities = [new Microsoft.Maps.Pushpin(), new Microsoft.Maps.Infobox(), {desc: "This is a fake obj"}, null, undefined];
-        thisMap.entities.getLength = function () { return length; };
-        thisMap.entities.remove = function (entity) { removeCalls++; };
-        var mapService = new MapService(null, thisMap, trafficManager);
+        var mapService = new MapService(null, mapViewMock, trafficManagerMock);
         mapService.clearMap();
 
-        expect(removeCalls).toEqual(length);
-        expect(showCalls).toEqual(1);
-        expect(incidentCalls).toEqual(1);
-        expect(flowCalls).toEqual(1);
+        expect(mapViewMock.removeCalls()).toEqual(2);
+        expect(trafficManagerMock.getCallsOnShow()).toEqual(1);
+        expect(trafficManagerMock.getCallsOnIncidents()).toEqual(1);
+        expect(trafficManagerMock.getCallsOnFlow()).toEqual(1);
     });
 
     it("should create a push pin for each camera object", function () {
-        var factory = {
-            createPin: function (c) { return 1; },
-            createInfobox: function (c) { return 2; }
-        };
 
-        var map = {};
-        map.entities = [];
+        var factoryStub = createFactoryStub();
+
+        var mapViewMock = new MapViewMock();
+        mapViewMock.stubEntities([]);
 
         var cams = [{ Url: "Blah", Name:"One" }, { Url: "Nah", Name:"Two" }, { Url: "Tah",Name:"Three" }];
 
-        var mapService = new MapService(factory, map);
+        var mapService = new MapService(factoryStub, mapViewMock);
         var cameraInfos = mapService.setMapWithCameras(cams, null);
         
-        expect(map.entities.length).toEqual(6);
+        expect(mapViewMock.entityCount()).toEqual(6);
         expect(cameraInfos.length).toEqual(3);
         
         expect(cameraInfos[0].CameraName).toEqual("One");
@@ -57,39 +43,43 @@ describe("MapService", function () {
     });
     
     it("should not create push pins for a non set of camera data", function () {
-        var factory = {
-            createPin: function (c) { return 1; },
-            createInfobox: function (c) { return 2; }
-        };
+        
+        var factoryStub = createFactoryStub();
 
-        var map = {};
-        map.entities = [];
+        var mapViewMock = new MapViewMock();
+        mapViewMock.stubEntities([]);
 
         var cams = [];
 
-        var mapService = new MapService(factory, map);
+        var mapService = new MapService(factoryStub, mapViewMock);
         var cameraInfos = mapService.setMapWithCameras(cams, null);
 
-        expect(map.entities.length).toEqual(0);
+        expect(mapViewMock.entityCount()).toEqual(0);
         expect(cameraInfos.length).toEqual(0);
     });
     
     it("should not create push pins for a set of null camera data", function () {
-        var factory = {
-            createPin: function (c) { return 1; },
-            createInfobox: function (c) { return 2; }
-        };
 
-        var map = {};
-        map.entities = [];
+        var factoryStub = createFactoryStub();
+
+        var mapViewMock = new MapViewMock();
+        mapViewMock.stubEntities([]);
 
         var cams = null;
 
-        var mapService = new MapService(factory, map);
+        var mapService = new MapService(factoryStub, mapViewMock);
         var cameraInfos = mapService.setMapWithCameras(cams, null);
 
-        expect(map.entities.length).toEqual(0);
+        expect(mapViewMock.entityCount()).toEqual(0);
         expect(cameraInfos.length).toEqual(0);
     });
+    
+    function createFactoryStub() {
+        
+        var factoryStub = new PushpinFactoryStub();
+        factoryStub.onCreateInfoboxReturn(2);
+        factoryStub.onCreatePinReturn(1);
+        return factoryStub;
+    }
 });
 
