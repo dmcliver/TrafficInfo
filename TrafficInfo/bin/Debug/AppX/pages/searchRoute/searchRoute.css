@@ -33,7 +33,7 @@
     -ms-grid-columns: 400px 400px;
     -ms-grid-rows: 1fr;
     height: 40px;
-    width: 700px;
+    width: 840px;
 }
 
 #startControl, #endControl {
@@ -57,7 +57,6 @@
     -ms-grid-column: 1;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    
 }
 
 #endLoc{
@@ -104,7 +103,21 @@
 }
 
 @media screen and (-ms-view-state: fullscreen-portrait) {
+    
     #formBackgnd {
-        margin-left: -0px;
+        -ms-grid-columns: 400px;
+        -ms-grid-rows: 1fr 1fr;
+        width: 500px;
+    }
+
+    #endControl {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    #endLocValid {
+        margin-left: -27px;   
     }
 }
