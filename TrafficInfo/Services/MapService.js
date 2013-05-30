@@ -52,7 +52,7 @@
 
     function setBackgroundImage(imgUrl) {
         
-        $("#mainBody").css("background-image","url('/images/" + imgUrl + "');");
+        document.getElementById("mainBody").style.backgroundImage = "url('/images/" + imgUrl + "')";
     };
 
     function viewChanged(evt) {

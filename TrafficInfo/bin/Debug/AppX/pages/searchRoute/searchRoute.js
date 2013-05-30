@@ -7,14 +7,11 @@
 
     var endTxtBxIdName = "endLoc";
     var startTxtBxIdName = "startLoc";
+    
+    var startLocValid = "startLocValid";
+    var endLocValid = "endLocValid";
 
-    var endTxtBxId = "#endLoc";
-    var startTxtBxId = "#startLoc";
-
-    var startLocValid = "#startLocValid";
-    var endLocValid = "#endLocValid";
-
-    var allErrors = "#allErrors";
+    var allErrors = "allErrors";
 
     var startLocDataModel = null;
     var endLocDataModel = null;
@@ -30,10 +27,10 @@
             textBox1 = new AutoCompleteTextBox(startTxtBxIdName, "startSearchResultList", onStartSuggestedResult, onStartSuggestedResult, onStartSuggestedResult, startLocIsInvalid);
             textBox2 = new AutoCompleteTextBox(endTxtBxIdName, "endSearchResultList", onEndSuggestedResult, onEndSuggestedResult, onEndSuggestedResult, endLocIsInvalid);
 
-            $("#helpButton").click(function(evt) {
+            document.getElementById("helpButton").onclick = function() {
                 WinJS.Navigation.navigate("/pages/help/help.html");
-            });
-
+            };
+            
             var toggleSwitch = document.getElementById("settingSwitch");
 
             presenter.showSettingsIfEnabled();
@@ -54,24 +51,24 @@
 
         enableControls();
 
-        $(startTxtBxId).val(startPlace.name);
-        $(endTxtBxId).val(endPlace.name);
+        document.getElementById(startTxtBxIdName).value = startPlace.name;
+        document.getElementById(endTxtBxIdName).value = endPlace.name;
 
         startLocDataModel = new AutoCompleteTextBoxModel(startPlace.name, startPlace.lat, startPlace.long);
         endLocDataModel = new AutoCompleteTextBoxModel(endPlace.name, endPlace.lat, endPlace.long);
 
-        $(startLocValid).hide();
-        $(endLocValid).hide();
+        document.getElementById(startLocValid).style.display = 'none';
+        document.getElementById(endLocValid).style.display = 'none';
     };
 
     function startLocIsInvalid() {
         startLocDataModel = null;
-        $(startLocValid).show();
+        document.getElementById(startLocValid).style.display = 'block';
     }
 
     function endLocIsInvalid() {
         endLocDataModel = null;
-        $(endLocValid).show();
+        document.getElementById(endLocValid).style.display = 'block';
     }
 
     function clearTextBox2(evt) {
@@ -104,8 +101,8 @@
         
         if (startLocDataModel == null) {
             
-            $(allErrors).text(validationMessage);
-            $(allErrors).css('display', 'block');
+            document.getElementById(allErrors).innerText = validationMessage;
+            document.getElementById(allErrors).style.display = 'block';
             return false;
         }
         return true;
@@ -119,15 +116,15 @@
     function onStartSuggestedResult(model) {
         
         startLocDataModel = model;
-        $(startTxtBxId).val(model.bind_prop);
-        $(startLocValid).hide();
+        document.getElementById(startTxtBxIdName).value = model.bind_prop;
+        document.getElementById(startLocValid).style.display = 'none';
     }
     
     function onEndSuggestedResult(model) {
         
         endLocDataModel = model;
-        $(endTxtBxId).val(model.bind_prop);
-        $("#endLocValid").hide();
+        document.getElementById(endTxtBxIdName).value = model.bind_prop;
+        document.getElementById(endLocValid).style.dislay = 'none';
     }
 
     function toggleControlEnable(evt) {

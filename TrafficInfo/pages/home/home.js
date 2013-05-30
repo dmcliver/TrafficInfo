@@ -13,13 +13,12 @@
     var value;
     var listViewControl;
     var listViewCollection;
-
+    var homePresenter;
+    
     WinJS.UI.Pages.define("/pages/home/home.html", {
 
         ready: function (element, options) {
-
-            displayTutorial();
-
+                       
             listViewControl = document.getElementById("searchResultList").winControl;
             listViewControl.addEventListener("selectionchanged", onSelectedCity);
             listViewControl.addEventListener("iteminvoked", firePopupLeftClick);
@@ -34,6 +33,7 @@
             coordinator = new LocationCoordinator(new CameraCoordinateRepository());
             charmBarService = new CharmBarService(new ShareCoordinator(Windows.Storage.Streams.RandomAccessStreamReference, new UriBuilder()));
             var trafficSettingsRepository = new TrafficSettingsRepository();
+            homePresenter = new HomePresenter.Presenter();
 
             charmBarService.getCurrentSelectedCamera = getCurrentCamera;
             charmBarService.invokeSuggestedResults = integratedSearchForNewLocation;
@@ -45,6 +45,7 @@
     });
 
     function displayTutorial() {
+
         var runOnce = Windows.Storage.ApplicationData.current.roamingSettings.values["isFirstTime"];
 
         if (runOnce == null || runOnce == true) {
@@ -83,6 +84,8 @@
         Microsoft.Maps.Events.addHandler(map, 'click', hideInfobox);
         nztaRepository.retrieveAllCameras();
         setTimeout(refreshCameras, value * 60 * 1000);
+
+        displayTutorial();
     }
 
     function refreshCameras() {
@@ -160,14 +163,11 @@
 
     function onCameraPushpinClick(e) {
 
-        var filteredCameras = _.filter(cameraInfos, function (c) {
-            return c.getPushpin() == e.target;
-        });
+        homePresenter.updateViewWithCameraFromTarget(e, cameraInfos);
+    }
 
-        if (filteredCameras.length > 0) {
-            cameraInfo = filteredCameras[0];
-            cameraInfo.show();
-        }
+    function showCamera(camera) {
+        camera.show();
     }
 
     function showHelp() {
@@ -181,6 +181,10 @@
     function showSearch() {
         Windows.ApplicationModel.Search.SearchPane.getForCurrentView().show();
     }
+
+    WinJS.Namespace.define("HomeCodeBehind", {
+        showCamera: showCamera
+    });
 })();
 
 

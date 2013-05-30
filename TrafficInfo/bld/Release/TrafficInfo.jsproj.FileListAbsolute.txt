@@ -1,0 +1,13 @@
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Release\resources.pri
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Release\AppxManifest.xml
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bin\Release\TrafficInfo.build.appxrecipe
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\priconfig.xml
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\layout.resfiles
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\resources.resfiles
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\pri.resfiles
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\LanguageQualifiers.txt
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\ProjectArchitectures.txt
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\priconfig.xml.intermediate
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\layout.resfiles.intermediate
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\resources.resfiles.intermediate
+C:\Users\Annon\Documents\TrafficInfoSrc\TrafficInfo\bld\Release\pri.resfiles.intermediate

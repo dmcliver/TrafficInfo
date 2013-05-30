@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="3e53a469-4019-4682-82a8-1dad69748c5a" Version="1.0.0.0" Publisher="CN=annon" ProcessorArchitecture="neutral" />
+  <Identity Name="33329DanielMcliver.KiwiTraffic" Version="1.0.0.15" Publisher="CN=014E27D3-0A7A-410C-8455-F26D711C1014" ProcessorArchitecture="neutral" />
   <Properties>
-    <DisplayName>KiwiTraffic</DisplayName>
-    <PublisherDisplayName>annon</PublisherDisplayName>
-    <Logo>images\storelogo.png</Logo>
+    <DisplayName>Kiwi Traffic</DisplayName>
+    <PublisherDisplayName>Daniel Mcliver</PublisherDisplayName>
+    <Logo>images\ryanlerch_Warning_Sheep_Roadsign (ass).png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.2.1</OSMinVersion>
@@ -45,12 +45,8 @@
     </Application>
   </Applications>
   <Capabilities>
-    <Capability Name="enterpriseAuthentication" />
-    <Capability Name="privateNetworkClientServer" />
-    <Capability Name="internetClientServer" />
     <Capability Name="internetClient" />
     <DeviceCapability Name="location" />
-    <DeviceCapability Name="proximity" />
   </Capabilities>
   <Dependencies>
     <PackageDependency Name="Microsoft.WinJS.1.0" MinVersion="1.0.9200.20602" />

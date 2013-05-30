@@ -3,31 +3,37 @@
     "use strict";
 
     var rate;
-
+    var presenter;
     WinJS.UI.Pages.define("/pages/settings/settings.html", {
 
         ready: function (element, options) {
 
             rate = document.getElementById("refreshRate");
-
-            var optVals = _.map(rate.options, function (o) {
-                return o.value;
-            });
+            rate.addEventListener("change", this.getRateValue);
             
-            var value = Windows.Storage.ApplicationData.current.roamingSettings.values["refreshRate"];
+            presenter = new SettingsPresenter(this, new RoamingSettingsRepository());
+            presenter.setRefreshRateWithSettings();
 
-            if (value != undefined) {
-                var index = optVals.indexOf(value);
+            this.getRefreshRateIndexFromValue = function (selectedRefreshRate) {
+
+                var optVals = [];
+
+                for (var i = 0; i < rate.options; i++) {
+                    optVals.push(rate.options[i].value);
+                }
+
+                return optVals.indexOf(selectedRefreshRate);
+            };
+
+            this.setSelectedRateIndex = function(index) {
                 rate.selectedIndex = index;
-            }
-            
-            rate.addEventListener("change", getRateValue);
+            };
+
+            this.getRateValue = function(select) {
+                var value = rate.options[rate.selectedIndex].value;
+                presenter.setRefreshRate(value);
+            };
         }
     });
-    
-    function getRateValue(select) {
-        var value = rate.options[rate.selectedIndex].value;
-        Windows.Storage.ApplicationData.current.roamingSettings.values["refreshRate"] = value;
-    }
 
 })();

@@ -50,9 +50,10 @@
     htmlEl.onkeyup = saveDetails;
 
     self.bind = function (list) {
-        _.each(list, function (i) {
-            items.push(i);
-        });
+
+        for (var i = 0; i < list.length; i++) {
+            items.push(list[i]);
+        }
     };
 
     self.clear = function() {

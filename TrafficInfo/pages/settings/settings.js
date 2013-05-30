@@ -9,16 +9,20 @@
         ready: function (element, options) {
 
             rate = document.getElementById("refreshRate");
-            rate.addEventListener("change", getRateValue);
+            rate.addEventListener("change", this.getRateValue);
             
             presenter = new SettingsPresenter(this, new RoamingSettingsRepository());
             presenter.setRefreshRateWithSettings();
 
-            this.getRefreshRateIndexFromValue = function (value) {
-                
-                return _.map(rate.options, function(o) {
-                    return o.value;
-                }).indexOf(value);
+            this.getRefreshRateIndexFromValue = function (selectedRefreshRate) {
+
+                var optVals = [];
+
+                for (var i = 0; i < rate.options; i++) {
+                    optVals.push(rate.options[i].value);
+                }
+
+                return optVals.indexOf(selectedRefreshRate);
             };
 
             this.setSelectedRateIndex = function(index) {

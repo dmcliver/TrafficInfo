@@ -34,4 +34,12 @@
         roamingSettings.values[startplace] = start.name;
         roamingSettings.values[endplace] = end.name;
     };
+
+    this.retrieveRefreshRate = function() {
+        return Windows.Storage.ApplicationData.current.roamingSettings.values["refreshRate"];
+    };
+
+    this.setRefreshRate = function(refreshRate) {
+        Windows.Storage.ApplicationData.current.roamingSettings.values["refreshRate"] = refreshRate;
+    };
 };

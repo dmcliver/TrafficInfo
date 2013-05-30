@@ -42,14 +42,14 @@
 
                 return {
 
-                    eventComments: re.querySelector("eventComments").textContent,
+                    eventComments: re.querySelector("eventComments") ?  re.querySelector("eventComments").textContent: "" ,
                     eventType: re.querySelector("eventType").textContent,
                     location: re.querySelector("locationArea").textContent,
                     description: re.querySelector("eventDescription").textContent
                 };
             }).Where(function (evt) {
-                var comments = evt.eventComments.toLowerCase();
-                return evt.eventType == "Damage Report" || evt.description == "Crash" || comments.indexOf("incident") != -1 || comments.indexOf("accident") != -1 || comments.indexOf("collision") != -1;
+                var comments = evt.eventComments? evt.eventComments.toLowerCase() : "";
+                return evt.eventType == "Damage Report" || evt.description == "Crash" || (evt.eventComments && comments.indexOf("incident") != -1 || comments.indexOf("accident") != -1 || comments.indexOf("collision") != -1);
             }).items;
 
             self.retrieveAllIncidentsResponse(queryResult);

@@ -39,7 +39,12 @@
 
                 title: "Camera refresh rate",
                 href: "/pages/settings/settings.html"
-            }
+            },
+            "appSecurity": {
+                
+                title: "Privacy policy",
+                href: "/pages/settings/privacy.html"
+            } 
         };
         
         WinJS.UI.SettingsFlyout.populateSettings(e);

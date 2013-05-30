@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="2.2" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="Daniel Mcliver" OSVERSION="6.2.9200.0" OS="Microsoft Windows 8 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="CommandLine" ReportGenerationTime="5/23/2013 6:51:05 PM" ID="28ef7589b579b9e808bb7b90c6a46b12">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
+    <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
+    <REQUIREMENT NUMBER="3" TITLE="Digitally signed file test" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus." />
+    <REQUIREMENT NUMBER="4" TITLE="Support x64 Windows test" RATIONALE="To maintain compatibility with 64-bit versions of Windows, it is necessary that applications should natively support 64-bit or at minimum 32-bit Windows based applications to run seamlessly on 64-bit." />
+    <REQUIREMENT NUMBER="5" TITLE="OS version checking test" RATIONALE="Applications must not perform version checks for equality (== 5.1). If you need a specific feature, check whether the feature is available. If you need Windows XP, check for Windows XP or later (&gt;= 5.1), This way, your detection code will continue to work on future versions of Windows. Driver installers and uninstall modules should never check the OS version." />
+    <REQUIREMENT NUMBER="6" TITLE="User account control (UAC) test" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." />
+    <REQUIREMENT NUMBER="7" TITLE="Adhere to system restart manager messages" RATIONALE="In a critical shutdown, applications that return FALSE to WM_QUERYENDSESSION will be sent WM_ENDSESSION and closed, while those that time out in response to WM_QUERYENDSESSION will be terminated." />
+    <REQUIREMENT NUMBER="8" TITLE="Safe mode test" RATIONALE="By default, most drivers and services that did not come preinstalled with Windows are not started in Safe Mode. They should remain disabled unless they are needed for basic operations of the system or for diagnostic and recovery purposes." />
+    <REQUIREMENT NUMBER="9" TITLE="Multiuser session test" RATIONALE="Windows users should be able to run concurrent sessions without conflict or disruption.  Applications must ensure that when running in multiple sessions either locally or remotely, the normal functionality of the application should not be impacted. Application settings and data files should not be persisted across users. A user’s privacy and preferences should be isolated to the user’s session." />
+    <REQUIREMENT NUMBER="10" TITLE="Crashes and hangs test" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
+      <TEST INDEX="47" NAME="App launch tests" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:22s.93ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:05s.23ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="App manifest compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.74ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.07ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Private Code Signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.85ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:04s.92ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications.">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:02s.15ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="60" NAME="Optimized Binding References" DESCRIPTION="When using bindings, WinJS.Binding.optimizeBindingReferences should be set to true to optimize the memory usage." EXECUTIONTIME="00h:00m:02s.31ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="43" NAME="Performance launch" DESCRIPTION="Application should have a responsive launch time with reasonable CPU, File IO and Memory usage" EXECUTIONTIME="00h:01m:22s.95ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="44" NAME="Performance suspend" DESCRIPTION="Application should have a responsive suspend with reasonable CPU and File IO usage" EXECUTIONTIME="00h:01m:21s.40ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources test" RATIONALE="The Appx Package Manifest should have valid resources defined in the resources.pri file, as per the Appx Packaging Specification and Appx Manifest Schema.">
+      <TEST INDEX="45" NAME="App resources validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:01s.15ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:02s.54ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:03s.51ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="File encoding" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:02s.15ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Direct3D feature level support" RATIONALE="Applications must render content on Direct3D feature level 9.1 hardware.">
+      <TEST INDEX="51" NAME="Direct3D feature level support" DESCRIPTION="Applications must render content on Direct3D feature level 9.1 hardware." EXECUTIONTIME="00h:00m:00s.71ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
+      <TEST INDEX="52" NAME="Special Use Capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.57ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute test" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:01s.30ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Type location test" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.63ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Type name case-sensitivity test" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.64ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Type name correctness test" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.64ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="General metadata correctness test" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:01s.53ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Properties test" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:01s.30ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="33329DanielMcliver.KiwiTraffic" Type="Application" Source="AppxPackage" Publisher="CN=014E27D3-0A7A-410C-8455-F26D711C1014" Version="1.0.0.13" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\33329DanielMcliver.KiwiTraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" PathEvidenceId="0x8c7" RNP="0x1" DNP="0xd" EvidenceId="0x8c7" Id="0000aca4bc5b7523596bcbb123a01b6b3be500000904">
+        <Indicators>
+          <DirectoryIndicators>
+            <Directory Name="home" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\home" RNP="0x9" DNP="0xb" UniqueId="0x917" Id="00007eb0baafbaaf8336d49e7c3224114d4f05b6a749" />
+            <Directory Name="pages" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages" RNP="0x9" DNP="0xb" UniqueId="0x914" Id="000019ff601290dc13568ff4c70ea07fd47a73f13ab3" />
+            <Directory Name="searchroute" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\searchroute" RNP="0x9" DNP="0xb" UniqueId="0x91a" Id="00008545cf0097198d2815c8876b4afd967c2790ffc0" />
+            <Directory Name="settings" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\settings" RNP="0x9" DNP="0xb" UniqueId="0x91d" Id="0000640f24481574839ab34d85fad829617f870bbf93" />
+            <Directory Name="task" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\task" RNP="0x9" DNP="0xb" UniqueId="0x90b" Id="0000656e8bf8656c94db32968cd72fc72303f156adea" />
+            <Directory Name="bing.maps.javascript" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\bing.maps.javascript" RNP="0x9" DNP="0xb" UniqueId="0x8d2" Id="00006a1a97684a506bf977ba006a3130c26493df5df7" />
+            <Directory Name="presenters" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\presenters" RNP="0x9" DNP="0xb" UniqueId="0x8f7" Id="00009461f73e42c83bd4952e77aff024cd5549e7fae6" />
+            <Directory Name="coordinators" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\coordinators" RNP="0x9" DNP="0xb" UniqueId="0x8eb" Id="0000f9fc5702e15e9e7d19bfd625d395fd264d0131e5" />
+            <Directory Name="33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0x9" DNP="0xb" UniqueId="0x8c8" Id="000022dffa6c6793f84ab4d7711f49f8e9f94667af1f" />
+            <Directory Name="js" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\bing.maps.javascript\js" RNP="0x9" DNP="0xb" UniqueId="0x8e3" Id="0000ed830a2cad918e620bb3cae846c3985ea8ddae26" />
+            <Directory Name="domain" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\domain" RNP="0x9" DNP="0xb" UniqueId="0x8ef" Id="0000ea398617353d87b83ff96ae10849b3f795a50627" />
+            <Directory Name="repositories" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories" RNP="0x9" DNP="0xb" UniqueId="0x8fb" Id="000095fac8a2db175a122f3db5e218f566c99b45402f" />
+            <Directory Name="scripts" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\scripts" RNP="0x9" DNP="0xb" UniqueId="0x901" Id="0000259bac86927a232331c10ec9d5c2cfd65e851e51" />
+            <Directory Name="js" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\js" RNP="0x9" DNP="0xb" UniqueId="0x90f" Id="0000ed830a2cad918e620bb3cae846c3985ea8ddae26" />
+            <Directory Name="help" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\help" RNP="0x9" DNP="0xb" UniqueId="0x915" Id="0000c2e3b963c513881a40bfbaa5804b8ac8c7836de6" />
+            <Directory Name="controls" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\controls" RNP="0x9" DNP="0xb" UniqueId="0x8e6" Id="00008d6aacbc06c31053b38fe8340ac7697e945a0cfb" />
+            <Directory Name="services" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\services" RNP="0x9" DNP="0xb" UniqueId="0x904" Id="000066f3d1049d3b49239c7b4fcb9d5c7112958f89e1" />
+          </DirectoryIndicators>
+          <PackageManifestIndicator>
+            <PackageManifest PackageFullName="33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" />
+            <Identity Name="33329DanielMcliver.KiwiTraffic" Version="1.0.0.13" Publisher="CN=014E27D3-0A7A-410C-8455-F26D711C1014" ProcessorArchitecture="neutral" />
+            <Extension Category="windows.search" />
+            <Extension Category="windows.backgroundTasks" StartPage="Task\UpdateTileTask.js">
+              <BackgroundTasks>
+                <Task Type="systemEvent" />
+                <Task Type="timer" />
+              </BackgroundTasks>
+            </Extension>
+            <Dependencies>
+              <PackageDependency Name="Microsoft.WinJS.1.0" MinVersion="1.0.9200.20602" />
+            </Dependencies>
+            <Properties>
+              <DisplayName>Kiwi Traffic</DisplayName>
+              <PublisherDisplayName>Daniel Mcliver</PublisherDisplayName>
+              <Logo>images\ryanlerch_Warning_Sheep_Roadsign (ass).png</Logo>
+            </Properties>
+            <Resources>
+              <Resource Language="EN-US" />
+            </Resources>
+            <Prerequisites>
+              <OSMinVersion>6.2.1</OSMinVersion>
+              <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+            </Prerequisites>
+            <Capabilities>
+              <Capability Name="internetClientServer" />
+              <Capability Name="internetClient" />
+              <DeviceCapability Name="location" />
+            </Capabilities>
+          </PackageManifestIndicator>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000f3ddb1770d3d5f4f3ae71bda80869937f0af3fe6">
+            <File Name="WideTileBehaviour.js" Id="0000e7c9bae39a2285a6aa93e962627c4df739b5453c" ShortName="WIDETI~1.JS" Size="0x124" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\widetilebehaviour.js" LongPathHash="00005295ca9683c127aaf016f36cd5125eb87bb72f3b" UniqueId="0x8d1" />
+            <File Name="BackgroundImageUpdater.js" Id="00000c29fd77569f3ca0163f7092aa632caa922a200b" ShortName="BACKGR~1.JS" Size="0x2d2" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:58" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\backgroundimageupdater.js" LongPathHash="000002bbfe9ae6c9d27b5cca3c6781e2b6fecbcb40c5" UniqueId="0x8c9" />
+            <File Name="MapBounds.js" Id="0000262c8f5df3cd9b60daa7d4551e7a757e5a46e19e" ShortName="MAPBOU~1.JS" Size="0xa4e" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\mapbounds.js" LongPathHash="0000ff1fbf22efb0d2380a55008933c5ae538b4fd01d" UniqueId="0x8cc" />
+            <File Name="LiveTileServiceDecorator.js" Id="00000823aa91db429172ebc05bf258c0a5c7ce5c6fce" ShortName="LIVETI~1.JS" Size="0x1c9" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\livetileservicedecorator.js" LongPathHash="0000b95b0acef2a9330fe4b901e7d5ade4843f2c9817" UniqueId="0x8cb" />
+            <File Name="NullTileServiceDecorator.js" Id="00003b2e2c92fac6154fb24e28ae648cdfc4d539d0cc" ShortName="NULLTI~1.JS" Size="0x74" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\nulltileservicedecorator.js" LongPathHash="0000bdc427b0c66518b253b2105bb4c785a59fc636b5" UniqueId="0x8cd" />
+            <File Name="PushpinFactory.js" Id="0000b461e5f55cc85a4d8e3fb469956e8118149c9db8" ShortName="PUSHPI~1.JS" Size="0x30e" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pushpinfactory.js" LongPathHash="00002d0d43e2a94dbfd49bb251db5a4daa183d51fe0f" UniqueId="0x8ce" />
+            <File Name="default.html" Id="0000cd1f73c1fd974f83eca57c6a68080eb42104389b" ShortName="DEFAUL~1.HTM" Size="0x49e" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\default.html" LongPathHash="0000759e0411a3de039f9c31a622bde1b05e862557c5" UniqueId="0x8ca" />
+            <File Name="SquareTileBehaviour.js" Id="0000206f7484b85ba7793f3c9ccfd7728db944403603" ShortName="SQUARE~1.JS" Size="0xcb" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\squaretilebehaviour.js" LongPathHash="0000c89f7d49871ce44219e560213995dfcb2eebc58a" UniqueId="0x8cf" />
+            <File Name="TileBadgeUpdater.js" Id="000094074724a8b22d67bca1d9e9cbf1bf2ada5cd117" ShortName="TILEBA~1.JS" Size="0x1c5" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\tilebadgeupdater.js" LongPathHash="00002b70da06deb79c4b9f0cc1ae4a61e8e06794a17d" UniqueId="0x8d0" />
+            <File Name="LocationCoordinator.js" Id="000073433d2ca9ac6e2af62f375ba5394e2cdcfe5bed" ShortName="LOCATI~1.JS" Size="0x80e" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\coordinators" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\coordinators\locationcoordinator.js" LongPathHash="000062f2d358ce5a79f89dd8bf7971f5ac5f0a4c3978" UniqueId="0x8ec" />
+            <File Name="CameraPushpinInfo.js" Id="0000ac156a6d92741ed745ea7a8922bf66edcb9d40be" ShortName="CAMERA~1.JS" Size="0x264" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Domain" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\domain\camerapushpininfo.js" LongPathHash="00009aed8ec41e664fc3daf45e040200a50ff9a973c5" UniqueId="0x8f1" />
+            <File Name="SettingsPresenter.js" Id="000032b286c84695154622153070385a4c22efff8e61" ShortName="SETTIN~1.JS" Size="0x1bf" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\presenters" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\presenters\settingspresenter.js" LongPathHash="00004138dca58048d57c3bfe25ba1b096d44930847f1" UniqueId="0x8fa" />
+            <File Name="MapService.js" Id="000063277a62720ca97f6be23ce8b126939f6e9d5327" ShortName="MAPSER~1.JS" Size="0x13e5" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Services" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\services\mapservice.js" LongPathHash="000047a954e3fed9d4981f4572084561522dc7cf48a5" UniqueId="0x906" />
+            <File Name="veapiModules.js" Id="000009288bfbb547605a65d6024020995632f712d7f1" ShortName="VEAPIM~1.JS" Size="0x40de5" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\bing.maps.javascript\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\bing.maps.javascript\js\veapimodules.js" LongPathHash="00001d47a6dd802b140554e08bc88b1cdd2f7361f65f" UniqueId="0x8e5" />
+            <File Name="ValidatorService.js" Id="00007135ec5a3ac65a34fe51e01f41823091aa50ca7c" ShortName="VALIDA~1.JS" Size="0xff" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Services" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\services\validatorservice.js" LongPathHash="0000bb55122e99c5ddf04ffba68bfa77618d2e1185fa" UniqueId="0x90a" />
+            <File Name="default.js" Id="000044fe1a8fe27d00c7ffb4e4aa16809f98c686c0c6" Size="0x6de" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\js\default.js" LongPathHash="00007bc50ccd9be0922cc494da132e7f92444d1147d4" UniqueId="0x910" />
+            <File Name="SearchRoutePresenter.js" Id="00008410c70ae561d36a3e57033bd527b7eea9919a8e" ShortName="SEARCH~1.JS" Size="0x232" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\presenters" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\presenters\searchroutepresenter.js" LongPathHash="0000a377ef62062f1d78c875ef30015e94d38dedb8cb" UniqueId="0x8f9" />
+            <File Name="ShareCoordinator.js" Id="0000dc60ba301188b046073e8a14cf0074dd43ed7077" ShortName="SHAREC~1.JS" Size="0x220" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\coordinators" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\coordinators\sharecoordinator.js" LongPathHash="0000c1f7b766a6484e86b4f6b782db9a7157f49ec760" UniqueId="0x8ed" />
+            <File Name="home.html" Id="000018aea1d8a31bb2ae50203f4ae95ee41a73eec17c" ShortName="HOME~1.HTM" Size="0x10f0" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\home" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\home\home.html" LongPathHash="000099093bb8613b5af86d09d2171c04c6e15e8d7a25" UniqueId="0x918" />
+            <File Name="TileService.js" Id="0000b6f05acff09a8241420dd8ff113ea61b7a9fe133" ShortName="TILESE~1.JS" Size="0x986" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Services" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\services\tileservice.js" LongPathHash="00004a1a9be57bcf5f22a24ba5713c084847bb56844c" UniqueId="0x908" />
+            <File Name="AutoCompleteTextBoxView.js" Id="000094c7ca70beda4c4cfffab54aeef3c7d12062a171" ShortName="AUTOCO~4.JS" Size="0x71e" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Controls" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\controls\autocompletetextboxview.js" LongPathHash="0000587f8a53284e2671d387fa29a25d75a9bfdbcee8" UniqueId="0x8ea" />
+            <File Name="NztaRepository.js" Id="0000e685912687337da5ca826182cb40c170510d5938" ShortName="NZTARE~1.JS" Size="0x92e" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories\nztarepository.js" LongPathHash="0000a8938a9ab66dff684d3cae48107a18fee7096910" UniqueId="0x8fe" />
+            <File Name="TrafficConditions.js" Id="00004769b136b2acbcd80de498520f7b527578e009a9" ShortName="TRAFFI~1.JS" Size="0x95" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Domain" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\domain\trafficconditions.js" LongPathHash="000069f2b240bd2e90553d389cbcc4def1b91a48281d" UniqueId="0x8f6" />
+            <File Name="Location.js" Id="000077a10066b798912a25038da8799d206419b7cddc" Size="0xf4" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Domain" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\domain\location.js" LongPathHash="0000d9ae33f3c66c1f3748aa40838b0c7a7faa7d4cb1" UniqueId="0x8f2" />
+            <File Name="RoamingSettingsRepository.js" Id="0000d589103491ac1d6ecb0db2c64b60c6b0bef2b69a" ShortName="ROAMIN~1.JS" Size="0x66c" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories\roamingsettingsrepository.js" LongPathHash="000030ec9ef70456ce4bc6b6ce5b688d87649237fd1e" UniqueId="0x8ff" />
+            <File Name="TileNotificationFactory.js" Id="000078faee3903235ce215d4d4547fb5e7e214c4a770" ShortName="TILENO~1.JS" Size="0xcd" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Services" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\services\tilenotificationfactory.js" LongPathHash="00006bc31354cf4db0ad05d9dbad002bb398345db312" UniqueId="0x907" />
+            <File Name="UpdateTileTask.js" Id="0000d27f69adf5ea8277bb8abc88ac4d1dd34a345423" ShortName="UPDATE~1.JS" Size="0x1ed" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Task" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\task\updatetiletask.js" LongPathHash="0000f664ab57c38e73b2b645948f2577b2654732245a" UniqueId="0x90c" />
+            <File Name="settings.js" Id="000066dbdb023e58591348fdf01b4d73a18cb7b51f6b" Size="0x472" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\settings" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\settings\settings.js" LongPathHash="00007a6a1d879ae5aa14535ca19496895c6d381c182a" UniqueId="0x91f" />
+            <File Name="TrafficSettingsRepository.js" Id="0000d5a3cc6e4accf6b0479d0592ac840c9999eca6db" ShortName="TRAFFI~1.JS" Size="0x176" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories\trafficsettingsrepository.js" LongPathHash="00002321d29102ebb88a5c647cdb7c578b40f3f3323b" UniqueId="0x900" />
+            <File Name="navigator.js" Id="0000d05a747c7319d25a9e84ea45412f109751b074a9" ShortName="NAVIGA~1.JS" Size="0x18be" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\js\navigator.js" LongPathHash="0000659b7158597987f1338f3acec14b4fe3fd42782e" UniqueId="0x911" />
+            <File Name="Motorway.js" Id="00003de94868d7ef4e0c6e2cc668ab69b44b77168d37" Size="0x7b" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Domain" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\domain\motorway.js" LongPathHash="0000dbe104f12004adc23e5d092ec147f233d06bbe40" UniqueId="0x8f3" />
+            <File Name="help.html" Id="000069a4b6172631f860e4cd85504cf294f4d1ef08d0" ShortName="HELP~1.HTM" Size="0x5ec" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\help" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\help\help.html" LongPathHash="0000c697e3289a2323975d01ac494b674b2f976a4579" UniqueId="0x916" />
+            <File Name="home.js" Id="0000b38a83a82ef6187d95167a9c1959b175f21dca09" Size="0x1814" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\home" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\home\home.js" LongPathHash="0000bcbe94b6ecf4f2711d612604225a4845fdb3afea" UniqueId="0x919" />
+            <File Name="searchRoute.html" Id="00001fcb686171760efedbc8876b0ea7ed39508a9fb7" ShortName="SEARCH~1.HTM" Size="0x1448" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\searchroute" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\searchroute\searchroute.html" LongPathHash="00002804eb3f48d0fcaa01a95c7a400a9751e306bc29" UniqueId="0x91b" />
+            <File Name="JSLINQ-vsdoc.js" Id="0000ca3d0e379f9553c3dcf8b15db18ffeb77d941918" ShortName="JSLINQ~1.JS" Size="0x1a33" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Scripts" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\scripts\jslinq-vsdoc.js" LongPathHash="0000cfd9ed0c2fcb6c5fe7675e5654020db2129958b6" UniqueId="0x902" />
+            <File Name="UriEncoderService.js" Id="00004d0fc3ac12c78e22ec19b1465a4cb84b2bf3f134" ShortName="URIENC~1.JS" Size="0x204" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Services" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\services\uriencoderservice.js" LongPathHash="0000d4e020cb3736722ae7abbb987c7acb718ad206d3" UniqueId="0x909" />
+            <File Name="JSLINQ.js" Id="00004685fca0f63f4ee696300a9495662ffcf943955b" Size="0x1b67" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Scripts" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\scripts\jslinq.js" LongPathHash="00008019610bc66274f359a262a618d3c6b734b57a3b" UniqueId="0x903" />
+            <File Name="Place.js" Id="00008c450ff148f317d40422a949b09085c7f129751a" Size="0x1af" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Domain" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\domain\place.js" LongPathHash="000078075b330b41a021da6e8410f6c1bccc4b183304" UniqueId="0x8f4" />
+            <File Name="AutoCompleteTextBoxController.js" Id="000017a1637531e49c9e8e53bb2d35c56b74f7451fcd" ShortName="AUTOCO~2.JS" Size="0x6c8" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Controls" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\controls\autocompletetextboxcontroller.js" LongPathHash="0000e41f114be86473ee6f6d0fbef1903e823eb7adef" UniqueId="0x8e8" />
+            <File Name="veapicore.js" Id="00003e6e4d8cbaf574043a00b8fc111c42ec8a910e6b" ShortName="VEAPIC~1.JS" Size="0x49a52" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\bing.maps.javascript\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\bing.maps.javascript\js\veapicore.js" LongPathHash="00001e72a3e773bf15532bf805061adbdf3d61cff197" UniqueId="0x8e4" />
+            <File Name="AutoCompleteTextBox.js" Id="00002fdb34be254cf0f49db4ddcdf5204bc8bb042225" ShortName="AUTOCO~1.JS" Size="0x210" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Controls" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\controls\autocompletetextbox.js" LongPathHash="000091c30c74d3bb7021b6ab4aacdb21d399797c8209" UniqueId="0x8e7" />
+            <File Name="Camera.js" Id="000096b188147eb521278fee4f6ca4d5de299cccb828" Size="0x230" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Domain" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\domain\camera.js" LongPathHash="0000fe2579eadb6ff0b50389a6c983ef3f95351c280e" UniqueId="0x8f0" />
+            <File Name="GeocodeRepository.js" Id="000094e2ffd53520e966d1248e07072c940db68a28d5" ShortName="GEOCOD~1.JS" Size="0x1db" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories\geocoderepository.js" LongPathHash="0000ea442f7eff8c37b7e5aaea2b61d4bcb70ae93a96" UniqueId="0x8fd" />
+            <File Name="searchRoute.js" Id="00001ad89a4ba460124a2ddec63d1d0cf3bf9cd166fd" ShortName="SEARCH~1.JS" Size="0x141a" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\searchroute" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\searchroute\searchroute.js" LongPathHash="00005cb24c7039c53396dc4c08e70c11a3f22a1414fe" UniqueId="0x91c" />
+            <File Name="settings.html" Id="000085b7194aca27871d1a549320baf7019f30279db5" ShortName="SETTIN~1.HTM" Size="0x5bb" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\settings" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\pages\settings\settings.html" LongPathHash="00008dedb288cfa8edb04bb080c8b379646b849abc84" UniqueId="0x91e" />
+            <File Name="CharmBarService.js" Id="00009a407e383694aa680a0b87097b2a160bd342053d" ShortName="CHARMB~1.JS" Size="0x51e" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Services" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\services\charmbarservice.js" LongPathHash="000006598efb542a2e1c93217c5d27b05692ae5365cb" UniqueId="0x905" />
+            <File Name="Tile.js" Id="0000111eea857476f6bbe3605314325393923ce557d1" Size="0x570" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Domain" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\domain\tile.js" LongPathHash="0000d04ccb48f6fb3219271cda60b5bacf3bfb96ddb0" UniqueId="0x8f5" />
+            <File Name="HomePresenter.js" Id="0000b97f7c830c602fd0c26ee7b056aa2dc0b898738e" ShortName="HOMEPR~1.JS" Size="0x2a2" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\presenters" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\presenters\homepresenter.js" LongPathHash="0000fcc2fd26805b5e861c41e24520bc0615668ce063" UniqueId="0x8f8" />
+            <File Name="CameraCoordinateRepository.js" Id="00003be8ea96d15069bb3527aaea687ae2e670e3c82f" ShortName="CAMERA~1.JS" Size="0x489" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\repositories\cameracoordinaterepository.js" LongPathHash="0000f1d272f79772d7e28cee084b1331267b50f65060" UniqueId="0x8fc" />
+            <File Name="UriBuilder.js" Id="0000b2313e0284c947b3ccefbeb77c4b9d4fca29e314" ShortName="URIBUI~1.JS" Size="0x99" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\coordinators" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\coordinators\uribuilder.js" LongPathHash="00005e8f62f1a2313a3ad812def92e785e067fd19d66" UniqueId="0x8ee" />
+            <File Name="AutoCompleteTextBoxModel.js" Id="0000d5ac35d245433ad2505b40e27db5a6e9ce1901ed" ShortName="AUTOCO~3.JS" Size="0xc6" BinaryType="UNKNOWN" Created="05/24/2013 01:46:58" Modified="05/24/2013 01:46:59" Path="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\Controls" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\33329danielmcliver.kiwitraffic_1.0.0.13_neutral__kkc9fbfwqkrj6\controls\autocompletetextboxmodel.js" LongPathHash="0000a03540642e3861aed99bdbf192a6a0f06e47bfdd" UniqueId="0x8e9" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="0000aca4bc5b7523596bcbb123a01b6b3be500000904" AnalysisVersion="1.54" DictionaryVersion="1.6" Type="Package" Id="33329DanielMcliver.KiwiTraffic_1.0.0.13_neutral__kkc9fbfwqkrj6">
+      <AitFile ErrorCode="0" Name="LiveTileServiceDecorator.js" Id="00000823aa91db429172ebc05bf258c0a5c7ce5c6fce" />
+      <AitFile ErrorCode="0" Name="veapiModules.js" Id="000009288bfbb547605a65d6024020995632f712d7f1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager.current.defaultContext.languages" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="BackgroundImageUpdater.js" Id="00000c29fd77569f3ca0163f7092aa632caa922a200b" />
+      <AitFile ErrorCode="0" Name="Tile.js" Id="0000111eea857476f6bbe3605314325393923ce557d1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.UI.Notifications.TileUpdateManager.getTemplateContent" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="AutoCompleteTextBoxController.js" Id="000017a1637531e49c9e8e53bb2d35c56b74f7451fcd">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.html" Id="000018aea1d8a31bb2ae50203f4ae95ee41a73eec17c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.AppBar" />
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+          <AitFeature Name="WinJS.UI.ListLayout" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="searchRoute.js" Id="00001ad89a4ba460124a2ddec63d1d0cf3bf9cd166fd">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingSettings.values" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="searchRoute.html" Id="00001fcb686171760efedbc8876b0ea7ed39508a9fb7">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.AppBar" />
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+          <AitFeature Name="WinJS.UI.ListLayout" />
+          <AitFeature Name="WinJS.UI.ListView" />
+          <AitFeature Name="WinJS.UI.ToggleSwitch" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="SquareTileBehaviour.js" Id="0000206f7484b85ba7793f3c9ccfd7728db944403603" />
+      <AitFile ErrorCode="0" Name="MapBounds.js" Id="0000262c8f5df3cd9b60daa7d4551e7a757e5a46e19e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingSettings" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="AutoCompleteTextBox.js" Id="00002fdb34be254cf0f49db4ddcdf5204bc8bb042225" />
+      <AitFile ErrorCode="0" Name="SettingsPresenter.js" Id="000032b286c84695154622153070385a4c22efff8e61" />
+      <AitFile ErrorCode="0" Name="NullTileServiceDecorator.js" Id="00003b2e2c92fac6154fb24e28ae648cdfc4d539d0cc" />
+      <AitFile ErrorCode="0" Name="CameraCoordinateRepository.js" Id="00003be8ea96d15069bb3527aaea687ae2e670e3c82f" />
+      <AitFile ErrorCode="0" Name="Motorway.js" Id="00003de94868d7ef4e0c6e2cc668ab69b44b77168d37" />
+      <AitFile ErrorCode="0" Name="veapicore.js" Id="00003e6e4d8cbaf574043a00b8fc111c42ec8a910e6b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="Windows.ApplicationModel" />
+          <AitFeature Name="Windows.ApplicationModel.Resources.Core" />
+          <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager.current.defaultContext.languages" />
+          <AitFeature Name="Windows.System.UserProfile.GlobalizationPreferences.homeGeographicRegion" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.js" Id="000044fe1a8fe27d00c7ffb4e4aa16809f98c686c0c6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Binding.optimizeBindingReferences" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.UI.processAll" />
+          <AitFeature Name="Windows.ApplicationModel.Activation" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="JSLINQ.js" Id="00004685fca0f63f4ee696300a9495662ffcf943955b" />
+      <AitFile ErrorCode="0" Name="TrafficConditions.js" Id="00004769b136b2acbcd80de498520f7b527578e009a9" />
+      <AitFile ErrorCode="0" Name="UriEncoderService.js" Id="00004d0fc3ac12c78e22ec19b1465a4cb84b2bf3f134" />
+      <AitFile ErrorCode="0" Name="MapService.js" Id="000063277a62720ca97f6be23ce8b126939f6e9d5327">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingSettings.values" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="settings.js" Id="000066dbdb023e58591348fdf01b4d73a18cb7b51f6b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.Pages.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="help.html" Id="000069a4b6172631f860e4cd85504cf294f4d1ef08d0" />
+      <AitFile ErrorCode="0" Name="ValidatorService.js" Id="00007135ec5a3ac65a34fe51e01f41823091aa50ca7c" />
+      <AitFile ErrorCode="0" Name="LocationCoordinator.js" Id="000073433d2ca9ac6e2af62f375ba5394e2cdcfe5bed" />
+      <AitFile ErrorCode="0" Name="Location.js" Id="000077a10066b798912a25038da8799d206419b7cddc" />
+      <AitFile ErrorCode="0" Name="TileNotificationFactory.js" Id="000078faee3903235ce215d4d4547fb5e7e214c4a770">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.UI.Notifications.TileNotification" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="SearchRoutePresenter.js" Id="00008410c70ae561d36a3e57033bd527b7eea9919a8e" />
+      <AitFile ErrorCode="0" Name="settings.html" Id="000085b7194aca27871d1a549320baf7019f30279db5">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.SettingsFlyout" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.show" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Place.js" Id="00008c450ff148f317d40422a949b09085c7f129751a" />
+      <AitFile ErrorCode="0" Name="TileBadgeUpdater.js" Id="000094074724a8b22d67bca1d9e9cbf1bf2ada5cd117">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.UI.Notifications.BadgeTemplateType.badgeGlyph" />
+          <AitFeature Name="Windows.UI.Notifications.BadgeUpdateManager.getTemplateContent" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="AutoCompleteTextBoxView.js" Id="000094c7ca70beda4c4cfffab54aeef3c7d12062a171">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.List" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="GeocodeRepository.js" Id="000094e2ffd53520e966d1248e07072c940db68a28d5">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.xhr" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Camera.js" Id="000096b188147eb521278fee4f6ca4d5de299cccb828" />
+      <AitFile ErrorCode="0" Name="CharmBarService.js" Id="00009a407e383694aa680a0b87097b2a160bd342053d">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application.onsettings" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.populateSettings" />
+          <AitFeature Name="Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView" />
+          <AitFeature Name="Windows.ApplicationModel.Search.SearchPane.getForCurrentView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="CameraPushpinInfo.js" Id="0000ac156a6d92741ed745ea7a8922bf66edcb9d40be" />
+      <AitFile ErrorCode="0" Name="UriBuilder.js" Id="0000b2313e0284c947b3ccefbeb77c4b9d4fca29e314">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Foundation.Uri" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.js" Id="0000b38a83a82ef6187d95167a9c1959b175f21dca09">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.ApplicationModel.Search.SearchPane.getForCurrentView" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingSettings.values" />
+          <AitFeature Name="Windows.Storage.Streams.RandomAccessStreamReference" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+          <AitFeature Name="Windows.UI.Popups.UICommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="PushpinFactory.js" Id="0000b461e5f55cc85a4d8e3fb469956e8118149c9db8" />
+      <AitFile ErrorCode="0" Name="TileService.js" Id="0000b6f05acff09a8241420dd8ff113ea61b7a9fe133">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder" />
+          <AitFeature Name="Windows.ApplicationModel.Background.TimeTrigger" />
+          <AitFeature Name="Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText04" />
+          <AitFeature Name="Windows.UI.Notifications.TileTemplateType.tileWidePeekImage04" />
+          <AitFeature Name="Windows.UI.Notifications.TileUpdateManager.createTileUpdaterForApplication" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="HomePresenter.js" Id="0000b97f7c830c602fd0c26ee7b056aa2dc0b898738e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Namespace.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="JSLINQ-vsdoc.js" Id="0000ca3d0e379f9553c3dcf8b15db18ffeb77d941918" />
+      <AitFile ErrorCode="0" Name="default.html" Id="0000cd1f73c1fd974f83eca57c6a68080eb42104389b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="navigator.js" Id="0000d05a747c7319d25a9e84ea45412f109751b074a9">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Class.define" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Promise" />
+          <AitFeature Name="WinJS.Promise.as" />
+          <AitFeature Name="WinJS.Promise.timeout" />
+          <AitFeature Name="WinJS.UI.Animation.enterPage" />
+          <AitFeature Name="WinJS.UI.Pages.render" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="UpdateTileTask.js" Id="0000d27f69adf5ea8277bb8abc88ac4d1dd34a345423">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localSettings" />
+          <AitFeature Name="Windows.UI.WebUI.WebUIBackgroundTaskInstance.current" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="RoamingSettingsRepository.js" Id="0000d589103491ac1d6ecb0db2c64b60c6b0bef2b69a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingSettings" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingSettings.values" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="TrafficSettingsRepository.js" Id="0000d5a3cc6e4accf6b0479d0592ac840c9999eca6db">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingSettings.values" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="AutoCompleteTextBoxModel.js" Id="0000d5ac35d245433ad2505b40e27db5a6e9ce1901ed" />
+      <AitFile ErrorCode="0" Name="ShareCoordinator.js" Id="0000dc60ba301188b046073e8a14cf0074dd43ed7077" />
+      <AitFile ErrorCode="0" Name="NztaRepository.js" Id="0000e685912687337da5ca826182cb40c170510d5938">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.xhr" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="WideTileBehaviour.js" Id="0000e7c9bae39a2285a6aa93e962627c4df739b5453c" />
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

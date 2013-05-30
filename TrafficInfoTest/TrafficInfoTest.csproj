@@ -42,15 +42,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fixtures\CameraFixtureBuilder.js" />
     <Content Include="css\jasmine.css" />
     <Content Include="Fixtures\DataPropertiesFixture.js" />
     <Content Include="IncidentFixtureBuilder.js" />
     <Content Include="Mocks\BadgeUpdaterMock.js" />
+    <Content Include="Mocks\HomeViewMock.js" />
     <Content Include="Mocks\MapViewMock.js" />
     <Content Include="Mocks\RequestDataMock.js" />
     <Content Include="Mocks\SettingsViewMock.js" />
     <Content Include="Mocks\TileUpdaterMock.js" />
     <Content Include="Mocks\WideTileDecoratorMock.js" />
+    <Content Include="specs\HomePresenterSpec.js" />
+    <Content Include="specs\LoggingInterceptorSpec.js" />
     <Content Include="TileNotificationDummy.js" />
     <Content Include="Mocks\TrafficManagerMock.js" />
     <Content Include="Scripts\jasmine-html.js" />
